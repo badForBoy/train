@@ -381,6 +381,51 @@ a.head2-link-logo{
     left: 0;
     right: 0;
     z-index: 20;
+    text-align: center;
+}
+.close{
+    width: 50px;
+    height: 50px;
+}
+.close a{
+
+}
+.login-safe{
+    margin: 50px auto 16px;
+    font-size: 20px;
+    color: #333;
+}
+.login-title{
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 36px;
+}
+.login-title a{
+    color: #188EEE;
+}
+.login-tips{
+    margin-bottom: 24px;
+}
+.login-qr{
+    display: inline-block;
+    text-align: center;
+    height: 120px;
+    width: 100px;
+    background: #ddd;
+}
+.login-face{
+    display: inline-block;
+    text-align: center;
+    height: 120px;
+    width: 100px;
+    background: #ddd;
+}
+.login-way,.login-other{
+    text-align: right;
+    padding: 0 10px;
+}
+.login-way{
+    border-bottom: 2px solid #eee;
 }
 /* 轮播图 */
 .wrap-big-banner{
@@ -508,7 +553,7 @@ h3.modal-like-title{
     line-height: 24px;
     top: 107px;
     color: #fff;
-    z-index: 3;
+    z-index: 1;
     background-color: rgba(0,0,0,.6);
 }
 .modal-like-item p{
