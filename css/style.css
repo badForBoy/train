@@ -18,7 +18,8 @@ h3{
 }
 a{
 	text-decoration: none;
-	color: #666;
+	color: #333;
+    font-size: 1.4rem;
 }
 a:hover{ 
 	color: #188EEE;
@@ -61,14 +62,16 @@ li{
 .pull-right{
 	float: right;
 }
-
+.hidden{
+    display: none;
+}
 
 /*head1*/
 #head1{
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	line-height: 35px;
 	/*background-color: #F6F6F6;*/
-    color: #999;
+    color: #333;
     border-bottom: 1px solid #E7E8E7;
 }
 .head1-left ul li{
@@ -77,34 +80,58 @@ li{
 }
 .head1-left ul li a,
 .head1-right ul li a{
-    color: #999;
+    color: #333;
+}
+.head1-left ul li a:hover,
+.head1-right ul li a:hover{
+    color: #188EEE;
 }
 .head1-right ul li{
 	float: right;
-	padding-left: 20px;
+	padding-right: 20px;
 }
 .head1-wrap-nav{
     position: relative;
 }
+.head1-wrap-nav .my-platform i{
+    display: block;
+    position: absolute;
+    font-size: 1rem;
+    width: 12px;
+    height: 12px;
+    line-height: 13px;
+    top: 2px;
+    right: 0px;
+    margin-left: 2px;
+    transition: transform .3s;
+    margin-top: 10px;
+}
 .head1-modal-nav{
     display: none;
     position: absolute;
+    width: 120px;
     right: 0;
-    border: 1px solid #eee;
-    background: #aaa;
-    transition: 0.5s;
+    top: 35px;
+    border: 1px solid #dbdbdb;
+    border-top: 0;
 }
-.head1-wrap-nav:hover{
-    background: #aaa;
-}
-.head1-wrap-nav:hover .head1-modal-nav {
+ .head1-wrap-nav{
+    cursor: pointer;
+} 
+.head1-wrap-nav:hover .head1-modal-nav{
     display: block;
+}
+.head1-wrap-nav:hover .my-platform i{
+    -webkit-transform: rotate(180deg); 
+        -ms-transform: rotate(180deg); 
+         -o-transform: rotate(180deg); 
+            transform: rotate(180deg); 
 }
 .head1-modal-nav span{
     display: block;
-    border-bottom: 1px solid #eee;
-    height: 36px;
-    line-height: 36px;
+    border-bottom: 1px solid #dbdbdb;
+    height: 40px;
+    line-height: 40px;
     padding: 0 16px;
 }
 .head1-modal-nav span:last-child{
@@ -128,18 +155,19 @@ a.head2-link-logo{
     margin-left: 20px;
 }
 .head2-seach-modal{
-	height: 40px;
-    /*border: 2px solid #188EEE;*/
+	width: 450px;
+    height: 40px;
+    border: 2px solid #188EEE;
     background: #fff;
     position: relative;
+    /* overflow: hidden; */
 }
 .mod-search__input {
-   /* margin: 6px 10px 6px 64px;*/
-    border: 2px solid #188EEE !important;
+    margin: 6px 10px 6px 64px;
     padding: 0;
     width: 360px;
-    height: 36px;
-    line-height: 36px;
+    height: 24px;
+    line-height: 24px;
     font-size: 12px;
     text-indent: 12px;
     border: 0;
@@ -147,14 +175,66 @@ a.head2-link-logo{
     vertical-align: top;
     outline: none;
 }
-.mod-search__button{
-    margin-left: -4px;
-	width: 58px;
-	height: 36px;
-	background: #188EEE;
-	border: none;
-    color: #fff;
+i.search-more{
+    position: absolute;
+    left: 44px;
+    top: 12px;
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
 }
+a.search-item{
+    width: 64px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #ddd; 
+    cursor: pointer;
+    vertical-align: top;
+}
+.search-on{
+    background: #ddd;
+}
+a.search-item span{
+    display: inline-block;
+    position: relative;
+    height: 34px;
+    width: 62px;
+    color: #333;
+    font-size: 12px;
+    text-indent: 10px;
+    line-height: 34px;
+    background: #fff; 
+}
+a.search-item span.hidden{
+    display: none;
+}
+a.search-item span i{
+    padding-left: 12px;
+}
+a.search-btn{
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    display: block;
+    color: #fff;
+    background: #147de2;
+    width: 58px;
+    height: 40px;
+    font-size: 2.6rem;
+    padding-left: 18px;
+}
+/* .mod-search__button{
+    margin-left: -4px;
+    width: 58px;
+    height: 36px;
+    background: #188EEE;
+    border: none;
+    color: #fff;
+} */
 .seach-word-list a{
 	display: inline-block;
     vertical-align: middle;
@@ -227,12 +307,22 @@ a.head2-link-logo{
 .modal-nav-li:hover{
 	background: #0264A3;
 }
+.modal-nav-li:hover h3 a i{
+    color: #fff;
+}
 .modal-nav-li-first h3 a,
 .modal-nav-li h3 a{
 	font-size: 1.6rem;
 	color: #fff;
+    font-weight: normal;
 }
-.modal-nav-li-first h3 a:hover,
+.modal-nav-li-first h3 a i{
+    font-size: 2.2rem;
+    margin-right: 8px;
+    position: relative;
+    top: 2px;
+}
+/* .modal-nav-li-first h3 a:hover, */
 .modal-nav-li h3 a:hover,
 .modal-nav-li-title a:hover{
 	text-decoration: underline;
@@ -248,9 +338,18 @@ a.head2-link-logo{
 	color: #97D2F7;
 	margin-right: 8px;
 }
+.modal-nav-li-title a:hover{
+    color: #fff;
+}
 .modal-nav-li-head h3{
+    width: 100%;
 	display: inline-block;
-	padding: 11px 15px 0 15px;
+	padding: 11px 10px 0 15px;
+}
+.modal-nav-li-head h3 a i{
+    font-size: 1.2rem;
+    color: rgba(255,255,255,.3);
+    font-weight: normal;
 }
 .modal-nav_modal-nav-side{
     display: none;
@@ -295,6 +394,9 @@ a.head2-link-logo{
     text-align: left;
     vertical-align: top;
     margin-bottom: 3px;
+}
+.modal-nav-side-title a:hover{
+    color: #188eee;
 }
 
 .modal-nav-side-oprate{
@@ -373,7 +475,7 @@ a.head2-link-logo{
 .modal-login-all-title{
     position: fixed;
     width: 520px;
-    height: 360px;
+    height: 390px;
     background: #fff;
     top: 0;
     bottom: 0;
@@ -387,8 +489,19 @@ a.head2-link-logo{
     width: 50px;
     height: 50px;
 }
-.close a{
-
+.close i:hover{
+    background: #188eee;
+    color: #fff;
+}
+.close i{
+    display: inline-block;
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    padding: 4px;
+    width: 47px;
+    height: 20px;
+    cursor: pointer;
 }
 .login-safe{
     margin: 50px auto 16px;
@@ -425,7 +538,14 @@ a.head2-link-logo{
     padding: 0 10px;
 }
 .login-way{
+    padding-bottom: 8px;
     border-bottom: 2px solid #eee;
+}
+.login-other p{
+    line-height: 34px;
+    color: #666;
+    font-size: 14px;
+    cursor: default;
 }
 /* 轮播图 */
 .wrap-big-banner{
@@ -530,6 +650,12 @@ h3.modal-like-title{
 .modal-like-head a.pull-right{
     margin-top: 12px;
 }
+.modal-like-head a.pull-right i{
+    color: #666;
+}
+.modal-like-head a.pull-right span{
+    margin-left: 4px;
+}
 .modal-like-box{
     padding-top: 30px;
 }
@@ -560,6 +686,7 @@ h3.modal-like-title{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     height: 40px;
+    margin-bottom: 8px;
 }
 .item-line .price{
     color: #e85308;
@@ -567,6 +694,13 @@ h3.modal-like-title{
 }
 .item-line .source{
     display: inline-block;
+}
+.item-line .source a{
+    color: #999;
+    font-size: 1.2rem;
+}
+.item-line .source a:hover{
+    color: #188EEE;
 }
 /*********************
     金牌培训机构

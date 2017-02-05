@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>第七感网络</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="iconFont/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -25,10 +26,10 @@
 		<div class="head1-right pull-right">
 			<ul class="clearfix">
 				<li class="head1-wrap-nav">
-					<a href="">我的平台</a>
+					<span class="my-platform" href="">我的平台<i class="iconfont">&#xe659;</i></span>
 					<div class="head1-modal-nav">
-						<span><a href="">asasasasa</a></span>
-						<span><a href="">fefefefe</a></span>
+						<span><a href="">教育机构开课</a></span>
+						<span><a href="">个人老师开课</a></span>
 					</div>
 				</li>
 				<li><a href="">机构入驻</a></li>
@@ -46,8 +47,14 @@
 		</div>
 		<div class="head2-seach pull-left">
 			<div class="head2-seach-modal">
+				<i class="iconfont search-more">&#xe659;</i>
+				<a class="search-item" href="">
+					<span>价格<!-- <i class="iconfont">&#xe659;</i> --></span>
+					<span class="hidden">销量<!-- <i class="iconfont hidden">&#xe659;</i> --></span>
+				</a>
 				<input type="text" class="mod-search__input" placeholder="搜索课程">
-				<input type="button" class="mod-search__button" value="搜索课程">
+				<a class="search-btn" href=""><i class="iconfont">&#xe660;</i></a>
+				<!-- <input type="button" class="mod-search__button" value="搜索课程"> -->
 			</div>
 			<div class="seach-word-list">
 				<a href="">前端开发</a>
@@ -80,11 +87,11 @@
 					<div class="modal-nav">
 						<ul class="modal-nav-list">
 							<li class="modal-nav-li-first">
-								<h3><a href="">全部课程</a></h3>
+								<h3><a href=""><i class="iconfont">&#xe616;</i>全部课程</a></h3>
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a href="">IT·互联网</a></h3>
+									<h3><a class="clearfix" href="">商务礼仪<i class="iconfont pull-right">&#xe613;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
 									<a href="">前端开发</a>
@@ -93,7 +100,7 @@
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a href="">设计·创作</a></h3>
+									<h3><a class="clearfix" href="">谈判技巧<i class="iconfont pull-right">&#xe613;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
 									<a href="">平面设计</a>
@@ -102,7 +109,7 @@
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a href="">IT·互联网</a></h3>
+									<h3><a class="clearfix" href="">营销策略<i class="iconfont pull-right">&#xe613;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
 									<a href="">前端开发</a>
@@ -111,7 +118,7 @@
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a href="">IT·互联网</a></h3>
+									<h3><a class="clearfix" href="">行为心理学<i class="iconfont pull-right">&#xe613;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
 									<a href="">前端开发</a>
@@ -120,7 +127,7 @@
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a href="">IT·互联网</a></h3>
+									<h3><a class="clearfix" href="">IT·互联网<i class="iconfont pull-right">&#xe613;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
 									<a href="">前端开发</a>
@@ -129,7 +136,7 @@
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a href="">IT·互联网</a></h3>
+									<h3><a class="clearfix" href="">IT·互联网<i class="iconfont pull-right">&#xe613;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
 									<a href="">前端开发</a>
@@ -500,7 +507,7 @@
 					<div class="modal-login-all">
 						<div class="modal-login-all-title clearfix">
 							<div class="close pull-right">
-								<a></a>
+								<i id="close-icon" class="iconfont">&#xe604;</i>
 							</div>
 							<div class="login-safe">快速安全登录</div>
 							<div class="login-title">请使用<a href="">QQ手机版</a>扫描二维码,<br>或点击头像授权登录。</div>
@@ -516,9 +523,7 @@
 								<a href="">意见反馈</a>
 							</div>
 							<div class="login-other">
-								<span>
-									<p>其他登录方式：<i>微信登录</i></p>
-								</span>
+								<p>其他登录方式：<i>微信登录</i></p>
 							</div>
 						</div>
 						<div class="modal-login-all-bg"></div>
@@ -545,7 +550,7 @@
 	<div class="modal-like">
 		<div class="modal-like-head clearfix">
 			<h3 class="modal-like-title pull-left">猜你喜欢</h3>
-			<a class="pull-right" href="">换一批</a>
+			<a class="pull-right" href=""><i class="iconfont">&#xe79f;</i><span>换一批</span></a>
 		</div>
 		<div class="modal-like-box">
 			<ul class="modal-like-list clearfix">
