@@ -134,14 +134,14 @@ li{
 }
 .head2-seach-modal{
 	width: 450px;
-    height: 40px;
+    height: 32px;
     border: 2px solid #188EEE;
     background: #fff;
     position: relative;
     /* overflow: hidden; */
 }
 .mod-search__input {
-    margin: 6px 10px 6px 64px;
+    margin: 3px 10px 3px 64px;
     padding: 0;
     width: 360px;
     height: 24px;
@@ -156,7 +156,7 @@ li{
 i.search-more{
     position: absolute;
     left: 44px;
-    top: 12px;
+    top: 9px;
     display: inline-block;
     z-index: 2;
     cursor: pointer;
@@ -179,12 +179,12 @@ a.search-item{
 a.search-item span{
     display: inline-block;
     position: relative;
-    height: 34px;
+    height: 26px;
     width: 62px;
     color: #333;
     font-size: 12px;
     text-indent: 10px;
-    line-height: 34px;
+    line-height: 26px;
     background: #fff; 
 }
 a.search-item span.hidden{
@@ -201,8 +201,8 @@ a.search-btn{
     color: #fff;
     background: #147de2;
     width: 58px;
-    height: 40px;
-    font-size: 26px;
+    height: 32px;
+    font-size: 24px;
     padding-left: 18px;
 }
 
@@ -217,6 +217,69 @@ a.search-btn{
 .seach-word-list a:hover{
 	color: #0264A3;
 } */
+
+.login-item{
+	line-height: 32px;
+	margin-top: 10px;
+	padding: 0 8px;
+	cursor: default;
+
+}
+/* login-user */
+.login-user{
+	position: relative;
+}
+.login-user:hover .modal-user{
+	display: block;
+}
+.login-user span{
+	padding-left: 6px;
+	cursor: default;
+}
+.login-user span i{
+	position: absolute;
+	transition: transform .3s;
+	top: 2px;
+    right: -5px;
+}
+.login-user:hover span i{
+	-webkit-transform: rotate(180deg); 
+        -ms-transform: rotate(180deg); 
+         -o-transform: rotate(180deg); 
+            transform: rotate(180deg); 
+}
+.modal-user{
+	display: none;
+	position: absolute;
+	top: 32px;
+	z-index: 2;
+	background: #fff;
+}
+.modal-user ul{
+	border:1px solid #E0E0E0;
+}
+.modal-user ul li{
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	line-height: 30px;
+}
+.modal-user ul li:hover{
+	background: #ddd;
+}
+.modal-user ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.login-img{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	background: red;
+	padding-right: 6px;
+}
 
 /* **************
 	右侧内容
