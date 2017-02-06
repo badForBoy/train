@@ -1,0 +1,272 @@
+/**************
+   通用样式
+**************/
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-family: "PingFang SC","Microsoft Yahei",arial,\5b8b\4f53,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+}
+body{
+	background: #f3f3f3;
+}
+*{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+h3{
+    font-size: 16px;
+}
+a{
+	text-decoration: none;
+	color: #333;
+    font-size: 14px;
+}
+a:hover{ 
+	color: #188EEE;
+}
+i{
+	font-style: normal;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+.blue{
+    color: #188EEE;
+}
+.blue-bg{
+    background-color: #188EEE !important;
+}
+.contain{
+	width: 990px;
+	margin: 0 auto;
+}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	zoom:1;
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+.hidden{
+    display: none;
+}
+.contant{
+	width: 990px;
+	margin: 0 auto;
+}
+
+#header{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 40px;
+}
+
+/* **************
+	左侧列表
+***************** */
+.aside-left ul{
+	background: #fff;
+	width: 200px;
+	border: 1px solid #ddd;
+	padding: 6px 0;
+}
+.aside-left ul li{
+	height: 45px;
+	line-height: 45px;
+}
+.aside-left ul li i{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-left: 20px;
+	color: #333;
+	font-size: 14px;
+}
+.aside-left ul li i.color{
+	color: #188eee;
+}
+
+.aside-left ul li:hover span{
+	display: block;
+}
+.aside-left ul li span{
+	float: left;
+	display: none;
+	width: 4px;
+	height: 100%;
+	background: #ddd;
+}
+.aside-left ul li span.on{
+	display: block;
+	background: #188eee;
+}
+
+.main{
+	margin-left: 30px;
+}
+/* **************
+	顶部通栏
+***************** */
+
+.head2-seach{
+	position: relative;
+    padding-top: 10px;
+}
+.head2-seach-modal{
+	width: 450px;
+    height: 40px;
+    border: 2px solid #188EEE;
+    background: #fff;
+    position: relative;
+    /* overflow: hidden; */
+}
+.mod-search__input {
+    margin: 6px 10px 6px 64px;
+    padding: 0;
+    width: 360px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    text-indent: 12px;
+    border: 0;
+    border-left: 1px solid #ececec;
+    vertical-align: top;
+    outline: none;
+}
+i.search-more{
+    position: absolute;
+    left: 44px;
+    top: 12px;
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
+}
+a.search-item{
+    width: 64px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #ddd; 
+    cursor: pointer;
+    vertical-align: top;
+}
+.search-on{
+    background: #ddd;
+}
+a.search-item span{
+    display: inline-block;
+    position: relative;
+    height: 34px;
+    width: 62px;
+    color: #333;
+    font-size: 12px;
+    text-indent: 10px;
+    line-height: 34px;
+    background: #fff; 
+}
+a.search-item span.hidden{
+    display: none;
+}
+a.search-item span i{
+    padding-left: 12px;
+}
+a.search-btn{
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    display: block;
+    color: #fff;
+    background: #147de2;
+    width: 58px;
+    height: 40px;
+    font-size: 26px;
+    padding-left: 18px;
+}
+
+/* .seach-word-list a{
+	display: inline-block;
+    vertical-align: middle;
+    margin-right: 24px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #999;
+}
+.seach-word-list a:hover{
+	color: #0264A3;
+} */
+
+/* **************
+	右侧内容
+***************** */
+.aside-item{
+	position: relative;
+	width: 100%;
+}
+.aside-item h1{
+	font-weight: normal;
+	color: #333;
+	margin-bottom: 20px;
+}
+.item-ctn{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.item-content{
+	width: 760px;
+	background: #fff;
+    margin: 0;
+    padding-top: 170px;
+    padding-bottom: 170px;
+    border: 1px solid #e5e5e5;
+    line-height: 36px;
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+}
+
+/*********************
+    友情链接
+*********************/
+.wrap-friend{
+	margin-top: 50px;
+    background: #282828;
+    width: 100%;
+    height: auto;
+    padding: 35px 0 20px 0;
+}
+.modal-friend-icon{
+    /*position: absolute;*/
+    background: url(../img/solid.png) no-repeat;
+    width: 100px;
+    height: 67px;
+    margin: 20px auto 10px;
+    padding-top: 20px;
+}
+.modal-friend-information{
+    text-align: center;
+    color: #666;
+}
