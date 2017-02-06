@@ -5,7 +5,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     height: 100%;
-    font-size: 10px;
+    font-size: 12px;
     font-family: "PingFang SC","Microsoft Yahei",arial,\5b8b\4f53,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
 }
 *{
@@ -14,12 +14,12 @@ html {
 	-webkit-box-sizing:border-box; /* Safari */
 }
 h3{
-    font-size:1.6rem;
+    font-size: 16px;
 }
 a{
 	text-decoration: none;
 	color: #333;
-    font-size: 1.4rem;
+    font-size: 14px;
 }
 a:hover{ 
 	color: #188EEE;
@@ -41,7 +41,7 @@ li{
     background-color: #188EEE !important;
 }
 .contain{
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
 }
 /*清除浮动*/
@@ -68,15 +68,27 @@ li{
 
 /*head1*/
 #head1{
-	font-size: 1.2rem;
+    font-size: 12px;
+    width: 100%;
+    height: 36px;
 	line-height: 35px;
 	/*background-color: #F6F6F6;*/
     color: #333;
     border-bottom: 1px solid #E7E8E7;
 }
+.head1-left,
+.head1-right{
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+}
 .head1-left ul li{
 	float: left;
 	padding-right: 20px;
+}
+.wellcome span{
+    font-size: 14px;
+    color: #333;
 }
 .head1-left ul li a,
 .head1-right ul li a{
@@ -96,7 +108,7 @@ li{
 .head1-wrap-nav .my-platform i{
     display: block;
     position: absolute;
-    font-size: 1rem;
+    font-size: 10px;
     width: 12px;
     height: 12px;
     line-height: 13px;
@@ -117,6 +129,8 @@ li{
 }
  .head1-wrap-nav{
     cursor: pointer;
+    font-size: 14px;
+    color: #333;
 } 
 .head1-wrap-nav:hover .head1-modal-nav{
     display: block;
@@ -139,8 +153,22 @@ li{
 }
 
 /*head2*/
+#head2{
+    width: 100%;
+    height: 100px;
+}
 #head2 .contain{
+    width: 1200px;
 	height: 100px;
+}
+
+.head2-logo{
+    height: 100px;
+    width: 300px;
+}
+.head2-seach{
+    height: 100px;
+    width: 450px;
 }
 a.head2-link-logo{
 	display: block;
@@ -224,7 +252,7 @@ a.search-btn{
     background: #147de2;
     width: 58px;
     height: 40px;
-    font-size: 2.6rem;
+    font-size: 26px;
     padding-left: 18px;
 }
 /* .mod-search__button{
@@ -264,7 +292,7 @@ a.search-btn{
     vertical-align: middle;
     position: relative;
     padding: 14px 16px 10px 9px;
-    font-size: 1.6rem;
+    font-size: 16px;
     color: #333;
 }
 .wrap-banner-bg{
@@ -312,12 +340,12 @@ a.search-btn{
 }
 .modal-nav-li-first h3 a,
 .modal-nav-li h3 a{
-	font-size: 1.6rem;
+    font-size: 16px;
 	color: #fff;
     font-weight: normal;
 }
 .modal-nav-li-first h3 a i{
-    font-size: 2.2rem;
+    font-size: 22px;
     margin-right: 8px;
     position: relative;
     top: 2px;
@@ -347,8 +375,8 @@ a.search-btn{
 	padding: 11px 10px 0 15px;
 }
 .modal-nav-li-head h3 a i{
-    font-size: 1.2rem;
-    color: rgba(255,255,255,.3);
+    font-size: 12px;
+    color: #4a9dcf; 
     font-weight: normal;
 }
 .modal-nav_modal-nav-side{
@@ -361,8 +389,9 @@ a.search-btn{
     width: 980px;
     padding: 0 0 0 30px;
     background-color: #000;
-    background: rgba(255,255,255,.97);
-    font-size: 1.4rem;
+    background: rgba(255,255,255,.9);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5ffffff,endColorstr=#E5ffffff);
+    font-size: 14px;
 }
 .modal-nav_modal-nav-side ul li{
 	width: 720px;
@@ -422,7 +451,8 @@ a.search-btn{
 	right: 0;
 	width: 220px;
     height: 260px;
-    background-color: rgba(255,255,255,.9);
+    background: rgba(255,255,255,.9);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5ffffff,endColorstr=#E5ffffff);
 }
 .wrap-modal-login{
 	width: 180px;
@@ -459,6 +489,7 @@ a.search-btn{
 .modal-login-btn:active {
     background-color: #1774c9;
 }
+/* 登陆弹窗 */
 .modal-login-all{
     display: none;
 }
@@ -468,7 +499,9 @@ a.search-btn{
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.6);
+    background: #000;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
     z-index: 10;
 
 }
@@ -496,7 +529,7 @@ a.search-btn{
 .close i{
     display: inline-block;
     color: #666;
-    font-size: 1.2rem;
+    font-size: 12px;
     margin-top: 10px;
     padding: 4px;
     width: 47px;
@@ -519,19 +552,22 @@ a.search-btn{
 .login-tips{
     margin-bottom: 24px;
 }
-.login-qr{
+.login-tips-item{
     display: inline-block;
     text-align: center;
-    height: 120px;
     width: 100px;
+}
+.login-tips-item img{
+    width: 100px;
+    height: 100px;
     background: #ddd;
 }
-.login-face{
-    display: inline-block;
-    text-align: center;
-    height: 120px;
+.login-tips-item span{
     width: 100px;
-    background: #ddd;
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    cursor: default;
 }
 .login-way,.login-other{
     text-align: right;
@@ -622,11 +658,18 @@ ul.modal-big-banner-list li{
     width: 1200px;
     margin: 0 auto;
     height: 121px;
-    /*margin-left: 220px;*/
-    font-size: 0;
+}
+.modal-active{
+    width: 1200px;
+    height: 121px;
+    margin: 0 auto;
     border-bottom: 1px solid #EAEAEA;
     border-right: 1px solid #EAEAEA;
     overflow: hidden;
+}
+.wrap-active a{
+    width: 326px;
+    height: 121px;
 }
 /**********************
    猜你喜欢，热门课程
@@ -644,7 +687,7 @@ ul.modal-big-banner-list li{
     padding-bottom: 16px;
 }
 h3.modal-like-title{
-    font-size: 2.2rem;
+    font-size: 22px;
     display: inline-block;
 }
 .modal-like-head a.pull-right{
@@ -680,7 +723,8 @@ h3.modal-like-title{
     top: 107px;
     color: #fff;
     z-index: 1;
-    background-color: rgba(0,0,0,.6);
+    background: rgba(0,0,0,.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
 }
 .modal-like-item p{
     -webkit-line-clamp: 2;
@@ -690,14 +734,14 @@ h3.modal-like-title{
 }
 .item-line .price{
     color: #e85308;
-    font-size: 1.6rem;
+    font-size: 16px;
 }
 .item-line .source{
     display: inline-block;
 }
 .item-line .source a{
     color: #999;
-    font-size: 1.2rem;
+    font-size: 12px;
 }
 .item-line .source a:hover{
     color: #188EEE;
@@ -757,7 +801,7 @@ span.data{
     width: 290px;
 }
 .modal-news-hot h3{
-    font-size: 1.8rem;
+    font-size: 18px;
     color: #666;
 }
 .modal-news-hot ul{
@@ -773,6 +817,8 @@ span.data{
 .modal-news-mech-list li span,
 .modal-news-hot li span{
     padding-right: 6px;
+    font-size: 14px;
+    cursor: default;
 }
 .modal-news-hot-item ul li span{
     margin-right: 4px;
@@ -799,6 +845,7 @@ span.data{
     width: 120px;
     height: 120px;
     margin-left: 70px;
+    padding: 80px 0 50px 0;
 }
 .modal-more-icon_1{
     background: url(../img/renz_1.png) no-repeat;
@@ -816,9 +863,10 @@ span.data{
 }
 .modal-more-title{
     margin-top: 30px;
+    cursor: default;
 }
 .modal-more-title h3{
-    font-size: 1.8rem;
+    font-size: 18px;
     color: #333;
 }
 .modal-more-title p{

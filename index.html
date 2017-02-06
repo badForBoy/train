@@ -8,12 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<header id="head1">
+<div id="head1">
 	<div class="contain clearfix">
 		<div class="head1-left pull-left">
 			<ul class="clearfix">
-				<li>
-					<div>您好，欢迎来到第七感<div/>
+				<li class="wellcome">
+					<span>您好，欢迎来到第七感<span/>
 				</li>
 				<li>
 					<a href="">请登陆</a>
@@ -39,9 +39,10 @@
 			</ul>
 		</div>
 	</div>
-</header>	
-<header id="head2">
+</div>	
+<div id="head2">
 	<div class="contain clearfix">
+		<div class="test"></div>
 		<div class="head2-logo pull-left">
 			<a class="head2-link-logo" href=""></a>
 		</div>
@@ -65,13 +66,13 @@
 		</div>
 		<div class="head2-login"></div>
 	</div>
-</header>
+</div>
 <!-- 轮播，左侧课程列表，登陆框begin -->
-<section class="wrap-banner">
+<div class="wrap-banner">
 	<div >
 		<div class="wrap-litter-banner">
 			<ul>
-				<li><a href="">运维学院</a></li>
+				<li><a href="www.baidu.com">运维学院</a></li>
 				<li><a href="">公务员频道</a></li>
 				<li><a href="">网络营销频道</a></li>
 				<li><a href="">游戏美术频道</a></li>
@@ -512,8 +513,16 @@
 							<div class="login-safe">快速安全登录</div>
 							<div class="login-title">请使用<a href="">QQ手机版</a>扫描二维码,<br>或点击头像授权登录。</div>
 							<div class="login-tips">
-								<span class="login-qr"><img src="" alt=""></span>
-								<a class="login-face" href=""></a>
+								<div class="login-qr login-tips-item">
+									<img src="" alt="">
+									<span>企业登陆</span>
+								</div>
+								<div class="login-face login-tips-item">
+									<img src="" alt="">
+									<span>个人登陆</span>
+								</div>
+								<!-- <span class="login-qr"><img src="" alt=""></span>
+								<a class="login-face" href=""></a> -->
 							</div>
 							<div class="login-way">
 								<a href="">账号密码登录</a>
@@ -534,19 +543,21 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 <!-- 轮播，左侧课程列表，登陆框end -->
 
 <!-- 推荐课程begin -->
-<section class="wrap-active clearfix">
-	<a class="pull-right" href=""><img src="img/recommend_1.png"></a>
-	<a class="pull-right" href=""><img src="img/recommend_2.jpg"></a>
-	<a class="pull-right" href=""><img src="img/recommend_3.png"></a>
-</section>
+<div class="wrap-active">
+	<div class="modal-active clearfix">
+		<a class="pull-right" href=""><img src="img/recommend_1.png"></a>
+		<a class="pull-right" href=""><img src="img/recommend_2.jpg"></a>
+		<a class="pull-right" href=""><img src="img/recommend_3.png"></a>
+	</div>
+</div>
 <!-- 推荐课程end -->
 
 <!-- 猜你喜欢begin -->
-<section class="wrap-like">
+<div class="wrap-like">
 	<div class="modal-like">
 		<div class="modal-like-head clearfix">
 			<h3 class="modal-like-title pull-left">猜你喜欢</h3>
@@ -612,11 +623,11 @@
 			</ul>
 		</div>
 	</div>
-</section>
+</div>
 <!-- 猜你喜欢end -->
 
 <!-- 热门课程begin -->
-<section class="wrap-like">
+<div class="wrap-like">
 	<div class="modal-like">
 		<div class="modal-like-head clearfix">
 			<h3 class="modal-like-title pull-left">热门课程</h3>
@@ -682,11 +693,11 @@
 			</ul>
 		</div>
 	</div>
-</section>
+</div>
 <!-- 热门课程end -->
 
 <!-- 金牌培训机构begin -->
-<section class="wrap-like">
+<div class="wrap-like">
 	<div class="modal-like">
 		<div class="modal-like-head clearfix">
 			<h3 class="modal-like-title pull-left">金牌培训机构</h3>
@@ -788,11 +799,11 @@
 			</ul>
 		</div>
 	</div>
-</section>
+</div>
 <!-- 金牌培训机构end -->
 
 <!-- 进阶推荐begin -->
-<section class="wrap-like">
+<div class="wrap-like">
 	<div class="modal-like">
 		<div class="modal-like-head clearfix">
 			<h3 class="modal-like-title pull-left">进阶推荐</h3>
@@ -894,11 +905,11 @@
 			</ul>
 		</div>
 	</div>
-</section>
+</div>
 <!-- 进阶推荐end -->
 
 <!-- 热点新闻begin -->
-<section class="wrap-like">
+<div class="wrap-like">
 	<div class="modal-like">
 		<div class="modal-like-head clearfix">
 			<h3 class="modal-like-title pull-left">热点新闻</h3>
@@ -959,11 +970,11 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 <!-- 热点新闻end -->
 
 <!-- more begin -->
-<section class="wrap-more">
+<div class="wrap-more">
 	<div class="contain">
 		<div class="modal-more">
 			<div class="modal-more-item clearfix">
@@ -989,11 +1000,11 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 <!-- more end -->
 
 <!-- 友情链接 begin -->
-<footer class="wrap-friend">
+<div class="wrap-friend footer">
 	<div class="contain modal-friend">
 		<h3>友情链接:</h3>
 		<ul class="clearfix">
@@ -1044,12 +1055,12 @@
 			<p>版权所有 备案编号：京公网安备1101054307 , <a href="">ICP备07505283号</a></p>
 		</div>
 	</div>
-</footer>
+</div>
 <!-- 友情链接 end -->
 
 
-
-<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> -->
 <script type="text/javascript" src="js/style.js"></script>
 </body>
 </html>
