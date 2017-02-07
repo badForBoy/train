@@ -375,6 +375,9 @@ span.modal-bar-2{
 	border-bottom: 1px solid #e5e5e5;
 	padding: 13px 12px 15px;
 }
+.modal-item-content li:hover{
+	background: #eee;
+}
 .item-more{
 	position: relative;
 	width: 380px;
