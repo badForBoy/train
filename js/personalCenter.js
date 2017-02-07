@@ -6,7 +6,7 @@
 
 	//右侧内容的切换
 	var $contentItem = $(".content > div");
-	var current = 0;
+	var current ;
 
 	//全部订单详情切换
 	var $itemAll = $("#item-all");
@@ -36,7 +36,6 @@
 	//全部订单详情切换
 	$itemLi.click(function(event) {
 		var itemNum = $(this).index();
-		console.log(itemNum);
 		$(this).addClass('on').siblings($itemAll).removeClass('on');
 		$itemModal.eq(itemNum).removeClass('hidden').siblings($itemModal).addClass('hidden');
 	});
@@ -44,7 +43,6 @@
 	//学团详情切换
 	$team.click(function(event) {
 		var itemNum = $(this).index();
-		console.log(itemNum);
 		$(this).addClass('on').siblings($team).removeClass('on');
 		$teamMod.eq(itemNum).removeClass('hidden').siblings($teamMod).addClass('hidden');
 	});

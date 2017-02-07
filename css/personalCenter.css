@@ -79,7 +79,6 @@ li{
 
 #header{
 	width: 100%;
-	padding: 20px 0;
 	background: #fff;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 40px;
@@ -96,6 +95,11 @@ li{
 	height: 32px;
 	width: 90px;
 }
+/* .header-login, */
+.header-logo,
+.header-nav{
+	padding: 20px 0;
+}
 .header-nav ul li{
 	display: inline-block;
 	padding: 0 10px;
@@ -103,7 +107,7 @@ li{
 }
 .head2-seach{
 	position: relative;
-	padding-right: 10px;
+	padding: 20px 10px 20px 0;
 }
 .head2-seach-modal{
 	width: 450px;
@@ -194,7 +198,7 @@ a.search-btn{
 
 .login-item{
 	line-height: 32px;
-	padding: 0 8px;
+	padding: 20px 8px;
 	cursor: default;
 
 }
@@ -212,7 +216,7 @@ a.search-btn{
 .login-user span i{
 	position: absolute;
 	transition: transform .3s;
-	top: 2px;
+	top: 22px;
     right: -5px;
 }
 .login-user:hover span i{
@@ -224,7 +228,7 @@ a.search-btn{
 .modal-user{
 	display: none;
 	position: absolute;
-	top: 32px;
+	top: 72px;
 	z-index: 2;
 	background: #fff;
 }
@@ -250,7 +254,6 @@ a.search-btn{
 	height: 30px;
 	border-radius: 15px;
 	overflow: hidden;
-	background: red;
 	padding-right: 6px;
 }
 /* **************
@@ -450,9 +453,16 @@ span.modal-bar-2{
 	margin-bottom: 0;
 	line-height: 30px;
 }
+.modal-nothing,
 .item-modal-team{
 	padding: 170px 0;
 	text-align: center;
+	line-height: 36px;
+    font-size: 18px;
+    color: #999;
+}
+.modal-nothing a{
+	color: #188eee;
 }
 
 /*********************
