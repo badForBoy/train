@@ -1,0 +1,65 @@
+/* body{
+	background: #fff;
+} */
+#header{
+	margin-bottom: 0px;
+}
+/* 课程基本信息 */
+.basic{
+	background: #fff;
+	padding-bottom: 30px;
+}
+.content{
+	width: 990px;
+	margin: 0 auto;
+}
+.basic-info{
+	position: relative;
+}
+.coordinate{
+	padding: 20px 0;
+}
+.coordinate i{
+	padding: 0 5px;
+}
+.basic-banner{
+	width: 600px;
+	height: 340px;
+	margin-right: 20px;
+}
+.basic-header h3{
+	color: #333;
+	cursor: default;
+}
+.basic-eva{
+	color: #666;
+	cursor: default;
+	padding: 14px 0;
+}
+.basic-eva span{
+	padding-left: 6px;
+}
+.basic-free{
+	font-size: 30px;
+	color: #ff3c00;
+	line-height: 90px;
+}
+.basic-btn{
+	position: absolute;
+	bottom: 0;
+}
+.basic-btn a{
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 2px;
+	border: 1px solid #188eee;
+	color: #188eee;
+}
+.basic-btn a.on{
+	background: #188eee;
+	color: #fff;
+}
