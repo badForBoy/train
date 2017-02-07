@@ -336,6 +336,7 @@ a.search-btn{
 	padding: 0 32px 6px;
 	font-size: 20px;
 	line-height: 30px;
+	cursor: default;
 }
 #item-all li.on{
 	border-bottom: 3px solid #188eee;
@@ -423,6 +424,37 @@ span.modal-bar-2{
 	color: #999;
 	margin-bottom: 10px;
 }
+/* ******学团tab****** */
+#item-team{
+	background: #fff;
+	/* border-bottom: 1px solid #e5e5e5; */
+}
+.item-modal-team{
+	/* border-top: 0; */
+}
+#item-team li{
+	display: inline-block;
+	padding: 0 32px 6px;
+	font-size: 16px;
+	line-height: 30px;
+	cursor: default;
+}
+#item-team li.on{
+	border-top: 3px solid #188eee;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid transparent;
+	color: #188eee;
+}
+#item-team li h1{
+	margin-bottom: 0;
+	line-height: 30px;
+}
+.item-modal-team{
+	padding: 170px 0;
+	text-align: center;
+}
+
 /*********************
     友情链接
 *********************/
