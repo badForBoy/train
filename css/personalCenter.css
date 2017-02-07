@@ -79,62 +79,31 @@ li{
 
 #header{
 	width: 100%;
-	height: 100px;
+	padding: 20px 0;
 	background: #fff;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 40px;
 }
 
-/* **************
-	左侧列表
-***************** */
-.aside-left ul{
-	background: #fff;
-	width: 200px;
-	border: 1px solid #ddd;
-	padding: 6px 0;
-}
-.aside-left ul li{
-	height: 45px;
-	line-height: 45px;
-}
-.aside-left ul li i{
-	display: block;
-	width: 100%;
-	height: 100%;
-	padding-left: 20px;
-	color: #333;
-	font-size: 14px;
-}
-.aside-left ul li i.color{
-	color: #188eee;
-}
 
-.aside-left ul li:hover span{
-	display: block;
-}
-.aside-left ul li span{
-	float: left;
-	display: none;
-	width: 4px;
-	height: 100%;
-	background: #ddd;
-}
-.aside-left ul li span.on{
-	display: block;
-	background: #188eee;
-}
-
-.main{
-	margin-left: 30px;
-}
 /* **************
 	顶部通栏
 ***************** */
-
+.header-logo a{
+	background: url(../img/logo.png) no-repeat;
+	background-size: auto 32px;
+	display: block;
+	height: 32px;
+	width: 90px;
+}
+.header-nav ul li{
+	display: inline-block;
+	padding: 0 10px;
+	line-height: 32px;
+}
 .head2-seach{
 	position: relative;
-    padding-top: 10px;
+	padding-right: 10px;
 }
 .head2-seach-modal{
 	width: 450px;
@@ -222,9 +191,9 @@ a.search-btn{
 	color: #0264A3;
 } */
 
+
 .login-item{
 	line-height: 32px;
-	margin-top: 10px;
 	padding: 0 8px;
 	cursor: default;
 
@@ -284,6 +253,49 @@ a.search-btn{
 	background: red;
 	padding-right: 6px;
 }
+/* **************
+	左侧列表
+***************** */
+.aside-left ul{
+	background: #fff;
+	width: 200px;
+	border: 1px solid #ddd;
+	padding: 6px 0;
+}
+.aside-left ul li{
+	height: 45px;
+	line-height: 45px;
+}
+.aside-left ul li i{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-left: 20px;
+	color: #333;
+	font-size: 14px;
+}
+.aside-left ul li i.color{
+	color: #188eee;
+}
+
+.aside-left ul li:hover span{
+	display: block;
+}
+.aside-left ul li span{
+	float: left;
+	display: none;
+	width: 4px;
+	height: 100%;
+	background: #ddd;
+}
+.aside-left ul li span.on{
+	display: block;
+	background: #188eee;
+}
+
+.main{
+	margin-left: 30px;
+}
 
 /* **************
 	右侧内容
@@ -314,7 +326,100 @@ a.search-btn{
     color: #999;
     text-align: center;
 }
+/* ******全部订单tab****** */
+#item-all{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+#item-all li{
+	display: inline-block;
+	padding: 0 32px 6px;
+	font-size: 20px;
+	line-height: 30px;
+}
+#item-all li.on{
+	border-bottom: 3px solid #188eee;
+}
+#item-all li h1{
+	margin-bottom: 0;
+	line-height: 30px;
+}
+.modal-item-header{
+	height: 35px;
+	line-height: 35px;
+}
+.modal-item-header span{
+	font-size: 14px;
+	color: #999;
+	text-align: left;
+}
+.item-modal{
+	width: 760px;
+	border: 1px solid #e5e5e5;
+	padding: 0 0 40px;
+	background: #fff;
+}
+.modal-item-header{
+	background: #eee;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0 12px;
+}
+span.modal-bar-1{
+	margin-right: 400px;
+}
+span.modal-bar-2{
+	margin-right: 115px;
+}
 
+.modal-item-content li{
+	border-bottom: 1px solid #e5e5e5;
+	padding: 13px 12px 15px;
+}
+.item-more{
+	position: relative;
+	width: 380px;
+	min-height: 54px;
+}
+.item-more-img{
+	width: 80px;
+	height: 54px;
+	overflow: hidden;
+	background: #ddd;
+	margin-right: 10px;
+}
+.item-more-info p a{
+	width: 290px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.item-more-info p span{
+	padding-right: 6px;
+	cursor: default;
+}
+.item-name{
+	display: inline !important;
+}
+.item-status{
+	width: 88px;
+	margin-left: 75px;
+	color: #666;
+	cursor: default;
+}
+.item-action{
+	width: 76px;
+	margin-left: 55px;
+}
+.item-more a,
+.item-action a{
+	display: block;
+	color: #188eee;
+}
+.item-date{
+	width: 100%;
+	color: #999;
+	margin-bottom: 10px;
+}
 /*********************
     友情链接
 *********************/

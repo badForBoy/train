@@ -8,6 +8,12 @@
 	var $contentItem = $(".content > div");
 	var current = 0;
 
+	//全部订单详情切换
+	var $itemAll = $("#item-all");
+	var $itemLi = $("#item-all li");
+	var $itemModal = $(".item-modal > div");
+	var itemNum = 0;
+
 	//左侧列表相关样式的点击事件
 	$liItem.click(function(event) {
 		event.preventDefault();
@@ -23,5 +29,12 @@
 		$contentItem.eq(current).removeClass('hidden').siblings($contentItem).addClass('hidden');
 	});
 
+	//全部订单详情切换
+	$itemLi.click(function(event) {
+		var itemNum = $(this).index();
+		console.log(itemNum);
+		$(this).addClass('on').siblings($itemAll).removeClass('on');
+		$itemModal.eq(itemNum).removeClass('hidden').siblings($itemModal).addClass('hidden');
+	});
 
 }());
