@@ -217,7 +217,7 @@ a.search-btn{
 	position: absolute;
 	transition: transform .3s;
 	top: 22px;
-    right: -5px;
+    right: -7px;
 }
 .login-user:hover span i{
 	-webkit-transform: rotate(180deg); 

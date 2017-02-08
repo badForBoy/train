@@ -5,7 +5,7 @@
 	var current;
 
 	var $chapterBtn = $(".item-chapter i.iconfont");
-	var $chapterList = $(".mod-item-list");
+	var $header = $(".item-header");
 	var $listItem;
 
 	$navItem.click(function(event) {
@@ -14,8 +14,8 @@
 		$modItem.eq(current).removeClass('hidden').siblings($modItem).addClass('hidden');
 	});
 
-	$chapterBtn.click(function(event) {
-		var $listItem = $(this).parent().next();
+	$header.click(function(event) {
+		var $listItem = $(this).next();
 		$listItem.slideToggle(200);
 	});
 
