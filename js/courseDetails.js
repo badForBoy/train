@@ -15,7 +15,7 @@
 	});
 
 	$chapterBtn.click(function(event) {
-		var $listItem = $(this).parent().find('mod-item-list');
+		var $listItem = $(this).parent().next();
 		$listItem.slideToggle(200);
 	});
 

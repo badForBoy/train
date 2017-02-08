@@ -1,17 +1,31 @@
-/* body{
-	background: #fff;
-} */
+ body{
+	background: #ddd;
+} 
+i.star-gray{
+	color: #999 !important;
+}
 #header{
 	margin-bottom: 0px;
 }
 /* 课程基本信息 */
+
 .basic{
 	background: #fff;
 	padding-bottom: 30px;
 }
 .content{
-	width: 990px;
+	width: 1200px;
 	margin: 0 auto;
+}
+.details-content{
+	width: 860px;
+	background: #fff;
+}
+.details-company{
+	width: 320px;
+	margin-left: 20px;
+	padding: 20px;
+	background: red;
 }
 .basic-info{
 	position: relative;
@@ -37,7 +51,11 @@
 	padding: 14px 0;
 }
 .basic-eva span{
-	padding-left: 6px;
+	padding-left: 10px;
+}
+.basic-eva span i.iconfont{
+	font-size: 14px;
+	margin-right: 4px;
 }
 .basic-free{
 	font-size: 30px;
@@ -67,9 +85,6 @@
 /* 课程详情 */
 .details{
 	margin-top: 20px;
-}
-.details .content{
-	background: #fff;
 }
 .details-nav li{
 	display: inline-block;
@@ -113,4 +128,79 @@
 }
 .item-header i.iconfont:hover{
 	color: #333;
+}
+/* 学员评论 */
+.evaluate-all{
+	border: 1px solid #ddd;
+	padding: 10px 10px;
+	background: #ddd;
+}
+.evaluate-num{
+	width: 125px;
+	text-align: center;
+	border-right: 1px solid #666;
+}
+.evaluate-num span{
+	display: block;
+}
+.evaluate-num span.num{
+	font-size: 30px;
+	color: #ff3c00;
+}
+.evaluate-list{
+	margin-left: 20px;
+	height: 56px;
+	line-height: 56px;
+}
+.evaluate-list label{
+	font-size: 16px;
+	padding-right: 20px;
+}
+.evaluate-info ul li{
+	padding: 20px 10px;
+	border-bottom: 1px solid #ddd;
+}
+.info-personal{
+	width: 80px;
+	text-align: center;
+}
+.info-face{
+	margin: 0 auto;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+}
+.info-star{
+	margin-bottom: 5px;
+}
+.info-text{
+	margin-bottom: 10px;
+}
+.info-star i{
+	font-size: 14px;
+	color: #ffb200;
+}
+.info-date{
+	color: #666;
+}
+.info-add{
+	border-top: 1px dashed #ddd;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.page-wrap{
+	margin-top: 20px;
+	text-align: center;
+}
+.page-box a{
+	display: inline-block;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	margin-right: 5px;
 }
