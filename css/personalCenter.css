@@ -60,7 +60,7 @@
 	top: 0;
 }
 .item-content{
-	width: 760px;
+	width: 970px;
 	background: #fff;
     margin: 0;
     padding-top: 170px;
@@ -100,7 +100,7 @@
 	text-align: left;
 }
 .item-modal{
-	width: 760px;
+	width: 970px;
 	border: 1px solid #e5e5e5;
 	padding: 0 0 40px;
 	background: #fff;
@@ -111,7 +111,7 @@
 	padding: 0 12px;
 }
 span.modal-bar-1{
-	margin-right: 400px;
+	margin-right: 500px;
 }
 span.modal-bar-2{
 	margin-right: 115px;
@@ -129,7 +129,7 @@ span.modal-bar-2{
 }
 .item-more{
 	position: relative;
-	width: 380px;
+	width: 480px;
 	min-height: 54px;
 }
 .item-more-img{
