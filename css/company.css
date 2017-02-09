@@ -1,3 +1,4 @@
+
 .content{
 	width: 1200px;
 	margin: 0 auto;
@@ -21,6 +22,12 @@
 .banner{
 	height: 360px;
 	width: 900px;
+	overflow: hidden;
+}
+.banner ul li a{
+	display: block;
+	width: 900px;
+	height: 360px;
 	overflow: hidden;
 }
 .banner-btn{
@@ -61,6 +68,12 @@
 	color: #333;
 	width: 280px;
 }
+.info-star i{
+	color: #ffb200;
+}
+i.star-gray{
+	color: #999;
+}
 .jg-info{
 	position: relative;
 	background: #fff;
@@ -100,6 +113,9 @@
 	color: #fff;
 }
 
+.jg-introduce{
+	line-height: 1.8;
+}
 /* ****************
         main
 ******************* */
@@ -193,4 +209,40 @@
 .page-box a.on{
 	background: #188eee;
 	color: #fff;
+}
+/* 关于我们 */
+.jg-intr{
+	margin-top: 40px;
+	text-align: center;
+}
+.intr-header{
+	color: #333;
+	font-weight: normal;
+	text-align: center;
+	line-height: 40px;
+}
+.jg-intr span{
+	display: inline-block;
+	width: 24px;
+	height: 1px;
+	background: #ddd;
+	margin-bottom: 20px;
+}
+.jg-intr p{
+	color: #333;
+	line-height: 1.8;
+	text-align:justify;
+}
+
+/* 老师 */
+.th-item{
+	width: 300px;
+	padding: 20px;
+	color: #666;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.th-item p,
+.th-item h1{
+	margin-bottom: 16px;
 }
