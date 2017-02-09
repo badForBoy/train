@@ -608,7 +608,7 @@ ul.modal-big-banner-list li{
     background: rgba(0,0,0,.1);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000, endColorstr=#19000000);
     zoom: 1;
-    width: 140px;
+    padding: 0 20px;
     height: 24px;
     line-height: 22px;
     text-align: center;
