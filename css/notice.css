@@ -17,7 +17,7 @@ ul.details-nav{
 }
 .mod-item ul li{
 	position: relative;
-	padding: 20px 0;
+	padding: 20px 20px;
 	border-bottom: 1px solid #ddd;
 }
 .mod-item ul li h3{
@@ -41,7 +41,7 @@ ul.details-nav{
 	width: 260px;
 }
 .item-team{
-	height: 450px;
+	height: 560px;
 	background: #ddd;
 }
 .item-team li{
