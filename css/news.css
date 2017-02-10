@@ -5,6 +5,15 @@ p{
 	line-height: 1.8;
 	color: #666;
 }
+#header{
+	margin-bottom: 0;
+}
+.coordinate{
+	padding: 10px 20px;
+}
+.coordinate i {
+    padding: 0 5px;
+}
 .wrap-news{
 	margin-bottom: 20px;
 }
