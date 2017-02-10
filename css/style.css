@@ -151,6 +151,13 @@ li{
 .head1-modal-nav span:last-child{
     border-bottom: none;
 }
+.shopping i,
+.shopping span{
+    color: #188eee;
+}
+.shopping i{
+    margin-right: 5px;
+}
 
 /*head2*/
 #head2{
@@ -671,9 +678,9 @@ ul.modal-big-banner-list li{
     width: 326px;
     height: 121px;
 }
-/**********************
-   猜你喜欢，热门课程
-***********************/
+/****************************
+   本周热门课程，热门课程
+*****************************/
 .modal-like{
     width: 1225px;
     margin: 0 auto;
@@ -907,4 +914,32 @@ span.data{
 .modal-friend-information{
     text-align: center;
     color: #666;
+}
+
+/* **********************
+        go to top 
+************************ */
+.top{
+    position: fixed;
+    padding: 0 5px;
+    top: 50%;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.3);
+    z-index: 10;
+}
+.top li{
+    padding: 20px 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.top li:hover i{
+    color: #188eee;
+}
+.top li.bn{
+    border: 0;
+}
+.top li i{
+    color: #666;
+    font-size: 16px;
 }

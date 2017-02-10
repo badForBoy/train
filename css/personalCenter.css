@@ -209,3 +209,7 @@ span.modal-bar-2{
 .modal-nothing a{
 	color: #188eee;
 }
+/* 购物车 */
+.shop{
+	border: 1px solid #ddd;
+}
