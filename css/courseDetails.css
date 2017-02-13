@@ -54,8 +54,11 @@ i.star-gray{
 	padding-right: 10px;
 }
 .basic-eva span i.iconfont{
-	font-size: 14px;
+	font-size: 12px;
 	margin-right: 4px;
+}
+.basic-eva span a{
+	font-size: 12px;
 }
 .basic-free{
 	font-size: 30px;

@@ -10,6 +10,7 @@
 .aside-left ul li{
 	height: 45px;
 	line-height: 45px;
+	cursor: default;
 }
 .aside-left ul li i{
 	display: block;
@@ -39,7 +40,7 @@
 }
 
 .main{
-	margin-left: 30px;
+	margin: 0 0 40px 30px;
 }
 
 /* **************
