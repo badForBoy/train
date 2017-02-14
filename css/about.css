@@ -23,7 +23,10 @@ p{
 	background: #188eee;
 	color: #fff;
 }
-
+.item-team li i{
+	margin-left: 50px;
+	font-size: 12px;
+}
 
 .main{
 	padding: 0 50px;
@@ -40,9 +43,40 @@ p{
     overflow: hidden;
     line-height: 1.8;
 }
-.btn button{
-	padding: 10px 20px;
-	background: #188eee;
-	color: #fff;
-	outline: none;
+.address,
+.add-img,
+.opinion{
+	margin-bottom: 20px;
+}
+.btn a{
+	width: 80px;
+    display: block;
+    padding: 10px 20px;
+    background: #188eee;
+    color: #fff;
+    outline: none;
+    text-align: center;
+}
+.add-img-btn{
+	width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+}
+.add-inf p,
+.address p{
+	margin-bottom: 10px;
+}
+#url{
+	vertical-align: middle;
+    width: 736px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0px 10px;
 }

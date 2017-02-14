@@ -19,6 +19,9 @@
 	}, function() {
 		$(this).fadeOut(100);
 	});
+	$(window).click(function(event) {
+		$modalNav.fadeOut(100);
+	});
 
 	/*左侧列表显隐*/
 	$navList.hover(function(){

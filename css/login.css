@@ -1,0 +1,24 @@
+#login{
+	position: relative;
+	background: #e9e8e6;
+}
+.content{
+	width: 1200px;
+	margin: 0 auto;
+}
+.wrap-box-login{
+	position: absolute;
+	right: 200px;
+	width: 400px;
+	height: 420px;
+	padding: 20px 30px;
+	background: #fff;
+}
+.login-box{
+	width: 300px;
+    padding: 25px 25px 23px;
+    color: #6c6c6c;
+    background: #fff;
+    position: relative;
+    margin: 0 auto;
+}

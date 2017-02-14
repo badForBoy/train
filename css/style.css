@@ -113,7 +113,7 @@ li{
     height: 12px;
     line-height: 13px;
     top: 2px;
-    right: 0px;
+    right: 8px;
     margin-left: 2px;
     transition: transform .3s;
     margin-top: 10px;
@@ -126,6 +126,7 @@ li{
     top: 35px;
     border: 1px solid #dbdbdb;
     border-top: 0;
+    text-align: center;
 }
  .head1-wrap-nav{
     cursor: pointer;
@@ -679,7 +680,7 @@ ul.modal-big-banner-list li{
     height: 121px;
 }
 /****************************
-   本周热门课程，热门课程
+     热门课程，推荐课程
 *****************************/
 .modal-like{
     width: 1225px;
