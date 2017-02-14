@@ -1,0 +1,116 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: #edecea;
+}
+h3{
+	color: #4871bf;
+	margin-bottom: 20px;
+}
+a{
+	color: #4871bf;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+#header{
+	padding-top: 20px;
+	height: 120px;
+	border-bottom: 1px solid #ddd;
+}
+.wellcome{
+	margin-top: 34px;
+	font-size: 14px;
+	color: #666;
+}
+#header a{
+	display: block;
+    background: url(../img/logo.png) no-repeat;
+    width: 297px;
+    height: 81px;
+}
+.content{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.details-nav li{
+	display: inline-block;
+	padding: 12px 70px;
+}
+.details-nav li.on{
+	background: #188eee;
+	color: #fff;
+}
+.details-mod{
+	margin-top: 20px;
+}
+
+
+
+
+.form-group{
+	width: 500px;
+	height: 42px;
+	margin-top: 10px;
+}
+label{
+	display: inline-block;
+    width: 120px;
+    text-align: right;
+    float: left;
+    margin-right: 10px;
+    color: rgb(102, 102, 102);
+    height: 40px;
+    line-height: 40px;
+}
+.form-group{
+	
+}
+.form-group input{
+	display: inline-block;
+	width: 320px;
+    height: 38px;
+    color: rgb(102, 102, 102);
+    margin-right: 5px;
+    padding: 0px 10px;
+    border: 1px solid #ddd;
+}
+#phone_code,
+#id_code{
+	width: 203px;
+}
+img.id_code{
+	cursor: pointer;
+}
+button{
+	display: inline-block;
+    width: 210px;
+    cursor: pointer;
+    height: 44px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255,155,0);
+    border-radius: 4px;
+    background: rgb(255, 115, 0);
+    font: normal 12px/38px 微软雅黑;
+}
+button.btn_phone_code{
+	display: inline-block;
+    width: 110px !important;
+    height: 40px !important;
+    border: 1px solid #dedede;
+    text-align: center;
+    color: #666;
+    background: #F6F6F6;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.submit{
+	width: 500px;
+	height: 42px;
+	margin-top: 20px;
+	margin-left: 130px;
+}
