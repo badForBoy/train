@@ -114,11 +114,11 @@
 	});
 
 	/*登录弹窗按钮*/
-	$loginBtn.click(function(){
+	/*$loginBtn.click(function(){
 		$loginAll.fadeIn(200);
 	});
 	$closeIcon.click(function(){
 		$loginAll.fadeOut(200);
 	});
-
+*/
 }());

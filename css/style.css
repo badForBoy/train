@@ -493,9 +493,11 @@ a.search-btn{
 }
 .modal-login-btn:hover{
     background-color: #147de2;
+    color: #fff;
 }
 .modal-login-btn:active {
     background-color: #1774c9;
+    color: #fff;
 }
 /* 登陆弹窗 */
 .modal-login-all{
@@ -591,6 +593,22 @@ a.search-btn{
     font-size: 14px;
     cursor: default;
 }
+/* 右侧登陆框登录之前 */
+.wrap-modal-login{
+    padding: 20px 0;
+}
+.mod-after img{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+.mod-after span{
+    display: inline-block;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+
 /* 轮播图 */
 .wrap-big-banner{
     position: absolute;
@@ -733,19 +751,29 @@ h3.modal-like-title{
     z-index: 1;
     background: rgba(0,0,0,.6);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .modal-like-item p{
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    height: 40px;
     margin-bottom: 8px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;-webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .item-line .price{
     color: #e85308;
     font-size: 16px;
 }
 .item-line .source{
+    text-align: right;
     display: inline-block;
+    width: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .item-line .source a{
     color: #999;
@@ -824,11 +852,13 @@ span.data{
 }
 .modal-news-mech-list li span,
 .modal-news-hot li span{
+    float: left;
     padding-right: 6px;
     font-size: 14px;
     cursor: default;
 }
 .modal-news-hot-item ul li span{
+    float: left;
     margin-right: 4px;
     padding-right: 1px;
     text-align: center;
@@ -839,6 +869,19 @@ span.data{
     line-height: 20px;
     border-radius: 50%;
     background: #666;
+}
+.modal-news-hot li a,
+.modal-news-hot-item li a,
+.modal-news-mech-list li a{
+    float: left;
+    display: block;
+    width: 192px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.modal-news-hot li a{
+    width: 156px;
 }
 
 /*********************

@@ -1,6 +1,6 @@
 ;(function(){
 	//学团详情切换
-	var $team = $(".item-team li");
+	var $team = $(".item-team > li");
 	var $teamMod = $(".item-modal-team");
 
 	//学团详情切换

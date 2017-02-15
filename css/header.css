@@ -131,7 +131,7 @@ li{
     height: 12px;
     line-height: 13px;
     top: 2px;
-    right: 0px;
+    right: 7px;
     margin-left: 2px;
     transition: transform .3s;
     margin-top: 10px;
@@ -182,6 +182,7 @@ li{
 #head2{
     background: #fff;
     width: 100%;
+    margin-bottom: 20px;
 }
 #head2 .contain{
     position: relative;
@@ -340,7 +341,7 @@ a.search-btn{
 /* .modal-nav-li-first h3 a:hover, */
 .nav-banner{
     background: #fff;
-    padding: 20px 0;
+    padding: 0 0 20px 0;
 }
 .nav-all i{
     margin-right: 8px;

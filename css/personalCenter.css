@@ -220,3 +220,60 @@ span.modal-bar-2{
 .shop{
 	border: 1px solid #ddd;
 }
+
+/* ********************
+		我的主页 
+************************/
+.homepage{
+	padding: 20px;
+	background: #f1f1f1;
+	margin-bottom: 20px;
+}
+.user-pic{
+	color: #333;
+	width: 160px;
+	height: 160px;
+	background: pink;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user_title{
+	margin-left: 20px;
+}
+.name{
+	font-size: 32px;
+	color: #333;
+	margin-bottom: 20px;
+}
+.study,
+.wealth{
+	color: #333;
+	margin-bottom:5px;
+}
+.study span,
+.wealth span{
+	color: #ff7300;
+	margin-left: 5px;
+	margin-right: 20px;
+}
+.set a{
+	display: inline-block;
+    line-height: 1;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 0 12px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+    background: linear-gradient( #FAFAFA, #F2F2F2);
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    text-decoration: none;
+    color: #444;
+    white-space: nowrap;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    text-align: center;
+}
