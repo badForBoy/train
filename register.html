@@ -29,31 +29,38 @@
 	<!-- 顶部通栏 end -->
 
 	<div id="register">
-		<div class="content">
-			<ul class="details-nav">
-				<li class="on">个人注册</li>
-				<li>机构注册</li>
-			</ul>
-			<div class="details-mod">
+		<div class="content clearfix">
+			<div class="clearfix">
+				<ul class="details-nav pull-left">
+					<li class="on"><h2>个人注册</h2></li>
+					<li><h2>机构注册</h2></li>
+				</ul>
+				<div class="login pull-right">
+					<p>我已经有唐石账号? <a href="login.html">登 录</a></p>
+				</div>
+			</div>
+			<div class="details-mod pull-left">
 				<div class="mod-item">
 					<form action="">
 						<div class="form-group">
 							<label for="ph_num">
-								<i></i>
+								<i>*</i>
 								手机号：
 							</label>
 							<span class="form-controls">
 								<input type="text" id="ph_num">
 							</span>
+							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
 						</div>
 						<div class="form-group">
 							<label for="nickname">
-								<i></i>
+								<i>*</i>
 								呢称：
 							</label>
 							<span class="form-controls">
 								<input type="text" id="nickname">
 							</span>
+							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
 						</div>
 						<div class="form-group">
 							<label for="email">
@@ -63,56 +70,161 @@
 							<span class="form-controls">
 								<input type="text" id="email">
 							</span>
+							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
 						</div>
 						<div class="form-group">
 							<label for="passworld">
-								<i></i>
+								<i>*</i>
 								密码：
 							</label>
 							<span class="form-controls">
 								<input type="text" id="passworld">
 							</span>
+							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
 						</div>
 						<div class="form-group">
 							<label for="con_passworld">
-								<i></i>
+								<i>*</i>
 								确认密码：
 							</label>
 							<span class="form-controls">
 								<input type="text" id="con_passworld">
 							</span>
+							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
 						</div>
 						<div class="form-group clearfix">
 							<label class="pull-left" for="id_code">
-								<i></i>
+								<i>*</i>
 								验证码：
 							</label>
 							<span class="form-controls pull-left">
 								<input type="text" id="id_code">
 							</span>
+							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
 							<img class="id_code pull-left" src="img/id_code.jpg" src="">
 						</div>
 						<div class="form-group">
 							<label for="phone_code">
-								<i></i>
+								<i>*</i>
 								手机验证码：
 							</label>
 							<span class="form-controls">
 								<input type="text" id="phone_code">
 								<button class="btn_phone_code">获取验证码</button>
 							</span>
+							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
+						</div>
+						<div class="form-group">
+							<label for=""></label>
+							<span class="form-checked">
+								<input type="checkbox" checked="checked">
+								我已阅读并同意
+								<a href="about.html" target="_blank" class="orange">《唐石科技户注册协议》</a>
+							</span>
 						</div>
 						<div class="submit">
 							<button type="submit">注 册</button>
 						</div>
 					</form>
-
 				</div>
 				<div class="clearfix hidden">
 					<div class="aside-left pull-left">
-						2
+						<form action="">
+							<div class="form-group">
+								<label for="ph_num">
+									<i>*</i>
+									城市：
+								</label>
+								<div class="city">
+									<select name="" id="choice-city">
+										<option value="0">请选择</option>
+										<option value="1">直辖市</option>
+										<option value="2">安徽</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="ph_num">
+									<i>*</i>
+									手机号：
+								</label>
+								<span class="form-controls">
+									<input type="text" id="ph_num">
+								</span>
+							</div>
+							<div class="form-group">
+								<label for="nickname">
+									<i>*</i>
+									呢称：
+								</label>
+								<span class="form-controls">
+									<input type="text" id="nickname">
+								</span>
+							</div>
+							<div class="form-group">
+								<label for="email">
+									<i></i>
+									邮箱：
+								</label>
+								<span class="form-controls">
+									<input type="text" id="email">
+								</span>
+							</div>
+							<div class="form-group">
+								<label for="passworld">
+									<i>*</i>
+									密码：
+								</label>
+								<span class="form-controls">
+									<input type="text" id="passworld">
+								</span>
+							</div>
+							<div class="form-group">
+								<label for="con_passworld">
+									<i>*</i>
+									确认密码：
+								</label>
+								<span class="form-controls">
+									<input type="text" id="con_passworld">
+								</span>
+							</div>
+							<div class="form-group clearfix">
+								<label class="pull-left" for="id_code">
+									<i>*</i>
+									验证码：
+								</label>
+								<span class="form-controls pull-left">
+									<input type="text" id="id_code">
+								</span>
+								<img class="id_code pull-left" src="img/id_code.jpg" src="">
+							</div>
+							<div class="form-group">
+								<label for="phone_code">
+									<i>*</i>
+									手机验证码：
+								</label>
+								<span class="form-controls">
+									<input type="text" id="phone_code">
+									<button class="btn_phone_code">获取验证码</button>
+								</span>
+							</div>
+							<div class="form-group">
+								<label for=""></label>
+								<span class="form-checked">
+									<input type="checkbox" checked="checked">
+									我已阅读并同意
+									<a href="about.html" target="_blank" class="orange">《唐石科技户注册协议》</a>
+								</span>
+							</div>
+							<div class="submit">
+								<button type="submit">注 册</button>
+							</div>
+						</form>
 					</div>
 				</div>
+			</div>
+			<div class="bg pull-left">
+				<img src="img/login.jpg" >
 			</div>
 		</div>
 

@@ -111,5 +111,20 @@ input{
 
 
 .wrap-friend{
-	background: #e9e8e6;
+	background: #fff;
+}
+
+/* 找回密码 */
+.fm_forget{
+	width: 600px;
+	margin: 0 auto;
+}
+.id_code{
+	margin-bottom: 30px;
+}
+.box-forget h3{
+	text-align: center;
+}
+img.id_code{
+	margin-left: 20px;
 }

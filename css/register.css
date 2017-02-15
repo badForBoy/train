@@ -15,6 +15,9 @@ a{
 a:hover{
 	text-decoration: underline;
 }
+.wrap-friend{
+	background: #fff;
+}
 #header{
 	padding-top: 20px;
 	height: 120px;
@@ -37,8 +40,11 @@ a:hover{
 }
 
 .details-nav li{
+	text-align: center;
+	color: #188eee;
 	display: inline-block;
 	padding: 12px 70px;
+	cursor: default;
 }
 .details-nav li.on{
 	background: #188eee;
@@ -48,11 +54,17 @@ a:hover{
 	margin-top: 20px;
 }
 
-
+.login p{
+	color: #666;
+}
+.login p a{
+	padding: 14px 20px;
+	border: 1px solid #ddd;
+	margin-left: 20px;
+}
 
 
 .form-group{
-	width: 500px;
 	height: 42px;
 	margin-top: 10px;
 }
@@ -66,9 +78,29 @@ label{
     height: 40px;
     line-height: 40px;
 }
-.form-group{
-	
+.form-group label i{
+	color: #FF7300;
+    margin-left: 5px;
 }
+.form-checked{
+	display: inline-block;
+	width: 320px;
+    box-sizing: border-box;
+    line-height: 1;
+    padding: 0;
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+    line-height: 16px;
+}
+.form-checked input{
+	position: relative;
+	top: 2px;
+	width: 16px !important;
+	height: 16px !important;
+	-webkit-appearance: checkbox;
+}
+
 .form-group input{
 	display: inline-block;
 	width: 320px;
@@ -81,6 +113,9 @@ label{
 #phone_code,
 #id_code{
 	width: 203px;
+}
+.id_code{
+	margin-right: 10px;
 }
 img.id_code{
 	cursor: pointer;
@@ -114,4 +149,28 @@ button.btn_phone_code{
 	margin-top: 20px;
 	margin-left: 130px;
 }
-a{}
+.iferror{
+	display: none;
+	line-height: 38px;
+	color: red;
+}
+.iferror i{
+	font-size: 12px;
+}
+
+.city{
+	padding-top: 6px;
+}
+#choice-city{
+	height: 30px;
+    width: 92px;
+    position: relative;
+}
+#choice-city option{
+	line-height: 30px;
+}
+.bg{
+	width: 420px;
+	height: 320px;
+	margin-top: 40px;
+}
