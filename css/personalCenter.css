@@ -51,9 +51,14 @@
 	width: 100%;
 }
 .aside-item h1{
+	padding: 0 32px 6px;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: default;
 	font-weight: normal;
 	color: #333;
 	margin-bottom: 20px;
+	border-bottom: 1px solid #ddd;
 }
 .item-ctn{
 	position: absolute;
@@ -83,6 +88,7 @@
 	font-size: 20px;
 	line-height: 30px;
 	cursor: default;
+	color: #333;
 }
 #item-all li.on{
 	border-bottom: 3px solid #188eee;
