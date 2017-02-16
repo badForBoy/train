@@ -1,0 +1,149 @@
+/* ***************我的钱包*************** */
+.money-all{
+	width: 680px;
+	padding: 20px 40px;
+	border-right: 1px solid #ddd;
+}
+.money-card{
+	width: 288px;
+	text-align: center;
+
+}
+.money-all p{
+	color: #666;
+	margin-bottom: 10px;
+}
+p.money01{
+	font-size: 28px;
+	color: #188eee;
+}
+.ba-money{
+	border-bottom: 1px solid #ddd;
+	height: 44px;
+	line-height: 44px;
+}
+
+.money-card{
+}
+.icon-more{
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+	border: 1px solid #ddd;
+	cursor: default;
+}
+.icon-more i{
+	font-size: 42px;
+	line-height: 50px;
+	color: #666;
+}
+
+.mx-header{
+	padding: 10px 40px;
+	border: 1px solid #ddd;
+	border-top: none;
+}
+
+table{
+	width: 970px;
+	text-align: center;
+	border-collapse: collapse;
+	font-size: 14px !important;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+table tr{
+	display: inline-block;
+	font-size: 14px;
+	display: table-row;
+	height: 44px;
+	border-bottom: 1px solid #ddd;
+}
+table tr td{
+	color: #666;
+}
+table tr td div{
+	padding: 20px 0;
+}
+tbody th{
+	color: #333;
+	width: 20%;
+	height: 80px;
+}
+th.th-width{
+	width: 400px;
+}
+span.add{
+	color:#FF7300 !important;
+}
+span.reduce{
+	color: #6CC142 !important;
+}
+.page-wrap{
+	text-align: right;
+	margin-top: 20px;
+}
+.page-box a{
+	display: inline-block;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	text-align: center;
+	margin-right: 5px;
+}
+.page-box a.on{
+	background: #188eee;
+	color: #fff;
+}
+
+/* ***************我的积分*************** */
+.integral .money-all{
+	border: none;
+}
+.integral .money-card{
+	margin-top: 40px;
+}
+.notice .th-width{
+	text-align: left;
+}
+.notice table{
+	border-top: 1px solid #ddd;
+}
+
+/* ***************添加课程*************** */
+.mod-course label{
+	float: left;
+	width: 120px;
+	text-align: right;
+    line-height: 34px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.wrap-course{
+	padding: 10px;
+}
+.mod-course .title{
+	float: left;
+}
+.title{
+	width: 650px;
+}
+.title select{
+	display: inline-block;
+	width: 142px;
+}
+.title object{
+	position: relative;
+	top: 10px;
+	background: #188eee;
+	padding: 10px 20px;
+	color: #fff;
+	cursor: default;
+}
+.empty{
+	height: 10px;
+}
