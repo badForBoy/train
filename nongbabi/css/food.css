@@ -1,0 +1,56 @@
+.banner{
+	width: 1920px;
+	margin: 0 auto;
+}
+.row{
+	margin: 40px 0 120px 0;
+}
+.item{
+	overflow: hidden;
+}
+.item h4{
+	color: #8e5324;
+	line-height: 60px;
+}
+.item p{
+	color: #666;
+}
+.six-img{
+	position: relative;
+	width: 740px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	padding: 20px 0;
+}
+.six1{
+	position: absolute;
+	left: 312px;
+    top: 108px;
+}
+.six2{
+	position: absolute;
+	left: 510px;
+    top: 235px;
+
+}
+.six3{
+	position: absolute;
+	left: 510px;
+    bottom: 235px;
+}
+.six4{
+	position: absolute;
+	left: 312px;
+    bottom: 108px;
+}
+.six5{
+	position: absolute;
+	left: 94px;
+    bottom: 235px;
+}
+.six6{
+	position: absolute;
+	left: 94px;
+    top: 235px;
+}

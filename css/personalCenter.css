@@ -78,11 +78,11 @@
     text-align: center;
 }
 /* ******全部订单tab****** */
-#item-all{
+.item-all{
 	margin-bottom: 20px;
 	border-bottom: 1px solid #e5e5e5;
 }
-#item-all li{
+.item-all li{
 	display: inline-block;
 	padding: 0 32px 6px;
 	font-size: 20px;
@@ -90,10 +90,10 @@
 	cursor: default;
 	color: #333;
 }
-#item-all li.on{
+.item-all li.on{
 	border-bottom: 3px solid #188eee;
 }
-#item-all li h1{
+.item-all li h1{
 	margin-bottom: 0;
 	line-height: 30px;
 }
