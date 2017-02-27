@@ -67,9 +67,9 @@ table tr td div{
 	padding: 20px 0;
 }
 tbody th{
-	color: #333;
+	color: #999;
 	width: 20%;
-	height: 80px;
+	background: #eee;
 }
 th.th-width{
 	width: 400px;
@@ -146,4 +146,11 @@ span.reduce{
 }
 .empty{
 	height: 10px;
+}
+.teacher-list .item-more-info p{
+	margin: 5px 0;
+}
+.page-wrap{
+	margin: 20px 0; 
+	text-align: center;
 }

@@ -158,7 +158,7 @@ span.modal-bar-2{
 .item-name{
 	display: inline !important;
 }
-.item-status{
+.status{
 	width: 88px;
 	margin-left: 75px;
 	color: #666;
@@ -275,4 +275,34 @@ span.modal-bar-2{
     user-select: none;
     text-shadow: 0 1px 0 rgba(255,255,255,.5);
     text-align: center;
+}
+
+.modal-price{
+	padding: 20px;
+}
+.price{
+	padding: 20px;
+	margin: 10px auto;
+	width: 100%;
+	background: #188eee;
+	box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    border-radius: 8px;
+    color: #fff;
+}
+.prece-left i{
+	font-size: 88px;
+}
+.prece-right .money{
+	font-size: 48px;
+}
+.prece-right .use{
+	font-size: 24px;
+}
+.price .time{
+	margin-left: 60px;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 20px;
 }

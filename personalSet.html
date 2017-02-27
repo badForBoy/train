@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="iconFont/iconfont.css">
 	<link rel="stylesheet" href="css/header.css">
-	<!-- <link rel="stylesheet" href="css/login.css"> -->
+	<link rel="stylesheet" href="css/common/item.css">
 	<link rel="stylesheet" href="css/personalSet.css">
 </head>
 <body>
@@ -502,8 +502,8 @@
 					<li class="on">账号绑定<i class="iconfont">&#xe65f;</i></li>
 					<li>个人信息<i class="iconfont">&#xe65f;</i></li>
 					<li>操作记录<i class="iconfont">&#xe65f;</i></li>
-					<li>实名认证<i class="iconfont">&#xe65f;</i></li>
-					<li>收货地址<i class="iconfont">&#xe65f;</i></li>
+					<!-- <li>实名认证<i class="iconfont">&#xe65f;</i></li>
+					<li>收货地址<i class="iconfont">&#xe65f;</i></li> -->
 				</ul>
 			</div>
 			<div class="aside-right pull-left">
@@ -515,7 +515,7 @@
 						<ul>
 							<li class="clearfix">
 								<div class="left pull-left">
-									<i class="iconfont">&#xe622;</i>
+									<i class="iconfont">&#xe61b;</i>
 								</div>
 								<div class="center pull-left">
 									<p class="font1"><strong>邮箱</strong> <span>731429927@qq.com</span> 已绑定</p>
@@ -539,7 +539,7 @@
 							</li>
 							<li class="clearfix">
 								<div class="left pull-left">
-									<i class="iconfont">&#xe622;</i>
+									<i class="iconfont">&#xe8b0;</i>
 								</div>
 								<div class="center pull-left">
 									<p class="font1"><strong>密码</strong>  已设置</p>
@@ -549,7 +549,7 @@
 									<a href="">更改</a>
 								</div>
 							</li>
-							<li class="clearfix">
+							<!-- <li class="clearfix">
 								<div class="left pull-left">
 									<i class="iconfont">&#xe622;</i>
 								</div>
@@ -560,7 +560,7 @@
 								<div class="right pull-right">
 									<a href="">更改</a>
 								</div>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 					<div class="item-modal-team hidden">
@@ -576,6 +576,10 @@
 							<div class="info-box clearfix">
 								<label for="" class="pull-left">城市</label>
 								<div class="pull-left info-item">杭州</div>
+							</div>
+							<div class="info-box clearfix">
+								<label for="" class="pull-left">详细地址</label>
+								<div class="pull-left info-item">浙江省杭州市江干区某某街</div>
 							</div>
 							<div class="info-box clearfix">
 								<label for="" class="pull-left">性别</label>
@@ -623,7 +627,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item-modal-team hidden">
+					<!-- <div class="item-modal-team hidden">
 						<div class="com-title">
 							实名认证
 							<a class="pull-right" href="">编辑</a>
@@ -634,7 +638,7 @@
 							收货地址
 							<a class="pull-right" href="">编辑</a>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				
 				<!-- 设置邮件 begin -->
@@ -648,29 +652,37 @@
 							<p>请输入登录密码验证身份</p>
 							<p>88888888@qq.com</p>
 						</div>
-						<div class="box">
-							<form action="" class="fm_forget">
-								<div class="username form-group clearfix">
-									<label for="tp_username">
-										请输入密码
-									</label>
-									<div class="control-input">
-										<input type="password" name="tp_username" tabindex="1" maxlength="32" placeholder="请输入密码">
+						<div class="wrap-help">
+							<form action="">
+								<div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="">密码</label>
+											<div class="title">
+												<input type="passworld" placeholder="请输入16个字符以下的名字">
+												<i class="success iconfont hidden">&#xe696;</i>
+												<i class="error iconfont hidden">&#xe613;</i>
+											</div>												
+										</div>
 									</div>
-								</div>
-								<div class="id_code form-group clearfix">
-									<label class="empty" for=""></label>
-									<div class="control-input">
-										<span class="form-controls pull-left">
-										<input type="text" id="id_code" placeholder="请填写验证码">
-									</span>
-									<img class="id_code pull-left" src="img/id_code.jpg" src="">
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label class="pull-left" for="id_code">验证码：</label>
+											<span class="title form-controls pull-left vcode">
+												<input type="text" id="" placeholder="请再次验证码">
+												<i class="error iconfont hidden"></i>
+												<i class="success iconfont hidden"></i>
+											</span>
+											<img class="id_code pull-left" src="img/id_code.jpg">
+										</div>
 									</div>
-								</div>
-								<div class="submit form-group">
-									<label class="empty" for=""></label>
-									<div class="control-input">
-										<a>下一步</a>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label class="empty" for=""></label>
+											<div class="title">
+												<a class="btn-primary" href="">下一步</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</form>
@@ -687,21 +699,27 @@
 							<span>修改邮箱</span>
 							<i class="iconfont close">&#xe604;</i>
 						</div>
-						<div class="box">
-							<form action="" class="fm_forget">
-								<div class="username form-group clearfix">
-									<label for="tp_username">
-										新的邮箱地址
-									</label>
-									<div class="control-input">
-										<input type="text" name="tp_username" tabindex="1" maxlength="32" placeholder="请输入邮箱地址">
+						<div class="wrap-help">
+							<form action="">
+								<div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="">新的邮箱</label>
+											<div class="title">
+												<input type="text" placeholder="请输入新的邮箱">
+												<i class="success iconfont hidden">&#xe696;</i>
+												<i class="error iconfont hidden">&#xe613;</i>
+											</div>												
+										</div>
 									</div>
-								</div>
-								<div class="submit form-group clearfix">
-									<label class="empty" for=""></label>
-									<div class="control-input">
-										<a>确定</a>
-										<a>取消</a>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label class="empty" for=""></label>
+											<div class="title">
+												<a class="btn-primary" href="">确定</a>
+												<a class="btn-default" href="">取消</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</form>
@@ -718,67 +736,103 @@
 							<span>编辑个人信息</span>
 							<i class="iconfont close">&#xe604;</i>
 						</div>
-						<div class="edit-info">
+						<div class="wrap-help">
 							<form action="">
-								<div class="form-group clearfix">
-									<label for="">昵称：</label>
-									<div class="control-input">
-										<input type="text" placeholder="请输入昵称">
+								<div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="">昵称</label>
+											<div class="title">
+												<input type="text" placeholder="请输入16个字符以下的名字">
+												<i class="success iconfont hidden">&#xe696;</i>
+												<i class="error iconfont hidden">&#xe613;</i>
+											</div>
+											
+										</div>
 									</div>
-								</div>
-								<div class="form-group clearfix">
-									<label for="">职业：</label>
-									<div class="control-input">
-										<select name="job" id="job">
-											<!-- <option value="">1</option>
-											<option value="">2</option>
-											<option value="">3</option> -->
-										</select>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">城市</label>
+											<div class="title">
+												<select name="" id="selId"></select>
+												<select name="" id="idcat"></select>
+												<select name="" id="job"></select>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="form-group clearfix szdq-wrap">
-									<label for="">所在地区：</label>
-									<div class="control-input">
-										<select name="" id="selId">
-											<!-- <option value="">1</option>
-											<option value="">2</option>
-											<option value="">3</option> -->
-										</select>
-										<select name="city" id="">
-										</select>
-										<select name="" id="">
-										</select>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">详细地址</label>
+											<div class="title">
+												<textarea name="" id="" cols="30" rows="5" placeholder="最多可输入160个字符"></textarea>
+												<!-- <input type="text" placeholder="请再次输入密码">
+												<i class="error iconfont hidden">&#xe613;</i>
+												<i class="success iconfont hidden">&#xe696;</i> -->
+												<!-- <p>头像图片不能超过1M,图像尺寸为260*340</p> -->
+											</div>
+											
+										</div>
 									</div>
-								</div>
-								<div class="form-group clearfix sex">
-									<label for="">性别：</label>
-									<div class="control-input">
-										<label for="">
-											<input type="radio" hidefocus="true">
-											保密
-										</label>
-										<label for="">
-											<input type="radio" hidefocus="true">
-											男
-										</label>
-										<label for="">
-											<input type="radio" hidefocus="true">
-											女
-										</label>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">性别</label>
+											<div class="title">
+												<select name="" id="sex"></select>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="form-group clearfix autograph">
-									<label for="">个性签名：</label>
-									<div class="control-input">
-										<textarea name="" id="" rows="5"></textarea>
-										<p>还可以输入128个字符</p>
+									<div class="wrap-course has-error">
+										<div class="mod-course clearfix">
+											<label for="">邮箱地址</label>
+											<div class="title">
+												<input type="text" placeholder="请输入您的邮箱地址">
+												<i class="error iconfont hidden">&#xe613;</i>
+												<i class="success iconfont hidden">&#xe696;</i>
+											</div>
+											
+										</div>
 									</div>
-								</div>
-								<div class="form-group clearfix">
-									<label class="empty" for=""></label>
-									<div class="control-input">
-										<a href="">确定</a>
-										<a href="">取消</a>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">个性签名</label>
+											<div class="title">
+												<textarea name="" id="" cols="30" rows="5" placeholder="最多可输入160个字符"></textarea>
+												<!-- <input type="text" placeholder="请再次输入密码">
+												<i class="error iconfont hidden">&#xe613;</i>
+												<i class="success iconfont hidden">&#xe696;</i> -->
+												<!-- <p>头像图片不能超过1M,图像尺寸为260*340</p> -->
+											</div>
+											
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">头像</label>
+											<div class="title ">
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<p>头像图片不能超过1M,图像尺寸为160*160</p>
+												<!-- <object data="" type="" width="120" height="30">上传图片</object> -->
+											</div>
+											
+										</div>
+									</div>
+									<!-- <div class="form-group">
+										<label class="" for=""></label>
+										<span class="form-checked">
+											<input type="checkbox" checked="checked">
+											我已阅读并同意
+											<a href="about.html" target="_blank" class="orange">《唐石科技教师管理协议》</a>
+										</span>
+									</div> -->
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label class="empty" for=""></label>
+											<div class="title">
+												<a class="btn-primary" href="">确认</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</form>

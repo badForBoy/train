@@ -1,0 +1,11 @@
+#help{
+	margin-bottom: 60px;
+}
+.fm-header{
+	height: 50px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+.fm-header p{
+	font-size: 22px;
+}

@@ -4,16 +4,44 @@
 	<meta charset="UTF-8">
 	<meta name="renderer" content="webkit">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no,email=no"/>
 	<link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">
 
 	<title>唐石科技</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="iconFont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/common/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<header>
+	<div class="container clearfix">
+		<div class="head2-logo pull-left">
+			<a class="head2-link-logo"></a>
+		</div>
+		<div class="head2-seach pull-left">
+			<div class="head2-seach-modal">
+				<i class="iconfont search-more">&#xe659;</i>
+				<a class="search-item" href="">
+					<span>机构<!-- <i class="iconfont">&#xe659;</i> --></span>
+					<span class="hidden">课程<!-- <i class="iconfont hidden">&#xe659;</i> --></span>
+				</a>
+				<input type="text" class="mod-search__input" placeholder="搜索课程">
+				<a class="search-btn" href=""><i class="iconfont">&#xe660;</i></a>
+				<!-- <input type="button" class="mod-search__button" value="搜索课程"> -->
+			</div>
+			<div class="seach-word-list">
+				<a href="">前端开发</a>
+				<a href="">Android开发</a>
+				<a href="">淘宝营销必修技</a>
+				<a href="">零基础学产品</a>
+			</div>
+		</div>
+		<div class="head2-login"></div>
+	</div>
+	</div>
+</header>
 <div id="head1">
 	<div class="contain clearfix">
 		<div class="head1-left pull-left">
@@ -39,7 +67,7 @@
 					</div>
 				</li>
 				<li><a href="">客服中心</a></li>
-				<li><a href="">机构入驻</a></li>
+				<li><a href="register.html">机构入驻</a></li>
 				<!-- <li class="shopping"><a href=""><i class="iconfont">&#xe609;</i>购物车</a></li> -->
 				<li class="head1-wrap-nav">
 					<span class="my-platform"><a href="personalCenter.html">个人中心</a><i class="iconfont">&#xe659;</i></span>
@@ -52,7 +80,7 @@
 	</div>
 </div>	
 <div id="head2">
-	<div class="contain clearfix">
+	<div class="contain clearfix container">
 		<div class="test"></div>
 		<div class="head2-logo pull-left">
 			<a class="head2-link-logo" href=""></a>
@@ -84,10 +112,10 @@
 		<div class="wrap-litter-banner">
 			<ul>
 				<li><a href="index.html">首页</a></li>
-				<li><a href="">培训课程</a></li>
-				<li><a href="">培训机构</a></li>
+				<li><a href="list.html">培训课程</a></li>
+				<li><a href="companyList.html">培训机构</a></li>
 				<li><a href="news.html">新闻动态</a></li>
-				<li><a href="">帮助选课</a></li>
+				<li><a href="help.html">帮助选课</a></li>
 				<li><a href="about.html">关于我们</a></li>
 			</ul>
 		</div>
@@ -102,56 +130,56 @@
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a class="clearfix" href="">商务礼仪<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+									<h3><a class="clearfix" href="list.html">商务礼仪<i class="iconfont pull-right">&#xe65f;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
-									<a href="">前端开发</a>
-									<a href="">Linux运维</a>
+									<a href="list.html">前端开发</a>
+									<a href="list.html">Linux运维</a>
 								</div>
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a class="clearfix" href="">谈判技巧<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+									<h3><a class="clearfix" href="list.html">谈判技巧<i class="iconfont pull-right">&#xe65f;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
-									<a href="">平面设计</a>
-									<a href="">游戏美术设计</a>
+									<a href="list.html">平面设计</a>
+									<a href="list.html">游戏美术设计</a>
 								</div>
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a class="clearfix" href="">营销策略<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+									<h3><a class="clearfix" href="list.html">营销策略<i class="iconfont pull-right">&#xe65f;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
-									<a href="">前端开发</a>
-									<a href="">Linux运维</a>
+									<a href="list.html">前端开发</a>
+									<a href="list.html">Linux运维</a>
 								</div>
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a class="clearfix" href="">行为心理学<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+									<h3><a class="clearfix" href="list.html">行为心理学<i class="iconfont pull-right">&#xe65f;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
-									<a href="">前端开发</a>
-									<a href="">Linux运维</a>
+									<a href="list.html">前端开发</a>
+									<a href="list.html">Linux运维</a>
 								</div>
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a class="clearfix" href="">IT·互联网<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+									<h3><a class="clearfix" href="list.html">IT·互联网<i class="iconfont pull-right">&#xe65f;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
-									<a href="">前端开发</a>
-									<a href="">Linux运维</a>
+									<a href="list.html">前端开发</a>
+									<a href="list.html">Linux运维</a>
 								</div>
 							</li>
 							<li class="modal-nav-li">
 								<div class="modal-nav-li-head">
-									<h3><a class="clearfix" href="">IT·互联网<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+									<h3><a class="clearfix" href="list.html">IT·互联网<i class="iconfont pull-right">&#xe65f;</i></a></h3>
 								</div>
 								<div class="modal-nav-li-title">
-									<a href="">前端开发</a>
-									<a href="">Linux运维</a>
+									<a href="list.html">前端开发</a>
+									<a href="list.html">Linux运维</a>
 								</div>
 							</li>
 						</ul>
@@ -556,7 +584,7 @@
 		<div class="modal-like-box">
 			<ul class="modal-like-list clearfix">
 				<li class="modal-like-item">
-					<a href=""><img src="img/220.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
 					</div>
@@ -567,7 +595,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -578,7 +606,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -589,7 +617,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -600,7 +628,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -626,7 +654,7 @@
 		<div class="modal-like-box">
 			<ul class="modal-like-list clearfix">
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_1.jpg"></a>
+					<a href=""><img src="img/220_5.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
 					</div>
@@ -637,7 +665,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_1.jpg"></a>
+					<a href=""><img src="img/220_5.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -648,7 +676,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_1.jpg"></a>
+					<a href=""><img src="img/220_5.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -659,7 +687,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_1.jpg"></a>
+					<a href=""><img src="img/220_5.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -670,7 +698,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_1.jpg"></a>
+					<a href=""><img src="img/220_5.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -699,18 +727,29 @@
 			</div>
 			<ul class="modal-like-list modal-train-list clearfix">
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_2.jpg"></a>
-					<div class="item-status">
+					<a href=""><img src="img/220_6.jpg"></a>
+					<!-- <div class="item-status">
 						<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+					</div> -->
+					<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
 					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
+						<span class="price">    重点推荐   </span>
 						<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_2.jpg"></a>
+					<a href=""><img src="img/220_6.jpg"></a>
+					<!-- <div class="item-status">
+						<span>随到随学 （共6节）</span>
+					</div> -->
+					<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
+					<div class="item-line">
+						<span class="price">    重点推荐   </span>
+						<span class="source pull-right"><a href="">第一课堂</a></span>
+					</div>
+				</li>
+				<li class="modal-like-item">
+					<a href=""><img src="img/220_6.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -721,7 +760,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_2.jpg"></a>
+					<a href=""><img src="img/220_6.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -732,7 +771,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_2.jpg"></a>
+					<a href=""><img src="img/220_6.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -743,7 +782,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_2.jpg"></a>
+					<a href=""><img src="img/220_6.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -754,7 +793,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_2.jpg"></a>
+					<a href=""><img src="img/220_6.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -765,18 +804,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_2.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
-					</div>
-				</li>
-				<li class="modal-like-item">
-					<a href=""><img src="img/220_2.jpg"></a>
+					<a href=""><img src="img/220_6.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -805,7 +833,7 @@
 			</div>
 			<ul class="modal-like-list modal-train-list clearfix">
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_3.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
 					</div>
@@ -816,7 +844,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_3.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -827,7 +855,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_3.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -838,7 +866,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_3.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -849,7 +877,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_3.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -860,7 +888,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_3.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -871,7 +899,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_3.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>
@@ -882,7 +910,7 @@
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_3.jpg"></a>
+					<a href=""><img src="img/220_4.jpg"></a>
 					<div class="item-status">
 						<span>随到随学 （共6节）</span>
 					</div>

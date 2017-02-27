@@ -43,4 +43,16 @@
 		$("#idcat").append("<option value=" + val + ">" + elcolum + "</option>");
 	}
 
+	var sexs = [
+	{"sex":"请选择","value":"0"},{"sex":"男","value":"1"},{"sex":"女","value":"2"}
+	]
+
+	var sexObj = eval(sexs);
+
+	for (var i = 0; i < sexObj.length; i++) {
+		var val = sexObj[i].value;
+		var sex = sexObj[i].sex;
+		$("#sex").append("<option value=" + val + ">" + sex + "</option>");
+	}
+
 }());

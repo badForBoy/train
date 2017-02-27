@@ -139,7 +139,7 @@ input{
 	top: 50%;
 	background: #fff;
 	margin-top: -300px;
-	margin-left: -270px;
+	margin-left: -380px;
 	z-index: 10;
 	border-radius: 8px;
 	padding: 20px 40px;
@@ -198,7 +198,7 @@ input{
 	font-size: 14px;
 }
 .form-group .control-input{
-	width: 298px;
+	/* width: 298px; */
 	float: left;
 }
 
@@ -268,3 +268,18 @@ input{
 	height: 80px;
 }
 
+.wrap-help{
+	border: 1px solid #ddd;
+	padding: 20px;
+}
+.title{
+	width: 600px;
+}
+.blackout .title{
+	width: 460px;
+}
+.next .wrap-help,
+.blackout .wrap-help{
+	border: 0;
+	padding: 0;
+}

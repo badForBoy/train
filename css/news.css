@@ -5,6 +5,12 @@ p{
 	line-height: 1.8;
 	color: #666;
 }
+h3 a{
+	font-size: 16px;
+}
+.tl h3 a{
+	color: #666;
+}
 #header{
 	margin-bottom: 0;
 }
@@ -107,22 +113,7 @@ p{
 }
 
 /* page */
-.page-wrap{
-	margin-top: 20px;
-	text-align: center;
-}
+
 .page-box a{
-	display: inline-block;
-	border: 1px solid #ddd;
-	border-radius: 4px;
-	width: 60px;
-	height: 30px;
-	line-height: 30px;
-	font-size: 16px;
-	text-align: center;
-	margin-right: 5px;
-}
-.page-box a.on{
-	background: #188eee;
-	color: #fff;
+	margin-right: 15px;
 }

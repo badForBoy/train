@@ -12,22 +12,21 @@
 .basic{
 	position: relative;
 	width: 900px;
-	height: 360px;
-	margin-right: 20px;
+	height: 540px;
 }
 .banner-btn,
 .banner{
 	position: absolute;
 } 
 .banner{
-	height: 360px;
+	height: 540px;
 	width: 900px;
 	overflow: hidden;
 }
 .banner ul li a{
 	display: block;
 	width: 900px;
-	height: 360px;
+	height: 540px;
 	overflow: hidden;
 }
 .banner-btn{
@@ -66,7 +65,7 @@
 }
 .info{
 	color: #333;
-	width: 280px;
+	width: 300px;
 }
 .info-star i{
 	color: #ffb200;
@@ -76,9 +75,9 @@ i.star-gray{
 }
 .jg-info{
 	position: relative;
-	background: #fff;
-	padding: 20px;
-	height: 360px;
+	background: #fafafa;
+	height: 540px;
+	padding: 0 20px;
 }
 .jg-header{
 	margin-bottom: 10px;
@@ -113,8 +112,12 @@ i.star-gray{
 	color: #fff;
 }
 
+.att,
 .jg-introduce{
-	line-height: 1.8;
+	margin-bottom: 20px;
+}
+.jg-introduce{
+	color: #666;
 }
 /* ****************
         main
@@ -137,79 +140,7 @@ i.star-gray{
 	padding: 20px 0;
 }
 
-/* 课程列表 */
-.header-list{
-	color: #333;
-	margin: 40px 0 10px 7px;
-}
-.box-list{
-	margin-bottom: 20px;
-}
 
-.modal-like-item{
-    float: left;
-    width: 236px;
-    padding: 7px 7px 10px;
-    border: 1px solid transparent;
-    position: relative; 
-    margin-right: 4px;
-}
-.modal-like-item:hover{
-    border-color: #ddd;
-    box-shadow: 1px 1px 2px 1px #ECECEC;
-}
-.item-status{
-    position: absolute;
-    height: 24px;
-    width: 220px;
-    padding: 0 4px;
-    line-height: 24px;
-    top: 107px;
-    color: #fff;
-    z-index: 1;
-    background: rgba(0,0,0,.6);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
-}
-.modal-like-item p{
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    height: 40px;
-    margin-bottom: 8px;
-}
-.item-line .price{
-    color: #e85308;
-    font-size: 16px;
-}
-.item-line .source{
-    display: inline-block;
-}
-.item-line .source a{
-    color: #999;
-    font-size: 12px;
-}
-.item-line .source a:hover{
-    color: #188EEE;
-}
-
-.page-wrap{
-	margin-top: 20px;
-	text-align: center;
-}
-.page-box a{
-	display: inline-block;
-	border: 1px solid #ddd;
-	border-radius: 4px;
-	width: 60px;
-	height: 30px;
-	line-height: 30px;
-	font-size: 16px;
-	text-align: center;
-	margin-right: 5px;
-}
-.page-box a.on{
-	background: #188eee;
-	color: #fff;
-}
 /* 关于我们 */
 .jg-intr{
 	margin-top: 40px;
@@ -237,6 +168,7 @@ i.star-gray{
 /* 老师 */
 .th-item{
 	width: 300px;
+	max-height: 542px; 
 	padding: 20px;
 	color: #666;
 	margin-bottom: 30px;

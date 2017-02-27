@@ -1,0 +1,79 @@
+.main{
+	margin-bottom: 60px;
+}
+.aside-left{
+	width: 948px;
+}
+.aside-right{
+	width: 252px;
+}
+.course-header{
+	float: left;
+	width: 60px;
+	height: 100%;	
+	margin-top: 7px;
+}
+.course-header h4{
+	color: #666;
+}
+.course{
+	border:1px solid #ddd;
+	padding: 8px 20px;
+}
+.wrap-course{
+	padding: 8px 0;
+	border-bottom: 1px dotted  #ddd;
+}
+.bn{
+	border: none;
+}
+dd{
+	width: 846px;
+	float: left;
+}
+dd a{
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 14px;
+}
+.modal-like-item {
+	width: 232px;
+}
+.aside-right ul li,
+.aside-right h3{
+	margin-left: 24px;
+}
+.modal-like-item{
+	margin-bottom: 40px;
+}
+.course-nav{
+	margin-left: -10px;
+	padding: 20px 0;
+}
+.course-nav a{
+	margin:0 10px;
+}
+.course-nav a.on{
+	color: #188eee;
+}
+.all .modal-like-list{
+	margin-left: -6px;
+}
+.on{
+	color: #188eee;
+}
+.aside-right h3{
+	line-height: 30px;
+}
+.find{
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+.find span{
+	margin: 0 5px;
+	color: #B10000;
+}
+.page-wrap{
+	margin-bottom: 40px;
+}

@@ -10,6 +10,7 @@
 	<title>register</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="iconFont/iconfont.css">
+	<link rel="stylesheet" href="css/common/item.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" href="css/register.css">
 </head>
@@ -40,173 +41,99 @@
 				</div>
 			</div>
 			<div class="details-mod pull-left">
-				<div class="mod-item">
+				<!-- 个人注册 begin -->
+				<div class="wrap-help">
 					<form action="">
-						<div class="form-group">
-							<label for="ph_num">
-								<i>*</i>
-								手机号：
-							</label>
-							<span class="form-controls">
-								<input type="text" id="ph_num">
-							</span>
-							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
-						</div>
-						<div class="form-group">
-							<label for="nickname">
-								<i>*</i>
-								呢称：
-							</label>
-							<span class="form-controls">
-								<input type="text" id="nickname">
-							</span>
-							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
-						</div>
-						<div class="form-group">
-							<label for="email">
-								<i></i>
-								邮箱：
-							</label>
-							<span class="form-controls">
-								<input type="text" id="email">
-							</span>
-							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
-						</div>
-						<div class="form-group">
-							<label for="passworld">
-								<i>*</i>
-								密码：
-							</label>
-							<span class="form-controls">
-								<input type="text" id="passworld">
-							</span>
-							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
-						</div>
-						<div class="form-group">
-							<label for="con_passworld">
-								<i>*</i>
-								确认密码：
-							</label>
-							<span class="form-controls">
-								<input type="text" id="con_passworld">
-							</span>
-							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
-						</div>
-						<div class="form-group clearfix">
-							<label class="pull-left" for="id_code">
-								<i>*</i>
-								验证码：
-							</label>
-							<span class="form-controls pull-left">
-								<input type="text" id="id_code">
-							</span>
-							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
-							<img class="id_code pull-left" src="img/id_code.jpg" src="">
-						</div>
-						<div class="form-group">
-							<label for="phone_code">
-								<i>*</i>
-								手机验证码：
-							</label>
-							<span class="form-controls">
-								<input type="text" id="phone_code">
-								<button class="btn_phone_code">获取验证码</button>
-							</span>
-							<span class="iferror"><i class="iconfont">&#xe604;</i>请填写正确的手机号码</span>
-						</div>
-						<div class="form-group">
-							<label for=""></label>
-							<span class="form-checked">
-								<input type="checkbox" checked="checked">
-								我已阅读并同意
-								<a href="about.html" target="_blank" class="orange">《唐石科技户注册协议》</a>
-							</span>
-						</div>
-						<div class="submit">
-							<button type="submit">注 册</button>
-						</div>
-					</form>
-				</div>
-				<div class="clearfix hidden">
-					<div class="aside-left pull-left">
-						<form action="">
-							<div class="form-group">
-								<label for="ph_num">
-									<i>*</i>
-									城市：
-								</label>
-								<div class="city">
-									<select name="" id="choice-city">
-										<option value="0">请选择</option>
-										<option value="1">直辖市</option>
-										<option value="2">安徽</option>
-									</select>
+						<div>
+							<div class="wrap-course has-success">
+								<div class="mod-course clearfix">
+									<label for="">手机号</label>
+									<div class="title">
+										<input type="text" placeholder="请输入手机号码">
+										<i class="success iconfont hidden">&#xe696;</i>
+										<i class="error iconfont hidden">&#xe613;</i>
+									</div>
+									
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="ph_num">
-									<i>*</i>
-									手机号：
-								</label>
-								<span class="form-controls">
-									<input type="text" id="ph_num">
-								</span>
+							<div class="wrap-course has-success">
+								<div class="mod-course clearfix">
+									<label for="">昵称</label>
+									<div class="title">
+										<input type="text" placeholder="请输入16个字符以下的名字">
+										<i class="success iconfont hidden">&#xe696;</i>
+										<i class="error iconfont hidden">&#xe613;</i>
+									</div>
+									
+								</div>
 							</div>
-							<div class="form-group">
-								<label for="nickname">
-									<i>*</i>
-									呢称：
-								</label>
-								<span class="form-controls">
-									<input type="text" id="nickname">
-								</span>
+							<div class="wrap-course has-error">
+								<div class="mod-course clearfix">
+									<label for="">邮箱地址</label>
+									<div class="title">
+										<input type="text" placeholder="请输入您的邮箱地址">
+										<i class="error iconfont hidden">&#xe613;</i>
+										<i class="success iconfont hidden">&#xe696;</i>
+									</div>
+									
+								</div>
 							</div>
-							<div class="form-group">
-								<label for="email">
-									<i></i>
-									邮箱：
-								</label>
-								<span class="form-controls">
-									<input type="text" id="email">
-								</span>
+							<div class="wrap-course has-error">
+								<div class="mod-course clearfix">
+									<label for="">密码</label>
+									<div class="title">
+										<input type="passworld" placeholder="请输入密码">
+										<i class="error iconfont hidden">&#xe613;</i>
+										<i class="success iconfont hidden">&#xe696;</i>
+									</div>
+									
+								</div>
 							</div>
-							<div class="form-group">
-								<label for="passworld">
-									<i>*</i>
-									密码：
-								</label>
-								<span class="form-controls">
-									<input type="text" id="passworld">
-								</span>
+							<div class="wrap-course">
+								<div class="mod-course clearfix">
+									<label for="">再次输入密码</label>
+									<div class="title">
+										<input type="passworld" placeholder="请再次输入密码">
+										<i class="error iconfont hidden">&#xe613;</i>
+										<i class="success iconfont hidden">&#xe696;</i>
+									</div>
+									
+								</div>
 							</div>
-							<div class="form-group">
-								<label for="con_passworld">
-									<i>*</i>
-									确认密码：
-								</label>
-								<span class="form-controls">
-									<input type="text" id="con_passworld">
-								</span>
+
+							<div class="wrap-course has-error">
+								<div class="mod-course clearfix">
+									<label class="pull-left" for="id_code">验证码：</label>
+									<span class="title form-controls pull-left vcode">
+										<input type="text" id="" placeholder="请再次验证码">
+										<i class="error iconfont hidden">&#xe613;</i>
+										<i class="success iconfont hidden">&#xe696;</i>
+									</span>
+									<img class="id_code pull-left" src="img/id_code.jpg">
+								</div>
 							</div>
-							<div class="form-group clearfix">
-								<label class="pull-left" for="id_code">
-									<i>*</i>
-									验证码：
-								</label>
-								<span class="form-controls pull-left">
-									<input type="text" id="id_code">
-								</span>
-								<img class="id_code pull-left" src="img/id_code.jpg" src="">
+							<div class="wrap-course has-error">
+								<div class="mod-course clearfix">
+									<label for="">手机验证码</label>
+									<div class="clearfix">
+										<div class="title pull-left vcode">
+											<input type="passworld" placeholder="请输入手机验证码">
+											<i class="error iconfont hidden">&#xe613;</i>
+											<i class="success iconfont hidden">&#xe696;</i>
+										</div>
+										<div class="pull-left">
+											<a class="btn btn-default" href="">获取验证码</a>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="form-group">
-								<label for="phone_code">
-									<i>*</i>
-									手机验证码：
-								</label>
-								<span class="form-controls">
-									<input type="text" id="phone_code">
-									<button class="btn_phone_code">获取验证码</button>
-								</span>
+							<div class="wrap-course">
+								<div class="mod-course clearfix">
+									<label class="empty" for=""></label>
+									<div class="title">
+										<a class="btn-primary" href="">立即提交</a>
+									</div>
+								</div>
 							</div>
 							<div class="form-group">
 								<label for=""></label>
@@ -216,12 +143,119 @@
 									<a href="about.html" target="_blank" class="orange">《唐石科技户注册协议》</a>
 								</span>
 							</div>
-							<div class="submit">
-								<button type="submit">注 册</button>
+						</div>
+					</form>
+				</div>
+				<!-- 个人注册 end -->
+
+				<!-- 机构注册 begin -->
+				<div class="clearfix hidden">				
+					<div class="wrap-help">
+						<form action="">
+							<div>
+								<div class="wrap-course">
+									<div class="mod-course clearfix">
+										<label for="">城市</label>
+										<div class="title">
+											<select name="" id="selId"></select>
+											<select name="" id="idcat"></select>
+											<select name="" id="job"></select>
+										</div>
+									</div>
+								</div>
+								<div class="wrap-course has-success">
+									<div class="mod-course clearfix">
+										<label for="">机构名称</label>
+										<div class="title">
+											<input type="text" placeholder="请输入16个字符以下的名字">
+											<i class="success iconfont hidden">&#xe696;</i>
+											<i class="error iconfont hidden">&#xe613;</i>
+										</div>
+										
+									</div>
+								</div>
+								<div class="wrap-course has-error">
+									<div class="mod-course clearfix">
+										<label for="">邮箱地址</label>
+										<div class="title">
+											<input type="text" placeholder="请输入您的邮箱地址">
+											<i class="error iconfont hidden">&#xe613;</i>
+											<i class="success iconfont hidden">&#xe696;</i>
+										</div>
+										
+									</div>
+								</div>
+								<div class="wrap-course has-error">
+									<div class="mod-course clearfix">
+										<label for="">密码</label>
+										<div class="title">
+											<input type="passworld" placeholder="请输入密码">
+											<i class="error iconfont hidden">&#xe613;</i>
+											<i class="success iconfont hidden">&#xe696;</i>
+										</div>
+										
+									</div>
+								</div>
+								<div class="wrap-course">
+									<div class="mod-course clearfix">
+										<label for="">再次输入密码</label>
+										<div class="title">
+											<input type="passworld" placeholder="请再次输入密码">
+											<i class="error iconfont hidden">&#xe613;</i>
+											<i class="success iconfont hidden">&#xe696;</i>
+										</div>
+										
+									</div>
+								</div>
+
+								<div class="wrap-course has-error">
+									<div class="mod-course clearfix">
+										<label class="pull-left" for="id_code">验证码：</label>
+										<span class="title form-controls pull-left vcode">
+											<input type="text" id="" placeholder="请再次验证码">
+											<i class="error iconfont hidden">&#xe613;</i>
+											<i class="success iconfont hidden">&#xe696;</i>
+										</span>
+										<img class="id_code pull-left" src="img/id_code.jpg">
+									</div>
+								</div>
+								<div class="wrap-course has-error">
+									<div class="mod-course clearfix">
+										<label for="">手机验证码</label>
+										<div class="clearfix">
+											<div class="title pull-left vcode">
+												<input type="passworld" placeholder="请输入手机验证码">
+												<i class="error iconfont hidden">&#xe613;</i>
+												<i class="success iconfont hidden">&#xe696;</i>
+											</div>
+											<div class="pull-left">
+												<a class="btn btn-default" href="">获取验证码</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wrap-course">
+									<div class="mod-course clearfix">
+										<label class="empty" for=""></label>
+										<div class="title">
+											<a class="btn-primary" href="">立即提交</a>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for=""></label>
+									<span class="form-checked">
+										<input type="checkbox" checked="checked">
+										我已阅读并同意
+										<a href="about.html" target="_blank" class="orange">《唐石科技户注册协议》</a>
+									</span>
+								</div>
 							</div>
 						</form>
 					</div>
 				</div>
+
+				<!-- 机构注册 end -->
 			</div>
 			<div class="bg pull-left">
 				<img src="img/login.jpg" >
@@ -246,5 +280,6 @@
 <script type="text/javascript" src="js/courseDetails.js"></script>
 <script type="text/javascript" src="js/search.js"></script>
 <script type="text/javascript" src="js/notice.js"></script>	
+<script type="text/javascript" src="js/select.js"></script>	
 </body>
 </html>

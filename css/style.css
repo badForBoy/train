@@ -746,7 +746,7 @@ h3.modal-like-title{
     width: 220px;
     padding: 0 4px;
     line-height: 24px;
-    top: 107px;
+    top: 115px;
     color: #fff;
     z-index: 1;
     background: rgba(0,0,0,.6);
@@ -762,6 +762,8 @@ h3.modal-like-title{
     text-overflow: ellipsis;
     display: -webkit-box;-webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    font-size: 14px;
+    cursor: default;
 }
 .item-line .price{
     color: #e85308;
@@ -808,6 +810,9 @@ h3.modal-like-title{
     margin-bottom: 20px;
 }
 
+.modal-like-item{
+    min-height: 222px;
+}
 /*********************
     热点新闻
 *********************/
@@ -987,3 +992,24 @@ span.data{
     color: #666;
     font-size: 16px;
 }
+
+
+/* ========================================媒体查询======================================== */
+ @media (max-width: 768px) { 
+     #head1{
+        display: none;
+    }
+    #head2{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 100px;
+        z-index: 99;
+        background: #eee;
+    }
+    .head2-seach{
+        display: none;
+    }
+} 

@@ -6,14 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="format-detection" content="telephone=no,email=no"/>
+	<title>唐石科技</title>
 	<link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">
-	<title>年度新闻</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="iconFont/iconfont.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/common/item.css">
-	<link rel="stylesheet" href="css/news.css">
-	<link rel="stylesheet" href="css/newsDetails.css">
+	<!-- <link rel="stylesheet" href="css/login.css"> -->
+	<link rel="stylesheet" href="css/personalSet.css">
 </head>
 <body>
 	<!-- 顶部通栏 begin -->
@@ -489,80 +489,495 @@
 
 	<!-- 顶部通栏 end -->
 
-	<div class="wrap-news">
-		<div class="contant clearfix">
-			<div class="coordinate">
-				<a href="index.html">全部课程</a><i class="iconfont">&#xe65f;</i><a href="news.html">新闻中心</a><i class="iconfont">&#xe65f;</i><a href="">详情新闻</a>
+	<div class="info-set">
+		<div class="contain clearfix">
+			<div class="aside-left pull-left">
+				<div class="user">
+					<div class="user-face">
+						<img src="img/face_2.jpg" alt="">
+					</div>
+					<h3>第一课堂</h3>
+				</div>
+				<h2 class="ti-comment">账号管理</h2>
+				<ul class="item-team">
+					<li class="on">账号绑定<i class="iconfont">&#xe65f;</i></li>
+					<li>机构信息<i class="iconfont">&#xe65f;</i></li>
+					<li>操作记录<i class="iconfont">&#xe65f;</i></li>
+					<!-- <li>实名认证<i class="iconfont">&#xe65f;</i></li>
+					<li>收货地址<i class="iconfont">&#xe65f;</i></li> -->
+				</ul>
 			</div>
-			<div class="news-main pull-left">
-				<div class="news-banner">
-					<img src="" alt="">
+			<div class="aside-right pull-left">
+				<div class="">
+					<div class="item-modal-team">
+						<div class="com-title">
+							账号绑定
+						</div>
+						<ul>
+							<li class="clearfix">
+								<div class="left pull-left">
+									<i class="iconfont">&#xe61b;</i>
+								</div>
+								<div class="center pull-left">
+									<p class="font1"><strong>邮箱</strong> <span>731429927@qq.com</span> 已绑定</p>
+									<p>可用邮箱加密码登录唐石，可用邮箱找回密码</p>
+								</div>
+								<div class="right pull-right">
+									<a class="change" href="">更改</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="left pull-left">
+									<i class="iconfont">&#xe622;</i>
+								</div>
+								<div class="center pull-left">
+									<p class="font1"><strong>手机</strong> <span>156 8888 8888</span></p>
+									<p>可用手机号加密码登录唐石，可通过手机号找回密码</p>
+								</div>
+								<div class="right pull-right">
+									<a href="">更改</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="left pull-left">
+									<i class="iconfont">&#xe652;</i>
+								</div>
+								<div class="center pull-left">
+									<p class="font1"><strong>电话</strong> <span>156 8888 8888</span></p>
+									<p>公司座机电话号码</p>
+								</div>
+								<div class="right pull-right">
+									<a href="">更改</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="left pull-left">
+									<i class="iconfont">&#xe8b0;</i>
+								</div>
+								<div class="center pull-left">
+									<p class="font1"><strong>密码</strong>  已设置</p>
+									<p>用于保护账号信息和登录安全</p>
+								</div>
+								<div class="right pull-right">
+									<a href="">更改</a>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="item-modal-team hidden">
+						<div class="wrap-help">
+							<form action="">
+								<div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="">机构名称</label>
+											<div class="title">
+												<input type="text" placeholder="请输入16个字符以下的名字">
+												<i class="success iconfont hidden">&#xe696;</i>
+												<i class="error iconfont hidden">&#xe613;</i>
+											</div>
+											
+										</div>
+									</div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="">主营业务</label>
+											<div class="title">
+												<input type="text" placeholder="请输入16个字符以下的名字">
+												<i class="success iconfont hidden">&#xe696;</i>
+												<i class="error iconfont hidden">&#xe613;</i>
+											</div>
+											
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">上课地点</label>
+											<div class="title">
+												<select name="" id="selId"></select>
+												<select name="" id="idcat"></select>
+												<select name="" id="job"></select>
+											</div>
+										</div>
+									</div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="">详细地址</label>
+											<div class="title">
+												<textarea name="" id="" cols="30" rows="5" placeholder="最多输入160个字符"></textarea>
+												<!-- <input type="text" placeholder="请输入16个字符以下的名字">
+												<i class="success iconfont hidden">&#xe696;</i>
+												<i class="error iconfont hidden">&#xe613;</i> -->
+											</div>												
+										</div>
+									</div>
+									
+									<div class="wrap-course has-error">
+										<div class="mod-course clearfix">
+											<label for="">机构简介</label>
+											<div class="title">
+												<textarea name="" id="" cols="30" rows="5" placeholder="最多输入160个字符"></textarea>
+												<!-- <input type="text" placeholder="请输入您的邮箱地址">
+												<i class="error iconfont hidden">&#xe613;</i>
+												<i class="success iconfont hidden">&#xe696;</i> -->
+											</div>
+											
+										</div>
+									</div>
+									<div class="wrap-course has-error">
+										<div class="mod-course clearfix">
+											<label for="">发展历程</label>
+											<div class="title">
+												<textarea name="" id="" cols="30" rows="5" placeholder="最多输入160个字符"></textarea>
+												<!-- <input type="text" placeholder="请输入您的邮箱地址">
+												<i class="error iconfont hidden">&#xe613;</i>
+												<i class="success iconfont hidden">&#xe696;</i> -->
+											</div>
+											
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">logo</label>
+											<div class="title ">
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<p>图片不能超过1M,图像宽度为160*160</p>
+												<!-- <object data="" type="" width="120" height="30">上传图片</object> -->
+											</div>
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">主页轮播图</label>
+											<div class="title ">
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<div class="has-add-photo add-photo">
+													<img src="img/details/goods.jpg">
+												</div>
+												<p>单张图片不能超过2M,图像宽度为820px</p>
+												<!-- <object data="" type="" width="120" height="30">上传图片</object> -->
+											</div>
+											
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">公司介绍</label>
+											<div class="title ">
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<p>单张图片不能超过2M,图像尺寸1200*320</p>
+												<!-- <object data="" type="" width="120" height="30">上传图片</object> -->
+											</div>
+											
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">办学环境</label>
+											<div class="title ">
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<div class="add-photo">
+													<i class="iconfont">&#xe6b9;</i>
+												</div>
+												<p>单张图片不能超过2M,图像宽度为1200px</p>
+												<!-- <object data="" type="" width="120" height="30">上传图片</object> -->
+											</div>
+											
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="" for=""></label>
+										<span class="form-checked">
+											<input type="checkbox" checked="checked">
+											我已阅读并同意
+											<a href="about.html" target="_blank" class="orange">《唐石科技课程发布管理协议》</a>
+										</span>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label class="empty" for=""></label>
+											<div class="title">
+												<a class="btn-primary" href="">添加</a>
+												<a class="btn-default" href="">保存草稿</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- <div class="com-title">
+							机构信息
+							<a class="pull-right edit-click" href="">编辑</a>
+						</div>
+						<div class="info-wrap">
+							<div class="info-box clearfix">
+								<label for="" class="pull-left">机构名称</label>
+								<div class="pull-left info-item">第一课堂</div>
+							</div>
+							<div class="info-box clearfix">
+								<label for="" class="pull-left">地址</label>
+								<div class="pull-left info-item">浙江省杭州市江干区某某街某某大厦1606号</div>
+							</div>
+							<div class="info-box clearfix">
+								<label for="" class="pull-left">主营业务</label>
+								<div class="pull-left info-item">雅思 托福</div>
+							</div>
+							<div class="info-box clearfix">
+								<label for="" class="pull-left">公司简介</label>
+								<div class="pull-left info-item">把经验传递给有梦想的人，振兴中国职业教育，打造一流教育品牌！天琥教育是一所集设计培训、教育教学、设计应用知识推广、设计课程研发于一体的集团化连锁教育机构，致力为各行业培养精英设计人才。</div>
+							</div>
+						</div> -->
+					</div>
+					<div class="item-modal-team hidden">
+						<div class="com-title">
+							操作记录
+							<!-- <a class="pull-right" href="">编辑</a> -->
+						</div>
+						<div class="record">
+							<div class="record-box">
+								<table>
+									<tbody>
+										<tr>
+											<th>类型</th>
+											<th>登录时间</th>
+											<th>城市</th>
+											<th>IP</th>
+											<th>登录设备</th>
+										</tr>
+										<tr>
+											<td>修改个人信息</td>
+											<td>2017.02.16 11:07</td>
+											<td>杭州</td>
+											<td>115.226.71.34</td>
+											<td>web</td>
+										</tr>
+										<tr>
+											<td>账号登陆</td>
+											<td>2017.02.16 11:07</td>
+											<td>杭州</td>
+											<td>115.226.71.34</td>
+											<td>web</td>
+										</tr>
+										<tr></tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="item-modal-team hidden">
+						<div class="com-title">
+							实名认证
+							<a class="pull-right" href="">编辑</a>
+						</div>
+					</div>
+					<div class="item-modal-team hidden">
+						<div class="com-title">
+							收货地址
+							<a class="pull-right" href="">编辑</a>
+						</div>
+					</div> -->
 				</div>
-				<div class="news-details">
-					<div class="news-header">
-						<h2 class="news-header">外媒简评：Office 2016 for Mac多了哪些改进</h2>
-						<p class="mg0">2017-01-17  08:53:41</p>
-						<p>来源：<span>凤凰网</span></p>
+				
+				<!-- 设置邮件 begin -->
+				<div class="blackout hidden">
+					<div class="modal-change">
+						<div class="bl-header">
+							<span>更改邮箱</span>
+							<i class="iconfont close">&#xe604;</i>
+						</div>
+						<div class="bl-title">
+							<p>请输入登录密码验证身份</p>
+							<p>88888888@qq.com</p>
+						</div>
+						<div class="wrap-help">
+							<form action="">
+								<div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="">密码</label>
+											<div class="title">
+												<input type="passworld" placeholder="请输入16个字符以下的名字">
+												<i class="success iconfont hidden">&#xe696;</i>
+												<i class="error iconfont hidden">&#xe613;</i>
+											</div>												
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label class="pull-left" for="id_code">验证码：</label>
+											<span class="title form-controls pull-left vcode">
+												<input type="text" id="" placeholder="请再次验证码">
+												<i class="error iconfont hidden"></i>
+												<i class="success iconfont hidden"></i>
+											</span>
+											<img class="id_code pull-left" src="img/id_code.jpg">
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label class="empty" for=""></label>
+											<div class="title">
+												<a class="btn-primary" href="">下一步</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
-					<div class="new_intro">
-						[摘要]微软的Office 2016 for Mac推出已有些时日了，不管是界面设计和功能都有较大的改进。但如果你是只关注效率的Office 2011 for Mac的老用户，到底要不要升级可能困扰着你。外媒TechRadar近日发布了一篇Office 2016 for Mac评测，我们总结看下Office 2016 for Mac对比之前版本的多了哪些新特性，是否值得升级。
-					</div>
-					<div class="details-img">
-						<img src="img/news/intro_1.jpg" alt="">
-					</div>
-					<p>纵观整个新版Office for Mac套件，改变最大的当然是界面及外观设计。Office 2016 for Mac版本不仅全面支持Retina分辨率，整个界面布局都是以Retina分辨率以及OS X的全新风格进行设计，而2011版本更新虽然加入了Retina分辨率支持，但是并不全面整体也看上去像修补过后的。整体引入了Windows版本Office 2013中出现的Ribbon界面，这一广受好评的设计让工作效率更高，主题色彩也十分鲜明。</p>
-					<div class="details-img">
-						<img src="img/news/intro_2.jpg" alt="">
-					</div>
-					<p>加入了OS X系统级别功能，包括多点触控缩放手势，原生全屏模式。同时微软的One Drive目录也直接集成进了系统打开/保存对话框，用户能够更方便存储读取云服务文件。</p>
-					<div class="details-img">
-						<img src="img/news/intro_3.jpg" alt="">
-					</div>
-					<p>对于办公用户，最明显的感受是加入了嵌套注释功能支持，文章和注释回馈能够同时阅读，对于效率大有提升。</p>
-					<p>新版智能查找Smart Lookup功能，能够直接在文档中查找和现实相关定义或者网络搜索结果，而老版则只能在工具栏中操作。</p>
-					<p>Office 2016 for Mac中缺失了Notebook笔记视图，相关功能被移至OneNote应用中。</p>
-					<div class="details-img">
-						<img src="img/news/intro_4.jpg" alt="">
-					</div>
-					<p>新版Excel加入了许多升级特性，可以让Mac用户更有效地编辑，创建复杂表格。PivotTable Slicers能够让表格数据筛选进行的更有效，可选的Analysis Toolpak插件能够进行复杂工程学或统计学分析。公式生成器，方程式编辑器以及自动完成功能均得到大幅度改善，推荐式图表工具能够得到更直观美感的数据图表。</p>
-					<div class="details-img">
-						<img src="img/news/intro_2.jpg" alt="">
-					</div>
-					<p>新版PowerPoint中的界面更新十分显著，同时加入了23套智能模板，主题和色彩选择选项更加丰富，能够呈现相当简洁美观的幻灯片视觉效果。PowerPoint中添加了嵌套注释功能(Threaded Comments) ；加入了演示者视图(Presenter View)使得演示者可以专注于给观众带来主题演示，而非专注于幻灯片的内容；更多丰富美观的幻灯片主题；</p>
+					<div class="modal-bg"></div>
 				</div>
-				<div class="page-wrap">
-					<div class="page-box">
-						<a href="">上一条</a>
-						<a href="">下一条</a>
+				<!-- 设置邮件 end -->
+
+				<!-- 设置邮件下一步 begin -->
+				<div class="next hidden">
+					<div class="modal-change">
+						<div class="bl-header">
+							<span>修改邮箱</span>
+							<i class="iconfont close">&#xe604;</i>
+						</div>
+						<div class="wrap-help">
+							<form action="">
+								<div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="">新的邮箱</label>
+											<div class="title">
+												<input type="text" placeholder="请输入新的邮箱">
+												<i class="success iconfont hidden">&#xe696;</i>
+												<i class="error iconfont hidden">&#xe613;</i>
+											</div>												
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label class="empty" for=""></label>
+											<div class="title">
+												<a class="btn-primary" href="">确定</a>
+												<a class="btn-default" href="">取消</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						
 					</div>
+					<div class="modal-bg"></div>
 				</div>
-			</div>
-			<div class="news-ad pull-left">
-				<div class="mb-1">
-					<a href=""><img src="img/news/mb_1.jpg" alt=""></a>
+					
 				</div>
-				<div class="mb-list">
-					<h3>热门关注</h3>
-					<ul>
-						<li><span></span><a href="">竞思训练中心环境优美，老师循循善诱，训练形式丰富多样，在学员开心学习的同时得到最佳的训练效果</a></li>
-						<li><span></span><a href="">天津职业资格教育培训培训学校哪家好?天津职业资格教育培训培训课程热报中</a></li>
-						<li><span></span><a href="">竞思训练中心环境优美，老师循循善诱，训练形式丰富多样，在学员开心学习的同时得到最佳的训练效果</a></li>
-						<li><span></span><a href="">天津职业资格教育培训培训学校哪家好?天津职业资格教育培训培训课程热报中</a></li>
-						<li><span></span><a href="">竞思训练中心环境优美，老师循循善诱，训练形式丰富多样，在学员开心学习的同时得到最佳的训练效果</a></li>
-						<li><span></span><a href="">天津职业资格教育培训培训学校哪家好?天津职业资格教育培训培训课程热报中</a></li>
-						<li><span></span><a href="">竞思训练中心环境优美，老师循循善诱，训练形式丰富多样，在学员开心学习的同时得到最佳的训练效果</a></li>
-						<li><span></span><a href="">天津职业资格教育培训培训学校哪家好?天津职业资格教育培训培训课程热报中</a></li>
-						<li><span></span><a href="">天津职业资格教育培训培训学校哪家好?天津职业资格教育培训培训课程热报中</a></li>
-						<li><span></span><a href="">竞思训练中心环境优美，老师循循善诱，训练形式丰富多样，在学员开心学习的同时得到最佳的训练效果</a></li>
-						<li><span></span><a href="">天津职业资格教育培训培训学校哪家好?天津职业资格教育培训培训课程热报中</a></li>
-						<li><span></span><a href="">竞思训练中心环境优美，老师循循善诱，训练形式丰富多样，在学员开心学习的同时得到最佳的训练效果</a></li>
-						<li><span></span><a href="">天津职业资格教育培训培训学校哪家好?天津职业资格教育培训培训课程热报中</a></li>
-					</ul>
-					</ul>
+				<!-- 设置邮件下一步 end -->
+
+				<!-- 编辑个人信息 begin -->
+				<div class="modal-personal modal-item hidden">
+					<div class="modal-change">
+						<div class="bl-header">
+							<span>编辑个人信息</span>
+							<i class="iconfont close">&#xe604;</i>
+						</div>
+						<div class="edit-info">
+							<form action="">
+								<div class="form-group clearfix">
+									<label for="">昵称：</label>
+									<div class="control-input">
+										<input type="text" placeholder="请输入昵称">
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="">职业：</label>
+									<div class="control-input">
+										<select name="job" id="job">
+											<!-- <option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option> -->
+										</select>
+									</div>
+								</div>
+								<div class="form-group clearfix szdq-wrap">
+									<label for="">所在地区：</label>
+									<div class="control-input">
+										<select name="" id="selId">
+											<!-- <option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option> -->
+										</select>
+										<select name="city" id="">
+										</select>
+										<select name="" id="">
+										</select>
+									</div>
+								</div>
+								<div class="form-group clearfix sex">
+									<label for="">性别：</label>
+									<div class="control-input">
+										<label for="">
+											<input type="radio" hidefocus="true">
+											保密
+										</label>
+										<label for="">
+											<input type="radio" hidefocus="true">
+											男
+										</label>
+										<label for="">
+											<input type="radio" hidefocus="true">
+											女
+										</label>
+									</div>
+								</div>
+								<div class="form-group clearfix autograph">
+									<label for="">个性签名：</label>
+									<div class="control-input">
+										<textarea name="" id="" rows="5"></textarea>
+										<p>还可以输入128个字符</p>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label class="empty" for=""></label>
+									<div class="control-input">
+										<a href="">确定</a>
+										<a href="">取消</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="modal-bg"></div>
 				</div>
+				<!-- 编辑个人信息 end -->
 			</div>
 		</div>
 	</div>
+	
+
+	
 
 	<!-- 友情链接 begin -->
 	<div class="wrap-friend footer">
@@ -577,9 +992,11 @@
 	<!-- 友情链接 end -->
 
 <script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="js/courseDetails.js"></script>
-<script type="text/javascript" src="js/company.js"></script>
 <script type="text/javascript" src="js/search.js"></script>	
-<script type="text/javascript" src="js/header.js"></script>		
+<script type="text/javascript" src="js/header.js"></script>	
+<script type="text/javascript" src="js/notice.js"></script>	
+<script type="text/javascript" src="js/popup.js"></script>
+<script type="text/javascript" src="js/select.js"></script>
+<!-- <script type="text/javascript" src="js/personalSet.js"></script> -->	
 </body>
 </html>
