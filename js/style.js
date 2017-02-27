@@ -39,24 +39,24 @@
 	/*轮播图*/
 
 
-	var timer = setInterval(function(){
-		/*btn(current);*/
-		play(current);
-		current++;
-		if(current==length){//当当前播放的索引值等于总图片数就重置为0，重新开始循环
-		current=0;
-		};
-		bg(current);
-		$imgBtn.eq(current-1).addClass("on").siblings($imgBtn).removeClass("on");
-		},2000);//将function写在setInterval里更简洁。这样写默认开始2秒就开始播放，如果想开始2秒就播放第二张，那就得把最前面的current=1;因为初始显示的就是第一张。所以2秒后应该显示第二张而不是还是第一张
+	// var timer = setInterval(function(){
+	// 	/*btn(current);*/
+	// 	play(current);
+	// 	current++;
+	// 	if(current==length){//当当前播放的索引值等于总图片数就重置为0，重新开始循环
+	// 	current=0;
+	// 	};
+	// 	bg(current);
+	// 	$imgBtn.eq(current-1).addClass("on").siblings($imgBtn).removeClass("on");
+	// 	},2000);//将function写在setInterval里更简洁。这样写默认开始2秒就开始播放，如果想开始2秒就播放第二张，那就得把最前面的current=1;因为初始显示的就是第一张。所以2秒后应该显示第二张而不是还是第一张
 	
-		$imgBtn.on("click",function(){
-			var n = $(this).index();
-			$(this).addClass("on").siblings($imgBtn).removeClass("on");
-			$imgList.eq(n).fadeIn(200).siblings($imgList).fadeOut(200);
-			bg(n + 1);
-		}
-	)
+	// 	$imgBtn.on("click",function(){
+	// 		var n = $(this).index();
+	// 		$(this).addClass("on").siblings($imgBtn).removeClass("on");
+	// 		$imgList.eq(n).fadeIn(200).siblings($imgList).fadeOut(200);
+	// 		bg(n + 1);
+	// 	}
+	// )
 	/*轮播背景墙颜色改变*/
 	function bg(n){
 		switch(n)
@@ -96,22 +96,22 @@
 		})
 	}
 	/*鼠标放上轮播停止，移开轮播继续*/
-	$imgList.hover(function(){
-		clearInterval(timer);
-	},function(){
-		$imgList.stop(true,true);
-		timer = setInterval(function(){
-		/*btn(current);*/
-		play(current);
-		current++;
-		if(current==length){
-		current=0;
-		};
-		bg(current);
-		$imgBtn.eq(current-1).addClass("on").siblings($imgBtn).removeClass("on");
-		},2000);
+	//$imgList.hover(function(){
+	//clearInterval(timer);
+	//},function(){
+	//	$imgList.stop(true,true);
+	//	timer = setInterval(function(){
+	//	/*btn(current);*/
+	//	play(current);
+	//	current++;
+	//	if(current==length){
+	//	current=0;
+	//	};
+	//	bg(current);
+	//	$imgBtn.eq(current-1).addClass("on").siblings($imgBtn).removeClass("on");
+	//	},2000);
 
-	});
+	//});
 
 	/*登录弹窗按钮*/
 	/*$loginBtn.click(function(){

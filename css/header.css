@@ -207,7 +207,7 @@ li{
 }
 a.head2-link-logo{
 	display: block;
-	background: url(../img/logo.png) no-repeat;
+	/* background: url(../img/logo.png) no-repeat; */
 	width: 297px;
 	height: 81px;
 }
@@ -521,35 +521,49 @@ a.search-btn{
     color: #666;
 }
 
-/* ***********************
-        按钮预定义样式
-*********************** */
-.defult{
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-.defult:hover{
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
-}
+
+
+@media (max-width: 768px) { 
+    #head1{
+        display: none;
+    }
+    #head2{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 100px;
+        z-index: 99;
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+    }
+    .head2-logo{
+        width: 100%;
+    }
+    .head2-logo img {
+        width: 50%;
+        padding-top: 10px;
+    }
+    #head2 .btn{
+        display: block !important;
+    }
+    .head2-seach{
+        display: none;
+    }
+    .head2-logo,
+    #head2 .contain,
+    #head2{
+        height: 70px;
+    }
+    .head2-logo{
+        padding-right: 0;
+    }
+    .nav-banner,.header-nav{
+        display: none;
+    }
+    a.head2-link-logo{
+        width: 217px !important;
+    }
+
+} 

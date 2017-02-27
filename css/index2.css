@@ -1,0 +1,18 @@
+/* .wrap-hot{
+    margin-top: 100px;
+} */
+.col-md-3 { width:20%;} 
+
+/* ========================================媒体查询======================================== */
+/* 小屏幕（平板，大于等于 768px） */
+@media (max-width: 768px) { 
+    .header-top{
+        display: none;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: @screen-md-min) { ... }
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: @screen-lg-min) { ... }

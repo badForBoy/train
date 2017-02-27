@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="renderer" content="webkit">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="format-detection" content="telephone=no,email=no"/>
 	<link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">
 
@@ -12,36 +12,10 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="iconFont/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="css/common/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/common/item.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<header>
-	<div class="container clearfix">
-		<div class="head2-logo pull-left">
-			<a class="head2-link-logo"></a>
-		</div>
-		<div class="head2-seach pull-left">
-			<div class="head2-seach-modal">
-				<i class="iconfont search-more">&#xe659;</i>
-				<a class="search-item" href="">
-					<span>机构<!-- <i class="iconfont">&#xe659;</i> --></span>
-					<span class="hidden">课程<!-- <i class="iconfont hidden">&#xe659;</i> --></span>
-				</a>
-				<input type="text" class="mod-search__input" placeholder="搜索课程">
-				<a class="search-btn" href=""><i class="iconfont">&#xe660;</i></a>
-				<!-- <input type="button" class="mod-search__button" value="搜索课程"> -->
-			</div>
-			<div class="seach-word-list">
-				<a href="">前端开发</a>
-				<a href="">Android开发</a>
-				<a href="">淘宝营销必修技</a>
-				<a href="">零基础学产品</a>
-			</div>
-		</div>
-		<div class="head2-login"></div>
-	</div>
-	</div>
-</header>
 <div id="head1">
 	<div class="contain clearfix">
 		<div class="head1-left pull-left">
@@ -80,11 +54,30 @@
 	</div>
 </div>	
 <div id="head2">
-	<div class="contain clearfix container">
+	<div class="contain clearfix">
 		<div class="test"></div>
 		<div class="head2-logo pull-left">
-			<a class="head2-link-logo" href=""></a>
+			<a class="head2-link-logo" href="">
+				<img src="img/logo.png" alt="">
+			</a>
 		</div>
+		
+		<button class="btn btn-default hidden" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		   <i class="iconfont">&#xe616;</i>
+		</button>
+		<div class="collapse" id="collapseExample">
+		  <div class="well">
+		    <ul>
+		    	<li><a href="list.html">商务礼仪</a></li>
+		    	<li><a href="list.html">谈判技巧</a></li>
+		    	<li><a href="list.html">营销策略</a></li>
+		    	<li><a href="list.html">行为心理学</a></li>
+		    	<li><a href="list.html">IT·互联网</a></li>
+		    	<li class="well-login"><a class="clearfix" href="login.html"><i class="iconfont pull-left ">&#xe602;</i>登录/注册 <i class="iconfont pull-right">&#xe65f;</i></a></li>
+		    </ul>
+		  </div>
+		</div>
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" value="0"></button>
 		<div class="head2-seach pull-left">
 			<div class="head2-seach-modal">
 				<i class="iconfont search-more">&#xe659;</i>
@@ -510,9 +503,9 @@
 				<!-- 左侧悬浮课程列表end -->
 
 				<!-- 轮播图begin -->
-				<div class="wrap-big-banner">
+				<!-- <div class="wrap-big-banner">
 					<div class="modal-big-banner">
-						<ul class="modal-big-banner-list">
+						<ul class="modal-big-banner-list clearfix">
 							<li><a href="courseDetails.html"><img src="img/banner_1.jpg" alt=""></a></li>
 							<li><a href="courseDetails.html"><img src="img/banner_2.jpg" alt=""></a></li>
 							<li><a href="courseDetails.html"><img src="img/banner_3.jpg" alt=""></a></li>
@@ -533,8 +526,46 @@
 							<span class="next pull-right"></span>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- 轮播图end -->
+				<!-- 轮播 begin -->
+				<div class="container-fluid">
+					<div class="box-big-banner">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="img/turn_1.jpg">
+						    </div>
+						    <div class="item">
+						      <img src="img/turn_2.jpg">
+						    </div>
+						    <div class="item">
+						      <img src="img/turn_2.jpg">
+						    </div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						    <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+						    <i class="iconfont">&#xe662;</i>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						    <!-- <span class="glyphicon-chevron-right" aria-hidden="true"><i class="iconfont">&#xe65f;</i></span> -->
+						    <span class="sr-only">Next</span>
+						    <i class="iconfont">&#xe65f;</i>
+						  </a>
+						</div>
+					</div>
+				</div>
+				<!-- 轮播 begin -->
 
 				<!-- 右侧登陆框登录之前 begin -->
 				<!-- <div class="wrap-login">
@@ -576,7 +607,7 @@
 
 <!-- 本周热门课程begin -->
 <div class="wrap-like">
-	<div class="modal-like">
+	<div class="modal-like ">
 		<div class="modal-like-head clearfix">
 			<h3 class="modal-like-title pull-left">热门课程</h3>
 			<a class="pull-right" href=""><i class="iconfont">&#xe79f;</i><span>换一批</span></a>
@@ -584,58 +615,68 @@
 		<div class="modal-like-box">
 			<ul class="modal-like-list clearfix">
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
-					</div>
-				</li>
-				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
-					</div>
-				</li>
-				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+				</li>
+				<li class="modal-like-item">
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
+					</div>
+				</li>
+				<li class="modal-like-item">
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 			</ul>
@@ -654,58 +695,68 @@
 		<div class="modal-like-box">
 			<ul class="modal-like-list clearfix">
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_5.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
-					</div>
-				</li>
-				<li class="modal-like-item">
-					<a href=""><img src="img/220_5.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_5.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_5.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
-					</div>
-				</li>
-				<li class="modal-like-item">
-					<a href=""><img src="img/220_5.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_5.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_5.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
+					<div class="box-item">
+						<a href=""><img src="img/220_5.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+				</li>
+				<li class="modal-like-item">
+					<div class="box-item">
+						<a href=""><img src="img/220_5.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
+					</div>
+				</li>
+				<li class="modal-like-item">
+					<div class="box-item">
+						<a href=""><img src="img/220_5.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 			</ul>
@@ -727,91 +778,75 @@
 			</div>
 			<ul class="modal-like-list modal-train-list clearfix">
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_6.jpg"></a>
-					<!-- <div class="item-status">
-						<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
-					</div> -->
-					<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
-					<div class="item-line">
-						<span class="price">    重点推荐   </span>
-						<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_6.jpg"></a>
+						<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
+						<div class="item-line clearfix">
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_6.jpg"></a>
-					<!-- <div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div> -->
-					<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
-					<div class="item-line">
-						<span class="price">    重点推荐   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_6.jpg"></a>
+						<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
+						<div class="item-line clearfix">
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_6.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_6.jpg"></a>
+						<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
+						<div class="item-line clearfix">
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_6.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_6.jpg"></a>
+						<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
+						<div class="item-line clearfix">
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_6.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_6.jpg"></a>
+						<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
+						<div class="item-line clearfix">
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_6.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_6.jpg"></a>
+						<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
+						<div class="item-line clearfix">
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_6.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_6.jpg"></a>
+						<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
+						<div class="item-line clearfix">
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_6.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_6.jpg"></a>
+						<p>教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍教育机构的简短介绍</p>
+						<div class="item-line clearfix">
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 			</ul>
@@ -833,91 +868,107 @@
 			</div>
 			<ul class="modal-like-list modal-train-list clearfix">
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
-					</div>
-				</li>
-				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
-					</div>
-				</li>
-				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
-					</div>
-				</li>
-				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
-					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 				<li class="modal-like-item">
-					<a href=""><img src="img/220_4.jpg"></a>
-					<div class="item-status">
-						<span>随到随学 （共6节）</span>
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
-					<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-					<div class="item-line">
-						<span class="price">    ¥99.00   </span>
-						<span class="source pull-right"><a href="">第一课堂</a></span>
+				</li>
+				<li class="modal-like-item">
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
+					</div>
+				</li>
+				<li class="modal-like-item">
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
+					</div>
+				</li>
+				<li class="modal-like-item">
+					<div class="box-item">
+						<a href=""><img src="img/220_4.jpg"></a>
+						<div class="item-status">
+							<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+						</div>
+						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
+						<div class="item-line clearfix">
+							<span class="price">    ¥99.00   </span>
+							<span class="source pull-right"><a href="">第一课堂第一课堂第一课堂第一课堂第一课堂</a></span>
+						</div>
 					</div>
 				</li>
 			</ul>
@@ -927,7 +978,7 @@
 <!-- 进阶推荐end -->
 
 <!-- 热点新闻begin -->
-<div class="wrap-like">
+<div class="wrap-like news">
 	<div class="modal-like">
 		<div class="modal-like-head clearfix">
 			<h3 class="modal-like-title pull-left">热点新闻</h3>
@@ -1023,7 +1074,7 @@
 
 <!-- 友情链接 begin -->
 <div class="wrap-friend footer">
-	<div class="contain modal-friend">
+	<div class="modal-friend container">
 		<h3>友情链接:</h3>
 		<ul class="clearfix">
 			<li><a href="">腾讯大学</a></li>
@@ -1085,7 +1136,7 @@
 		<li>
 			<i class="iconfont">&#xe619;</i>
 		</li>
-		<li class="bn hidden">
+		<li class="bn ">
 			<i class="iconfont">&#xe610;</i>
 		</li>
 	</ul>
@@ -1093,10 +1144,10 @@
 <!-- go to top end -->
 
 
-<!-- <script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script> -->
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>	
 <script type="text/javascript" src="js/top.js"></script>
 <script type="text/javascript" src="js/style.js"></script>
 <script type="text/javascript" src="js/search.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
 </body>
 </html>
