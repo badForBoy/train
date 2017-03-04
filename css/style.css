@@ -196,7 +196,7 @@ a.head2-link-logo{
     border: 2px solid #188EEE;
     background: #fff;
     position: relative;
-    /* overflow: hidden; */
+     overflow: hidden; 
 }
 .mod-search__input {
     margin: 6px 10px 6px 64px;
@@ -227,7 +227,6 @@ a.search-item{
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid #ddd; 
     cursor: pointer;
     vertical-align: top;
 }
@@ -259,7 +258,8 @@ a.search-btn{
     color: #fff;
     background: #147de2;
     width: 58px;
-    height: 40px;
+    height: 42px;
+    line-height: 42px;
     font-size: 26px;
     padding-left: 18px;
 }
@@ -328,8 +328,12 @@ a.search-btn{
 .modal-nav h3{
     margin: 0;
 }
+.modal-nav-li-first h3{
+    line-height: 50px;
+}
 .modal-nav-list{
 	width: 220px;
+    overflow: hidden;
 }
 .modal-nav-li-first{
 	height: 50px;
@@ -337,7 +341,6 @@ a.search-btn{
     width: 220px;
     background: #188EEE;
     padding-left: 15px;
-    padding-top: 12px;
 }
 .modal-nav-li{
 	position: relative;
@@ -345,7 +348,7 @@ a.search-btn{
     width: 220px;
     background: #0477C0;
     border-bottom: 1px solid #1681C4;
-    transition: .3s;
+    overflow: hidden;
 }
 .modal-nav-li:hover{
 	background: #0264A3;
@@ -458,235 +461,16 @@ a.search-btn{
 	margin-bottom: 10px;
 
 }
-
-/*登录板块*/
-.wrap-login{
-	position: absolute;
-	top: 20px;
-	right: 0;
-	width: 220px;
-    height: 260px;
-    background: rgba(255,255,255,.9);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5ffffff,endColorstr=#E5ffffff);
-}
-.wrap-modal-login{
-	width: 180px;
-	margin: 0 auto;
-}
-.modal-login-welcome{
-	color: #333;
-    font-size: 16px;
-    text-align: center;
-    width: 180px;
-    padding-top: 30px;
-}
-.modal-login-hi{
-    background: url(../img/userinfo-hi.png) no-repeat;
-    width: 114px;
-    height: 114px;
-    margin: 16px auto;
-}
-.modal-login-btn{
-    display: block;
-    width: 180px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 16px;
-    background-color: #188eee;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    cursor: pointer;
-}
-.modal-login-btn:hover{
-    background-color: #147de2;
-    color: #fff;
-}
-.modal-login-btn:active {
-    background-color: #1774c9;
-    color: #fff;
-}
-/* 登陆弹窗 */
-.modal-login-all{
-    display: none;
-}
-.modal-login-all-bg{
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: #000;
-    filter: alpha(opacity=60);
-    opacity: 0.6;
-    z-index: 10;
-
-}
-.modal-login-all-title{
-    position: fixed;
-    width: 520px;
-    height: 390px;
-    background: #fff;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    left: 0;
-    right: 0;
-    z-index: 20;
-    text-align: center;
-}
-.close{
-    width: 50px;
-    height: 50px;
-}
-.close i:hover{
-    background: #188eee;
-    color: #fff;
-}
-.close i{
-    display: inline-block;
-    color: #666;
-    font-size: 12px;
-    margin-top: 10px;
-    padding: 4px;
-    width: 47px;
-    height: 20px;
-    cursor: pointer;
-}
-.login-safe{
-    margin: 50px auto 16px;
-    font-size: 20px;
-    color: #333;
-}
-.login-title{
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 36px;
-}
-.login-title a{
-    color: #188EEE;
-}
-.login-tips{
-    margin-bottom: 24px;
-}
-.login-tips-item{
-    display: inline-block;
-    text-align: center;
-    width: 100px;
-}
-.login-tips-item img{
-    width: 100px;
-    height: 100px;
-    background: #ddd;
-}
-.login-tips-item span{
-    width: 100px;
-    height: 24px;
-    line-height: 24px;
-    color: #666;
-    cursor: default;
-}
-.login-way,.login-other{
-    text-align: right;
-    padding: 0 10px;
-}
-.login-way{
-    padding-bottom: 8px;
-    border-bottom: 2px solid #eee;
-}
-.login-other p{
-    line-height: 34px;
-    color: #666;
-    font-size: 14px;
-    cursor: default;
-}
-/* 右侧登陆框登录之前 */
-.wrap-modal-login{
-    padding: 20px 0;
-}
-.mod-after img{
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-}
-.mod-after span{
-    display: inline-block;
-    line-height: 30px;
-    margin-top: 20px;
-}
-
-
-/* 轮播图 */
-.wrap-big-banner{
-    position: absolute;
-    left: 220px;
-}
-.modal-big-banner{
-    position: relative;
-    width: 760px;
-    height: 300px;
-    overflow: hidden;
-}
-ul.modal-big-banner-list{
-    position: absolute;
-    /* width: 3800px; */
-}
-ul.modal-big-banner-list li{
-    display: block;
-    /* float: left; */
-}
-.modal-big-banner-btn{
-    position: absolute;
-    border-radius: 24px;
-    background: rgba(0,0,0,.1);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000, endColorstr=#19000000);
-    zoom: 1;
-    padding: 0 20px;
-    height: 24px;
-    line-height: 22px;
-    text-align: center;
-    bottom: 15px;
-    left: 50%;
-    margin-left: -70px;
-}
-.modal-big-banner-btn ul{
-    margin-top: -1px;
-    display: inline-block;
-}
-.modal-big-banner-btn ul li{
-    display: inline-block;
-    vertical-align: middle;
-    vertical-align: baseline;
-    margin-bottom: -2px;
-    border-radius: 6px;
-    border: 1px solid #fff;
-    border: 1px solid rgba(255,255,255,.6);
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
-    cursor: pointer;
-}
-.modal-big-banner-btn ul li.on{
-    background: #fff;
-}
-.modal-big-banner-btn2{
-    position: absolute;
-    top: 110px;
-    padding: 0 10px;
-    width: 100%;
-}
-.modal-big-banner-btn2 span{
-    display: none;
-    width: 46px;
-    height: 70px;
-    cursor: pointer;
-    color: #fff;
-    background-color: rgba(0,0,0,.6);
+.carousel-indicators{
+    margin: 0 auto;
 }
 
 /***********
    推荐课程
 ***********/
+.change-other{
+    margin-top: 20px;
+}
 .wrap-active{
     width: 1200px;
     margin: 0 auto;
@@ -704,94 +488,7 @@ ul.modal-big-banner-list li{
     width: 326px;
     height: 121px;
 }
-/****************************
-     热门课程，推荐课程
-*****************************/
-.modal-like{
-    width: 1225px;
-    margin: 0 auto;
-    padding-top: 40px;
-}
-.modal-like-head{
-    margin: 0 12px;
-    cursor: default;
-    color: #202020;
-    border-bottom: 1px solid #DDD;
-    padding-bottom: 16px;
-}
-h3.modal-like-title{
-    font-size: 22px;
-    display: inline-block;
-}
-.modal-like-head a.pull-right{
-    margin-top: 12px;
-}
-.modal-like-head a.pull-right i{
-    color: #666;
-}
-.modal-like-head a.pull-right span{
-    margin-left: 4px;
-}
-.modal-like-box{
-    padding-top: 30px;
-}
-.modal-like-box .modal-like-list li.modal-like-item{
-    float: left;
-    width: 236px;
-    padding: 7px 7px 10px;
-    border: 1px solid transparent;
-    position: relative;
-    margin-left: 9px;
-}
-.modal-like-box .modal-like-list li.modal-like-item:hover{
-    border-color: #ddd;
-    box-shadow: 0 8px 16px 0 rgba(7,17,27,.2);
-}
-.item-status{
-    position: absolute;
-    height: 24px;
-    width: 220px;
-    padding: 0 4px;
-    line-height: 24px;
-    top: 115px;
-    color: #fff;
-    z-index: 1;
-    background: rgba(0,0,0,.6);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-.modal-like-item p{
-    margin-bottom: 8px;
-    text-overflow: -o-ellipsis-lastline;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;-webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    font-size: 14px;
-    cursor: default;
-    height: 40px;
-}
-.item-line .price{
-    color: #e85308;
-    font-size: 16px;
-}
-.item-line .source{
-    text-align: right;
-    display: inline-block;
-    width: 120px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-.item-line .source a{
-    color: #999;
-    font-size: 12px;
-}
-.item-line .source a:hover{
-    color: #188EEE;
-}
+
 /*********************
     金牌培训机构
 *********************/
@@ -804,10 +501,10 @@ h3.modal-like-title{
     vertical-align: middle;
     max-width: 240px;
     width: auto!important;
-    max-height: 434px;
+    max-height: 474px;
     height: auto!important;
-    top: 38px;
-    left: -5px;
+    top: 12px;
+    left: -17px;
     overflow: hidden;
 }
 .modal-train-list{
@@ -846,8 +543,14 @@ span.data{
 }
 
 .modal-news-hot{
-    padding-left: 38px;
-    width: 290px;
+    /* padding-left: 38px; */
+    width: 280px;
+}
+.news-box{
+    padding-left: 25px;
+}
+.hot-news li a{
+    width: 230px !important;
 }
 .modal-news-hot h3{
     font-size: 18px;
@@ -857,11 +560,9 @@ span.data{
     padding-top: 10px;
 }
 .modal-news-hot ul li{
-    width: 233px;
     overflow: hidden;
     height: 30px;
     overflow: hidden;
-    /*border-bottom: 1px dotted #ddd;*/
 }
 .modal-news-mech-list li span,
 .modal-news-hot li span{
@@ -896,6 +597,9 @@ span.data{
 .modal-news-hot li a{
     width: 156px;
 }
+.more-news li a{
+    width: 210px;
+}
 
 /*********************
     more
@@ -921,8 +625,9 @@ span.data{
     background: url(../img/renz_3.png) no-repeat;
 }
 .modal-more-item{
-    display: inline-block;
+    float: left;
     text-align: left;
+    width: 400px;
     width: 33%;
 }
 .modal-more-title{
@@ -1190,3 +895,104 @@ li.well-login a i.pull-left{
     }
 } 
 
+
+
+
+.carousel-indicators li{
+    float: left;
+}
+
+
+/* ===============test begin=============== */
+.list{
+    margin-top: 10px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.wrap-list{
+    width: 1224px;
+    /* margin: 0 -15px; */
+    margin-left: -12px;
+}
+.item-list{
+    width: 238px;
+    width: calc(20%);
+    border: 1px solid #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.item-list:hover{
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 16px 0 rgba(7,17,27,.2);
+}
+.box-item{
+    padding: 10px 10px 15px 10px;
+}
+.list-img{
+    position: relative;
+}
+.list-img .list-status{
+    position: absolute;
+    padding: 0 0px;
+    width: 220px;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    cursor: default;
+    background-color: rgba(0,0,0,.2);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+}
+.list-img .list-status span{
+    width: 100%;
+    display: inline-block;
+    padding: 0 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.box-item .list-titl{
+    height: 40px;
+    width: 220px;
+    padding: 0 4px;
+    margin: 5px 0 12px 0;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.list-line{
+    width: 220px;
+    height: 22px;
+    padding: 0 4px;
+}
+.list-line .source {
+    text-align: right;
+    display: inline-block;
+    width: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.list-line .source a{
+    font-size: 12px;
+}
+.list-line .price{
+    color: #e85308;
+    font-size: 16px;
+    cursor: default;
+}
+
+/* ========================金牌培训机构 进阶推荐======================== */
+.company{
+    min-height: 580px;
+}
+.company-list{
+    /* width: 1000px; */
+}
+.company-list .item-list{
+    float: right !important;
+}
