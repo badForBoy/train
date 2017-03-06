@@ -126,7 +126,7 @@ i.star-gray{
 	border-bottom: 1px solid #ddd;
 }
 .details-nav li{
-	display: inline-block;
+	float: left;
 	padding: 0 20px;
 	font-size: 16px;
 	line-height: 48px;
@@ -167,12 +167,14 @@ i.star-gray{
 
 /* 老师 */
 .th-item{
-	width: 300px;
+	width: 25%;
 	max-height: 542px; 
-	padding: 20px;
 	color: #666;
 	margin-bottom: 30px;
 	overflow: hidden;
+}
+.box-item{
+	padding: 20px;
 }
 .th-item p,
 .th-item h1{

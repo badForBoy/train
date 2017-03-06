@@ -9,6 +9,7 @@
 	<title>课程详情</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="iconFont/iconfont.css">
+	<link rel="stylesheet" href="css/common/item.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/courseDetails.css">
 </head>
@@ -22,7 +23,7 @@
 						<span>您好，欢迎来到唐石<span/>
 					</li>
 					<li>
-						<a href="login.html">请登陆</a>
+						<a href="">请登陆</a>
 					</li>
 					<li>
 						<a href="">免费注册</a>
@@ -56,7 +57,9 @@
 		<div class="contain clearfix">
 			<div class="test"></div>
 			<div class="head2-logo pull-left">
-				<a class="head2-link-logo" href=""></a>
+				<a class="head2-link-logo" href="">
+					<img src="img/logo.png" alt="">
+				</a>
 			</div>
 			<div class="head2-seach pull-left">
 				<div class="head2-seach-modal">
@@ -80,7 +83,11 @@
 		</div>
 		<div class="header-nav">
 			<div class="contain clearfix">
-				<div class="nav-all pull-left"><i class="iconfont">&#xe616;</i>全部课程</div>
+				<div class="nav-all pull-left">
+					<div class="box-nav-all">
+						<i class="iconfont">&#xe616;</i>全部课程
+					</div>
+				</div>
 				<div class="nav-list pull-left">
 					<div class="nav-item"><a href="index.html">首页</a></div>
 					<div class="nav-item"><a href="">培训课程</a></div>
@@ -483,6 +490,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- 顶部通栏 end -->
 
 	<!-- 课程基本信息 begin -->
@@ -524,7 +532,7 @@
 	<div class="details">
 		<div class="content clearfix">
 			<div class="details-content pull-left">
-				<ul class="details-nav">
+				<ul class="details-nav clearfix">
 					<li class="on">课程介绍</li>
 					<li>课程章节</li>
 					<li>学员评论(188)</li>
@@ -790,66 +798,86 @@
 				</div>
 			</div>
 			<div class="details-company pull-left">
-				<div class="teacher">
-					<h3 class="company-bit">机构信息</h3>
-					<div class="company-bd">
-						<div class="medias">
-							<a href="company.html">
-								<img class="media" src="img/userinfo-hi.png" alt="">
-								<span class="name">第一课堂</span>
-							</a>
-							<p class="job">成就的XXXX</p>
-						</div>
-						<p class="desc">把经验传递给有梦想的人，振兴中国职业教育，打造一流教育品牌！</p>
-						<div class="contact">
-							<a href=""><img src="img/details/contact.jpg" alt=""></a>
-						</div>
-					</div>
-				</div>
-				<div class="recommend">
-					<h3>推荐课程</h3>
-					<div class="modal-like-item">
-						<a href=""><img src="img/220_2.jpg"></a>
-						<div class="item-status">
-							<span>随到随学 （共6节）</span>
-						</div>
-						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-						<div class="item-line">
-							<span class="price">    ¥99.00   </span>
-							<span class="source pull-right"><a href="">第一课堂</a></span>
+				<div class="box-company">
+					<div class="teacher">
+						<h3 class="company-bit">机构信息</h3>
+						<div class="company-bd">
+							<div class="medias">
+								<a href="company.html">
+									<img class="media" src="img/userinfo-hi.png" alt="">
+									<span class="name">第一课堂</span>
+								</a>
+								<p class="job">成就的XXXX</p>
+							</div>
+							<p class="desc">把经验传递给有梦想的人，振兴中国职业教育，打造一流教育品牌！</p>
+							<div class="contact">
+								<a href=""><img src="img/details/contact.jpg" alt=""></a>
+							</div>
 						</div>
 					</div>
-					<div class="modal-like-item">
-						<a href=""><img src="img/220_2.jpg"></a>
-						<div class="item-status">
-							<span>随到随学 （共6节）</span>
-						</div>
-						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-						<div class="item-line">
-							<span class="price">    ¥99.00   </span>
-							<span class="source pull-right"><a href="">第一课堂</a></span>
-						</div>
-					</div>
-					<div class="modal-like-item">
-						<a href=""><img src="img/220_2.jpg"></a>
-						<div class="item-status">
-							<span>随到随学 （共6节）</span>
-						</div>
-						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-						<div class="item-line">
-							<span class="price">    ¥99.00   </span>
-							<span class="source pull-right"><a href="">第一课堂</a></span>
-						</div>
-					</div>
-					<div class="modal-like-item">
-						<a href=""><img src="img/220_2.jpg"></a>
-						<div class="item-status">
-							<span>随到随学 （共6节）</span>
-						</div>
-						<p><a href="">股票视频教程-K线组合投资攻击战法-K线组合战法-教你学炒股</a></p>
-						<div class="item-line">
-							<span class="price">    ¥99.00   </span>
-							<span class="source pull-right"><a href="">第一课堂</a></span>
+					<div class="recommend">
+						<h3>推荐课程</h3>
+						<div class="wrap-list clearfix">
+							<div class="item-list pull-right">
+								<div class="box-item">
+									<div class="list-img">
+										<a href="courseDetails.html"><img src="img/220_4.jpg"></a>
+										<div class="list-status">
+											<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+										</div>
+									</div>
+									<p class="list-titl"><a href="courseDetails.html">股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程</a></p>
+									<div class="list-line clearfix">
+										<span class="price pull-left">    ¥99.00   </span>
+										<span class="source pull-right"><a href="company.html">第一课堂第一课堂第一课堂第一课堂</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="item-list pull-right">
+								<div class="box-item">
+									<div class="list-img">
+										<a href="courseDetails.html"><img src="img/220_4.jpg"></a>
+										<div class="list-status">
+											<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+										</div>
+									</div>
+									<p class="list-titl"><a href="courseDetails.html">股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程</a></p>
+									<div class="list-line clearfix">
+										<span class="price pull-left">    ¥99.00   </span>
+										<span class="source pull-right"><a href="company.html">第一课堂第一课堂第一课堂第一课堂</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="item-list pull-right">
+								<div class="box-item">
+									<div class="list-img">
+										<a href="courseDetails.html"><img src="img/220_4.jpg"></a>
+										<div class="list-status">
+											<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+										</div>
+									</div>
+									<p class="list-titl"><a href="courseDetails.html">股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程</a></p>
+									<div class="list-line clearfix">
+										<span class="price pull-left">    ¥99.00   </span>
+										<span class="source pull-right"><a href="company.html">第一课堂第一课堂第一课堂第一课堂</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="item-list pull-right">
+								<div class="box-item">
+									<div class="list-img">
+										<a href="courseDetails.html"><img src="img/220_4.jpg"></a>
+										<div class="list-status">
+											<span>随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）随到随学 （共6节）</span>
+										</div>
+									</div>
+									<p class="list-titl"><a href="courseDetails.html">股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程股票视频教程</a></p>
+									<div class="list-line clearfix">
+										<span class="price pull-left">    ¥99.00   </span>
+										<span class="source pull-right"><a href="company.html">第一课堂第一课堂第一课堂第一课堂</a></span>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -871,9 +899,10 @@
 	<!-- 友情链接 end -->
 
 
-<script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="js/header.js"></script>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>	
 <script type="text/javascript" src="js/courseDetails.js"></script>
 <script type="text/javascript" src="js/search.js"></script>	
+<script type="text/javascript" src="js/header.js"></script>		
 </body>
 </html>

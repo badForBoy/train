@@ -1,7 +1,6 @@
 ;(function(){
 	var $navAll = $(".nav-all");
 	var $modalNav = $(".modal-nav");
-	var $modalLi = $(".modal-nav-list");
 
 	var $navList = $(".modal-nav-li");
 	var $navSide = $(".modal-nav-side");
@@ -12,6 +11,7 @@
 	;
 
 	$navAll.hover(function(){
+		//debugger
 		$modalNav.fadeIn(100)
 	});
 	$modalNav.hover(function() {

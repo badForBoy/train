@@ -195,6 +195,7 @@ li{
 #head2 .contain{
     position: relative;
     width: 1200px;
+    z-index: 999;
 }
 
 .head2-logo{
@@ -254,7 +255,6 @@ a.search-item{
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid #ddd; 
     cursor: pointer;
     vertical-align: top;
 }
@@ -281,12 +281,13 @@ a.search-item span i{
 a.search-btn{
     position: absolute;
     right: -2px;
-    top: -2px;
+    top: 0px;
     display: block;
     color: #fff;
     background: #147de2;
     width: 58px;
-    height: 40px;
+    height: 38px;
+    line-height: 42px;
     font-size: 26px;
     padding-left: 18px;
 }
@@ -314,18 +315,21 @@ a.search-btn{
     height: 51px;
     line-height: 51px;
     width: 220px;
-    padding: 0 15px;
     background: #0264A3;
     cursor: default;
     color: #fff;
     font-size: 14px;
     font-size: 16px;
 }
+.box-nav-all{
+    padding: 0 15px;
+}
 .nav-all i{
     font-size: 22px;
 }
 .header-nav .nav-item{
-	display: inline-block;
+    float: left;
+	/* display: inline-block; */
     vertical-align: middle;
     position: relative;
     font-size: 16px;
@@ -363,7 +367,7 @@ a.search-btn{
     position: absolute;
     top: 51px;
     left: 0;
-    z-index: 3;
+    z-index: 99999;
 }
 .modal-nav-list{
     width: 220px;
@@ -506,7 +510,7 @@ a.search-btn{
     background: #282828;
     width: 100%;
     height: auto;
-    padding: 28px 0 20px 0;
+    /* padding: 28px 0 20px 0; */
 }
 .modal-friend-icon{
     /*position: absolute;*/

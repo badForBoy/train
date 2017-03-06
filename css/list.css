@@ -2,10 +2,10 @@
 	margin-bottom: 60px;
 }
 .aside-left{
-	width: 948px;
+	width: 962px;
 }
 .aside-right{
-	width: 252px;
+	width: 238px;
 }
 .course-header{
 	float: left;
@@ -105,4 +105,18 @@ dd a{
 	.modal-like-list{
 		margin-bottom: 130px; 
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.aside-left .wrap-list{
+	margin-left: -12px;
 }

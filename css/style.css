@@ -196,7 +196,6 @@ a.head2-link-logo{
     border: 2px solid #188EEE;
     background: #fff;
     position: relative;
-     overflow: hidden; 
 }
 .mod-search__input {
     margin: 6px 10px 6px 64px;
@@ -236,16 +235,13 @@ a.search-item{
 a.search-item span{
     display: inline-block;
     position: relative;
-    height: 34px;
+    height: 36px;
     width: 62px;
     color: #333;
     font-size: 12px;
     text-indent: 10px;
-    line-height: 34px;
+    line-height: 42px;
     background: #fff; 
-}
-a.search-item span.hidden{
-    display: none;
 }
 a.search-item span i{
     padding-left: 12px;
@@ -253,24 +249,16 @@ a.search-item span i{
 a.search-btn{
     position: absolute;
     right: -2px;
-    top: -2px;
+    top: 0px;
     display: block;
     color: #fff;
     background: #147de2;
     width: 58px;
-    height: 42px;
+    height: 38px;
     line-height: 42px;
     font-size: 26px;
     padding-left: 18px;
 }
-/* .mod-search__button{
-    margin-left: -4px;
-    width: 58px;
-    height: 36px;
-    background: #188EEE;
-    border: none;
-    color: #fff;
-} */
 .seach-word-list a{
 	display: inline-block;
     vertical-align: middle;
@@ -299,9 +287,16 @@ a.search-btn{
 	display: inline-block;
     vertical-align: middle;
     position: relative;
-    padding: 14px 16px 10px 9px;
+    padding: 14px 20px 10px 13px;
     font-size: 16px;
     color: #333;
+}
+.wrap-litter-banner ul li a{
+    font-size: 16px;
+    color: #333;
+}
+.wrap-litter-banner ul li a:hover{
+    color: #188eee;
 }
 .wrap-banner-bg{
 	height: 300px;
@@ -925,7 +920,7 @@ li.well-login a i.pull-left{
     margin-bottom: 10px;
 }
 .item-list:hover{
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     box-shadow: 0 8px 16px 0 rgba(7,17,27,.2);
 }
 .box-item{
@@ -936,14 +931,14 @@ li.well-login a i.pull-left{
 }
 .list-img .list-status{
     position: absolute;
-    padding: 0 0px;
+    padding: 6px 0px 0 0;
     width: 220px;
     bottom: 0;
     left: 0;
     color: #fff;
     cursor: default;
     background-color: rgba(0,0,0,.2);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);
 }
 .list-img .list-status span{
     width: 100%;

@@ -8,6 +8,9 @@ i.star-gray{
 	margin-bottom: 0px;
 }
 /* 课程基本信息 */
+.details .content{
+	margin-bottom: 20px;
+}
 
 .basic{
 	background: #fff;
@@ -22,10 +25,12 @@ i.star-gray{
 	background: #fff;
 }
 .details-company{
-	width: 330px;
-	margin-left: 10px;
-	padding: 20px;
+	width: 275px;
+	margin-left: 20px;
 	background: #fff;
+}
+.box-company{
+	padding: 20px;
 }
 .basic-info{
 	position: relative;
@@ -85,13 +90,17 @@ i.star-gray{
 	color: #fff;
 }
 
+.contact{
+	overflow: hidden;
+}
+
 /* 课程详情 */
 .details{
 	margin-top: 20px;
 	padding-bottom: 20px; 
 }
 .details-nav li{
-	display: inline-block;
+	float: left;
 	padding: 0 20px;
 	font-size: 16px;
 	line-height: 48px;
