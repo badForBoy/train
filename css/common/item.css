@@ -5,7 +5,7 @@
     text-align: left;
 }
 /* ====================课程列表==================== */
-.modal-like-box{
+/* .modal-like-box{
     padding-top: 30px;
 }
 .modal-like-box .modal-like-list li.modal-like-item{
@@ -75,13 +75,13 @@
     text-overflow: ellipsis;
     display: -webkit-box;-webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    height: 38px;/* 兼容ie超出隐藏 */
+    height: 38px;兼容ie超出隐藏
     overflow: hidden;
 }
 .item-line .price{
     color: #e85308;
     font-size: 16px;
-}
+} */
 
 button.btn{
     float: right;
@@ -533,7 +533,7 @@ a.btn{
     position: absolute;
     padding: 6px 0px 0 0;
     width: 220px;
-    bottom: 5px;
+    bottom: 0;
     left: 0;
     color: #fff;
     cursor: default;
@@ -579,4 +579,13 @@ a.btn{
     color: #e85308;
     font-size: 16px;
     cursor: default;
+}
+.list-line .source a{
+    color: #9E7E6B;
+}
+.list-line .source a:hover{
+    text-decoration: underline;
+}
+.list-titl a{
+    color: #444 !important;
 }

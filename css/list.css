@@ -78,45 +78,16 @@ dd a{
 	margin-bottom: 40px;
 }
 
-@media (max-width: 768px) { 
-	.aside-right{
-		display: none;
-	}
-	dd{
-		width: 100%;
-	}
-	dd a{
-		background: #ddd;
-	    border-radius: 4px;
-	    margin-bottom: 10px;
-	}
-	dl{
-		margin: 0;
-	}
-	#list{
-		margin-top: 70px;
-	}
-	.course{
-		padding: 8px 10px;
-	}
-	.main{
-		margin-bottom: 0;
-	}
-	.modal-like-list{
-		margin-bottom: 130px; 
-	}
-}
-
-
-
-
-
-
-
-
-
-
 
 .aside-left .wrap-list{
 	margin-left: -12px;
+}
+.list-img .list-status{
+	bottom: 5px;
+}
+
+.course-list .aside-left,
+.company-list .aside-left{
+	width: 950px;
+	margin-right: 12px;
 }

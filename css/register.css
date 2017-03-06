@@ -174,3 +174,58 @@ button.btn_phone_code{
 	height: 320px;
 	margin-top: 40px;
 }
+
+
+.details-mod{
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+.img-vcode input{
+	width: 485px;
+}
+.img-vcode img{
+	right: 128px;
+}
+p.help-more{
+	margin: 0;
+}
+.mod-course i{
+	right: -50px;
+}
+.file input{
+	box-sizing: content-box;
+	/* height: 34px; */
+	/* border: 0;
+	    background: #edecea; */
+}
+
+.register-select a{
+    width: 100%;
+    height: 42px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #4871bf;
+    border-radius: 8px;
+    cursor: pointer;
+    zoom: 1;
+    background: linear-gradient( #4871bf, #3962b0);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.3);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.1);
+    color: #fff;
+    border: 1px solid #1b4697;
+}
+.register-select .item-btn{
+	margin-bottom: 20px;
+}
+.register-select .item-btn a{
+	text-decoration: none;
+}
+.register-select .item-btn a:hover{
+	background: linear-gradient( #5b89de, #3962b0);
+}

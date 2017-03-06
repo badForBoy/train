@@ -8,7 +8,7 @@ html {
     font-size: 12px;
     font-family: "PingFang SC","Microsoft Yahei",arial,\5b8b\4f53,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
 }
-body{
+body{ 
     position: relative !important;
     overflow: scroll;
     min-height: 100%;
@@ -190,7 +190,6 @@ li{
 #head2{
     background: #fff;
     width: 100%;
-    margin-bottom: 20px;
 }
 #head2 .contain{
     position: relative;
@@ -353,7 +352,7 @@ a.search-btn{
 /* .modal-nav-li-first h3 a:hover, */
 .nav-banner{
     background: #fff;
-    padding: 0 0 20px 0;
+    padding: 10px 0;
 }
 .nav-all i{
     margin-right: 8px;
@@ -510,7 +509,7 @@ a.search-btn{
     background: #282828;
     width: 100%;
     height: auto;
-    /* padding: 28px 0 20px 0; */
+    padding: 40px 0;
 }
 .modal-friend-icon{
     /*position: absolute;*/

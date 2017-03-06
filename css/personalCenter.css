@@ -1,6 +1,9 @@
 /* **************
 	左侧列表
 ***************** */
+.aside-left{
+	width: 220px;
+}
 .aside-left ul{
 	background: #fff;
 	width: 200px;
@@ -14,7 +17,7 @@
 }
 .aside-left ul li i{
 	display: block;
-	width: 100%;
+	width: 176px;
 	height: 100%;
 	padding-left: 20px;
 	color: #333;
@@ -40,6 +43,7 @@
 }
 
 .main{
+	width: 950px;
 	margin: 0 0 40px 30px;
 }
 
@@ -66,7 +70,7 @@
 	top: 0;
 }
 .item-content{
-	width: 970px;
+	width: 950px;
 	background: #fff;
     margin: 0;
     padding-top: 170px;
@@ -107,7 +111,7 @@
 	text-align: left;
 }
 .item-modal{
-	width: 970px;
+	width: 950px;
 	border: 1px solid #e5e5e5;
 	background: #fff;
 }
@@ -179,42 +183,7 @@ span.modal-bar-2{
 	margin-bottom: 10px;
 }
 /* ******学团tab****** */
-#item-team{
-	background: #fff;
-	/* border-bottom: 1px solid #e5e5e5; */
-}
-.item-modal-team{
-	/* border-top: 0; */
-}
-#item-team li{
-	display: inline-block;
-	padding: 0 32px 6px;
-	font-size: 16px;
-	line-height: 30px;
-	cursor: default;
-}
-#item-team li.on{
-	border-top: 3px solid #188eee;
-	border-left: 1px solid #e5e5e5;
-	border-right: 1px solid #e5e5e5;
-	border-bottom: 1px solid transparent;
-	color: #188eee;
-}
-#item-team li h1{
-	margin-bottom: 0;
-	line-height: 30px;
-}
-.modal-nothing,
-.item-modal-team{
-	padding: 170px 0;
-	text-align: center;
-	line-height: 36px;
-    font-size: 18px;
-    color: #999;
-}
-.modal-nothing a{
-	color: #188eee;
-}
+
 /* 购物车 */
 .shop{
 	border: 1px solid #ddd;
@@ -281,7 +250,6 @@ span.modal-bar-2{
 	padding: 20px;
 }
 .price{
-	padding: 20px;
 	margin: 10px auto;
 	width: 100%;
 	background: #188eee;
@@ -290,6 +258,9 @@ span.modal-bar-2{
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
     border-radius: 8px;
     color: #fff;
+}
+.box-price{
+	padding: 20px;
 }
 .prece-left i{
 	font-size: 88px;

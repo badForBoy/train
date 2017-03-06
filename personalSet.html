@@ -58,7 +58,9 @@
 		<div class="contain clearfix">
 			<div class="test"></div>
 			<div class="head2-logo pull-left">
-				<a class="head2-link-logo" href=""></a>
+				<a class="head2-link-logo" href="">
+					<img src="img/logo.png" alt="">
+				</a>
 			</div>
 			<div class="head2-seach pull-left">
 				<div class="head2-seach-modal">
@@ -82,7 +84,11 @@
 		</div>
 		<div class="header-nav">
 			<div class="contain clearfix">
-				<div class="nav-all pull-left"><i class="iconfont">&#xe616;</i>全部课程</div>
+				<div class="nav-all pull-left">
+					<div class="box-nav-all">
+						<i class="iconfont">&#xe616;</i>全部课程
+					</div>
+				</div>
 				<div class="nav-list pull-left">
 					<div class="nav-item"><a href="index.html">首页</a></div>
 					<div class="nav-item"><a href="">培训课程</a></div>
@@ -549,18 +555,6 @@
 									<a href="">更改</a>
 								</div>
 							</li>
-							<!-- <li class="clearfix">
-								<div class="left pull-left">
-									<i class="iconfont">&#xe622;</i>
-								</div>
-								<div class="center pull-left">
-									<p class="font1"><strong>社交账号</strong></p>
-									<p>绑定第三方帐号，可以直接登录，还可以将内容同步到以下平台，与更多好友分享</p>
-								</div>
-								<div class="right pull-right">
-									<a href="">更改</a>
-								</div>
-							</li> -->
 						</ul>
 					</div>
 					<div class="item-modal-team hidden">
@@ -667,12 +661,24 @@
 									</div>
 									<div class="wrap-course">
 										<div class="mod-course clearfix">
-											<label class="pull-left" for="id_code">验证码：</label>
-											<span class="title form-controls pull-left vcode">
-												<input type="text" id="" placeholder="请再次验证码">
+											<label class="pull-left" for="phone_code">手机验证码：</label>
+											<div class="title form-controls pull-left">
+												<input type="text" id="" placeholder="请输入验证码">
 												<i class="error iconfont hidden"></i>
 												<i class="success iconfont hidden"></i>
-											</span>
+												<span class="phone-vcode">发送验证码</span>
+											</div>
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix img-vcode">
+											<label class="pull-left" for="id_code">验证码：</label>
+											<div class="title form-controls pull-left">
+												<input type="text" id="" placeholder="请输入验证码">
+												<i class="error iconfont hidden"></i>
+												<i class="success iconfont hidden"></i>
+												<!-- <img class="id_code pull-left" src="img/id_code.jpg"> -->
+											</div>
 											<img class="id_code pull-left" src="img/id_code.jpg">
 										</div>
 									</div>

@@ -12,7 +12,6 @@
 		$blackout.fadeIn(100);
 	});
 	$edit.click(function(event) {
-		debugger
 		event.preventDefault();
 		$(this).parent().parent().parent().parent().find('.modal-personal').fadeIn(100);
 	});

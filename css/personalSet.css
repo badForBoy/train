@@ -27,9 +27,10 @@ select{
     box-sizing: border-box;
 }
 input{
+	box-sizing:content-box !important;
 	display: block;
     width: 100%;
-    padding: 6px 12px;
+    height: 21px;
     font-size: 14px;
     line-height: 1.42857143;
     color: #787d82;
@@ -38,6 +39,10 @@ input{
     border: 1px solid #ccc;
     border-radius: 2px;
     box-sizing: border-box;
+    padding-right: 0;
+}
+textarea{
+	width: 654px;
 }
 .info-set{
 	margin-bottom: 40px;
@@ -120,27 +125,42 @@ input{
 	border-radius: 4px;
 }
 
-.modal-bg{
-	position: absolute;
+
+.blackout{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 999;
+	/* background-color: rgba(0,0,0,.4); */
+	/* filter:alpha(opacity=60);  */  
+  	/* -moz-opacity:0.6;   
+  	-khtml-opacity: 0.6;   
+  	opacity: 0.6; */
+}
+ .modal-bg{
+	position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 999;
     background: #000;
 	filter:alpha(opacity=60);   
   	-moz-opacity:0.6;   
   	-khtml-opacity: 0.6;   
   	opacity: 0.6;
-}
+} 
 .modal-change{
 	position: absolute;
+	width: 940px;
 	left: 50%;
-	top: 50%;
+	top: 120px;
 	background: #fff;
-	margin-top: -300px;
-	margin-left: -380px;
-	z-index: 10;
+	margin-left: -470px;
+	z-index: 9999; 
 	border-radius: 8px;
 	padding: 20px 40px;
 }
@@ -276,10 +296,45 @@ input{
 	width: 600px;
 }
 .blackout .title{
-	width: 460px;
+	/* position: relative; */
+	height: 34px;
+}
+.modal-personal .title i,
+.blackout .title i,
+.blackout .title img{
+	position: absolute;
+	top: 1px;
+    right: -54px;
+    
+    height: 34px;
+    line-height: 34px;
+    border-radius: 0 4px 4px 0;
+}
+.phone-vcode{
+	position: absolute;
+	width: 110px;
+    text-align: center;
+	top: 0;
+    right: -54px;
+    height: 34px;
+    line-height: 34px;
+    background: #188eee;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
 }
 .next .wrap-help,
 .blackout .wrap-help{
 	border: 0;
 	padding: 0;
+}
+.img-vcode{
+	position: relative; 
+}
+.img-vcode img{
+	position: absolute;
+	top: 0;
+	right: 50px;
+}
+.img-vcode input{
+	width: 500px;
 }

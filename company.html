@@ -8,7 +8,7 @@
 	<meta name="format-detection" content="telephone=no,email=no"/>
 	<link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">
 	<title>培训机构</title>
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/common/bootstrap.min.css">
 	<link rel="stylesheet" href="iconFont/iconfont.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/common/item.css">
@@ -533,7 +533,45 @@
 				<div class="cf-info"></div>
 			</div>
 			<div class="basic pull-left">
-				<div class="banner">
+				<!-- 轮播 begin -->
+				<div class="container-fluid">
+					<div class="box-big-banner">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="img/900_1.jpg">
+						    </div>
+						    <div class="item">
+						      <img src="img/900_2.jpg">
+						    </div>
+						    <div class="item">
+						      <img src="img/900_2.jpg">
+						    </div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						    <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+						    <i class="iconfont">&#xe662;</i>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						    <!-- <span class="glyphicon-chevron-right" aria-hidden="true"><i class="iconfont">&#xe65f;</i></span> -->
+						    <span class="sr-only">Next</span>
+						    <i class="iconfont">&#xe65f;</i>
+						  </a>
+						</div>
+					</div>
+				</div>
+				<!-- 轮播 begin -->
+				<!-- <div class="banner">
 					<ul>
 						<li><a href="#"><img src="img/900_1.jpg" alt=""></a></li>
 						<li class="hidden"><a href=""><img src="img/900_2.jpg" alt=""></a></li>
@@ -546,7 +584,7 @@
 						<li></li>
 						<li></li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
@@ -977,6 +1015,7 @@
 <script type="text/javascript" src="js/courseDetails.js"></script>
 <script type="text/javascript" src="js/company.js"></script>
 <script type="text/javascript" src="js/search.js"></script>	
-<script type="text/javascript" src="js/header.js"></script>		
+<script type="text/javascript" src="js/header.js"></script>
+<script src="js/bootstrap.min.js"></script>			
 </body>
 </html>

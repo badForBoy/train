@@ -602,13 +602,16 @@ span.data{
 .wrap-more{
     width: 100%;
     height: auto;
-    padding: 80px 0 50px 0;
+    /* padding: 80px 0 50px 0; */
 }
 .modal-more-icon{
     width: 120px;
     height: 120px;
     margin-left: 70px;
-    padding: 80px 0 50px 0;
+    /* padding: 80px 0 50px 0; */
+}
+.modal-more{
+    padding: 80px 0;
 }
 .modal-more-icon_1{
     background: url(../img/renz_1.png) no-repeat;
@@ -715,7 +718,7 @@ span.data{
 .box-big-banner{
     position: absolute;
     right: 0;
-    width: 1000px;
+    width: 980px;
 }
 .carousel-control.left i,
 .carousel-control.right i{
@@ -971,6 +974,19 @@ li.well-login a i.pull-left{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    color: #9E7E6B;
+}
+.list-line .source a{
+    color: #9E7E6B;
+}
+.list-line .source a:hover{
+    text-decoration: underline;
+}
+.list-titl a{
+    color: #444 !important;
+}
+.company .list-line .source{
+    text-align: left;
 }
 .list-line .source a{
     font-size: 12px;

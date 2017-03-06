@@ -112,6 +112,7 @@ input{
 
 .wrap-friend{
 	background: #fff;
+	padding: 40px 0;
 }
 
 /* 找回密码 */
@@ -122,9 +123,20 @@ input{
 .id_code{
 	margin-bottom: 30px;
 }
+.id_code input{
+	width: 340px;
+}
 .box-forget h3{
 	text-align: center;
 }
 img.id_code{
+	width: 132px;
 	margin-left: 20px;
+}
+
+
+
+/* 个人注册 */
+.header{
+
 }
