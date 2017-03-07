@@ -45,7 +45,7 @@
 		if ($searchItem.hasClass('hidden')) {
 			$searchItem.removeClass('hidden')
 		} else {
-			$(this).addClass("").siblings($searchItem).addClass("hidden")
+			//$(this).addClass("").siblings($searchItem).addClass("hidden")
 		}
 
 		//$(this).addClass("").siblings($imgBtn).addClass("hidden");

@@ -1,3 +1,6 @@
+.contant{
+	margin-bottom: 60px;
+}
 /* **************
 	左侧列表
 ***************** */
@@ -87,7 +90,7 @@
 	border-bottom: 1px solid #e5e5e5;
 }
 .item-all li{
-	display: inline-block;
+	float: left;
 	padding: 0 32px 6px;
 	font-size: 20px;
 	line-height: 30px;

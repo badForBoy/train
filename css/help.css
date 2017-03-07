@@ -1,11 +1,23 @@
+h3{
+	margin: 0;
+}
+.wellcome{
+	margin-top: 0;
+}
 #help{
 	margin-bottom: 60px;
 }
 .fm-header{
 	height: 50px;
-    border-bottom: 1px solid #ddd;
     margin-bottom: 40px;
 }
 .fm-header p{
 	font-size: 22px;
+}
+
+.img-vcode img{
+	left: 670px;
+}
+.wrap-help{
+	border: none;
 }

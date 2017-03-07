@@ -2,10 +2,11 @@
 .money-all{
 	width: 680px;
 	padding: 20px 40px;
-	border-right: 1px solid #ddd;
+	/* border-right: 1px solid #ddd; */
 }
 .money-card{
-	width: 288px;
+	display: none;
+	width: 268px;
 	text-align: center;
 
 }
@@ -115,7 +116,7 @@ span.reduce{
 }
 
 /* ***************添加课程*************** */
-.mod-course label{
+/* .mod-course label{
 	float: left;
 	width: 120px;
 	text-align: right;
@@ -146,11 +147,16 @@ span.reduce{
 }
 .empty{
 	height: 10px;
-}
+} */
 .teacher-list .item-more-info p{
 	margin: 5px 0;
 }
 .page-wrap{
 	margin: 20px 0; 
 	text-align: center;
+}
+
+
+.wrap-help{
+	border: none;
 }

@@ -110,10 +110,10 @@ label{
     padding: 0px 10px;
     border: 1px solid #ddd;
 }
-#phone_code,
+/* #phone_code,
 #id_code{
 	width: 203px;
-}
+} */
 .id_code{
 	margin-right: 10px;
 }
@@ -228,4 +228,66 @@ p.help-more{
 }
 .register-select .item-btn a:hover{
 	background: linear-gradient( #5b89de, #3962b0);
+}
+
+.file{
+	padding: 10px 0;
+	height: 60px;
+}
+.file{
+	position: relative;
+}
+.file label{
+	position: absolute;
+	left: 140px;
+	text-align: center;
+	margin: 0;
+}
+.file input{
+	position:absolute;
+	clip:rect(0 0 0 0);
+}
+.file .help-more{
+	position: absolute;
+    left: 270px;
+    top: 21px;
+}
+textarea{
+	width: 654px;
+}
+
+.standard_select{ /*边框*/
+	display:inline-block;
+	border: 1px solid #ccc;
+	padding:5px; /*调整此处改变select高度*/
+	background-color: #fff;
+	border-radius: 2px;
+	margin-right: 4px;
+}
+.select_shelter{ /*遮挡默认边框*/
+	display:inline-block;
+	width:100px;
+	*width:98px;
+	overflow:hidden;
+}
+.select_shelter select{
+	*margin:-2px;
+	padding:1px;
+	border:0px;
+	width:100px; /*select的宽度*/
+}
+.form-checked input{
+	display: inline-block;
+}
+.phone-vcode{
+	position: absolute;
+	width: 110px;
+    text-align: center;
+	top: 0;
+    right: -54px;
+    height: 34px;
+    line-height: 34px;
+    background: #188eee;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
 }

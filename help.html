@@ -6,11 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="format-detection" content="telephone=no,email=no"/>
-	<title>年度新闻</title>
+	<title>帮我选课</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="iconFont/iconfont.css">
-	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/common/item.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" href="css/personalSet.css">
+	<link rel="stylesheet" href="css/register.css">
 	<link rel="stylesheet" href="css/help.css">
 </head>
 <body>
@@ -57,7 +59,9 @@
 		<div class="contain clearfix">
 			<div class="test"></div>
 			<div class="head2-logo pull-left">
-				<a class="head2-link-logo" href=""></a>
+				<a class="head2-link-logo" href="">
+					<img src="img/logo.png" alt="">
+				</a>
 			</div>
 			<div class="head2-seach pull-left">
 				<div class="head2-seach-modal">
@@ -81,7 +85,11 @@
 		</div>
 		<div class="header-nav">
 			<div class="contain clearfix">
-				<div class="nav-all pull-left"><i class="iconfont">&#xe616;</i>全部课程</div>
+				<div class="nav-all pull-left">
+					<div class="box-nav-all">
+						<i class="iconfont">&#xe616;</i>全部课程
+					</div>
+				</div>
 				<div class="nav-list pull-left">
 					<div class="nav-item"><a href="index.html">首页</a></div>
 					<div class="nav-item"><a href="">培训课程</a></div>
@@ -489,12 +497,110 @@
 
 	<div id="help">
 		<div class="contain clearfix">
-			<div class="pull-left">
+			<div class="">
 				<div class="coordinate">
 					<a href="index.html">首页</a><i class="iconfont"></i><a href="news.html">帮我选课</a>
 				</div>
 				<div class="wrap-help">
-					<form action="">
+					<div class="fm-header text-center"><p>让专业培训顾问帮您选课</p></div>
+					<form action="" enctype="multipart/form-data">
+						<div>
+							<div class="wrap-course has-success">
+								<div class="mod-course clearfix">
+									<label for="name">您的姓名：</label>
+									<div class="title">
+										<input id="name" type="text" placeholder="请输入16个字符以下的名字">
+										<i class="success iconfont hidden"></i>
+										<i class="error iconfont hidden"></i>
+									</div>												
+								</div>
+							</div>
+							<div class="wrap-course">
+								<div class="mod-course clearfix">
+									<label for="">您在哪里：</label>
+									<div class="title">
+										<span class="standard_select"><!--边框-->
+											<span class="select_shelter"><!--遮挡默认边框-->
+											<select id="selId">
+												
+											</select>
+											</span>
+										</span>
+										<span class="standard_select"><!--边框-->
+											<span class="select_shelter"><!--遮挡默认边框-->
+											<select id="idcat">
+												
+											</select>
+											</span>
+										</span>
+										<span class="standard_select"><!--边框-->
+											<span class="select_shelter"><!--遮挡默认边框-->
+											<select id="job">
+												
+											</select>
+											</span>
+										</span>
+										<!-- <select name="" id="selId"></select>
+										<select name="" id="idcat"></select>
+										<select name="" id="job"></select> -->
+									</div>
+								</div>
+							</div>
+							<div class="wrap-course">
+								<div class="mod-course clearfix">
+									<label class="pull-left" for="phone_code">手机：</label>
+									<div class="title form-controls pull-left">
+										<input type="text" id="phone_code" placeholder="请输入验证码">
+										<i class="error iconfont hidden"></i>
+										<i class="success iconfont hidden"></i>
+										<span class="phone-vcode">发送验证码</span>
+									</div>
+								</div>
+							</div>
+							<div class="wrap-course has-success">
+								<div class="mod-course clearfix">
+									<label for="email">邮箱：</label>
+									<div class="title">
+										<input id="email" type="text" placeholder="邮箱地址">
+										<i class="success iconfont hidden"></i>
+										<i class="error iconfont hidden"></i>
+									</div>												
+								</div>
+							</div>
+							<div class="wrap-course">
+								<div class="mod-course clearfix">
+									<label for="address">您想学什么：</label>
+									<div class="title">
+										<textarea name="" id="address" cols="30" rows="3" placeholder="请输入120个以下字符"></textarea>
+										<!-- <i class="success iconfont hidden"></i>
+										<i class="error iconfont hidden"></i> -->
+										<p class="help-more">120/120</p>
+									</div>												
+								</div>
+							</div>
+							<div class="wrap-course">
+								<div class="mod-course clearfix img-vcode">
+									<label class="pull-left" for="img_code">验证码：</label>
+									<div class="title form-controls">
+										<input type="text" id="img_code" placeholder="请输入验证码" accept="image/jpg">
+										<i class="error iconfont hidden"></i>
+										<i class="success iconfont hidden"></i>
+										<!-- <img class="id_code pull-left" src="img/id_code.jpg"> -->
+									</div>
+									<img class="id_code" src="img/id_code.jpg">
+								</div>
+							</div>
+							<div class="wrap-course">
+								<div class="mod-course clearfix">
+									<label class="empty" for=""></label>
+									<div class="title">
+										<a class="btn-primary" href="">提交</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<!-- <form action="">
 						<div>
 							<div class="fm-header text-center"><p>让专业培训顾问帮您选课</p></div>
 							<div class="wrap-course">
@@ -531,7 +637,7 @@
 									<div class="title">
 										<textarea name="" id="" cols="30" rows="5"></textarea>
 									</div>
-
+					
 								</div>
 							</div>
 							<div class="wrap-course has-error">
@@ -540,7 +646,7 @@
 									<span class="form-controls pull-left">
 										<input type="text" id="id_code">
 									</span>
-									<span class="iferror"><i class="iconfont"><!-- 验证码错误 --></i></span>
+									<span class="iferror"><i class="iconfont">验证码错误</i></span>
 									<img class="id_code pull-left" src="img/id_code.jpg">
 								</div>
 							</div>
@@ -553,7 +659,7 @@
 								</div>
 							</div>
 						</div>
-					</form>
+					</form> -->
 				</div>
 			</div>
 			<div class="pull-right"></div>

@@ -36,7 +36,7 @@
 					<div class="bl-header text-center">
 						<span>欢迎注册唐石科技</span>
 					</div>
-					<form action="">
+					<form action="" enctype="multipart/form-data">
 						<div>
 							<div class="wrap-course has-success">
 								<div class="mod-course clearfix">
@@ -52,9 +52,30 @@
 								<div class="mod-course clearfix">
 									<label for="">城市：</label>
 									<div class="title">
-										<select name="" id="selId"></select>
+										<span class="standard_select"><!--边框-->
+											<span class="select_shelter"><!--遮挡默认边框-->
+											<select id="selId">
+												
+											</select>
+											</span>
+										</span>
+										<span class="standard_select"><!--边框-->
+											<span class="select_shelter"><!--遮挡默认边框-->
+											<select id="idcat">
+												
+											</select>
+											</span>
+										</span>
+										<span class="standard_select"><!--边框-->
+											<span class="select_shelter"><!--遮挡默认边框-->
+											<select id="job">
+												
+											</select>
+											</span>
+										</span>
+										<!-- <select name="" id="selId"></select>
 										<select name="" id="idcat"></select>
-										<select name="" id="job"></select>
+										<select name="" id="job"></select> -->
 									</div>
 								</div>
 							</div>
@@ -62,7 +83,7 @@
 								<div class="mod-course clearfix">
 									<label for="address">详细地址：</label>
 									<div class="title">
-										<textarea name="" id="address" cols="30" rows="3" placeholder="请输入120个字符以下的名字"></textarea>
+										<textarea name="" id="address" cols="30" rows="3" placeholder="请输入120个以下字符"></textarea>
 										<!-- <i class="success iconfont hidden"></i>
 										<i class="error iconfont hidden"></i> -->
 										<p class="help-more">120/120</p>
@@ -111,6 +132,16 @@
 								</div>
 							</div>
 							<div class="wrap-course file">
+								<label class="ui-primary" for="xFile" >
+									<i class="iconfont">&#xe6b9;</i>上传文件
+								</label>
+								<p class="help-more">请上传机构教学执照</p>
+								<div>
+									<input type="file" id="xFile">
+									
+								</div>
+							</div>
+							<!-- <div class="wrap-course file">
 								<div class="mod-course clearfix">
 									<label class="pull-left" for="license">机构执照：</label>
 									<div class="title form-controls pull-left">
@@ -120,12 +151,12 @@
 										<p class="help-more">请上传机构教学执照</p>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<div class="wrap-course">
 								<div class="mod-course clearfix img-vcode">
 									<label class="pull-left" for="img_code">验证码：</label>
 									<div class="title form-controls">
-										<input type="text" id="img_code" placeholder="请输入验证码">
+										<input type="text" id="img_code" placeholder="请输入验证码" accept="image/jpg">
 										<i class="error iconfont hidden"></i>
 										<i class="success iconfont hidden"></i>
 										<!-- <img class="id_code pull-left" src="img/id_code.jpg"> -->
@@ -144,10 +175,7 @@
 							</div>
 						</div>
 					</form>
-					
-				
 				<!-- 机构注册 end -->
-
 			</div>
 		</div>
 

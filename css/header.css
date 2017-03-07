@@ -189,7 +189,6 @@ li{
 /*head2*/
 #head2{
     background: #fff;
-    width: 100%;
 }
 #head2 .contain{
     position: relative;
@@ -424,11 +423,14 @@ a.search-btn{
     color: #fff;
 }
 .modal-nav-li-head h3{
-    width: 100%;
+    width: 95%;
     display: inline-block;
-    padding: 11px 10px 0 15px;
+    padding: 11px 0px 0 15px;
 }
 .modal-nav-li-head h3 a i{
+    position: absolute;
+    right: 15px;
+    top: 25px;
     font-size: 12px;
     color: #4a9dcf; 
     font-weight: normal;

@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="iconFont/iconfont.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/common/item.css">
+	<link rel="stylesheet" href="css/register.css">
 	<link rel="stylesheet" href="css/personalSet.css">
 </head>
 <body>
@@ -647,23 +648,54 @@
 							<p>88888888@qq.com</p>
 						</div>
 						<div class="wrap-help">
-							<form action="">
+							
+							<form action="" enctype="multipart/form-data">
 								<div>
 									<div class="wrap-course has-success">
 										<div class="mod-course clearfix">
-											<label for="">密码</label>
+											<label for="passworld">密码：</label>
 											<div class="title">
-												<input type="passworld" placeholder="请输入16个字符以下的名字">
-												<i class="success iconfont hidden">&#xe696;</i>
-												<i class="error iconfont hidden">&#xe613;</i>
+												<input id="password" type="text" placeholder="密码">
+												<i class="success iconfont hidden"></i>
+												<i class="error iconfont hidden"></i>
+											</div>												
+										</div>
+									</div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="passworld">确认密码：</label>
+											<div class="title">
+												<input id="password" type="text" placeholder="再次输入密码">
+												<i class="success iconfont hidden"></i>
+												<i class="error iconfont hidden"></i>
+											</div>												
+										</div>
+									</div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="email">新的邮箱：</label>
+											<div class="title">
+												<input id="email" type="text" placeholder="新的邮箱">
+												<i class="success iconfont hidden"></i>
+												<i class="error iconfont hidden"></i>
+											</div>												
+										</div>
+									</div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="email">确认邮箱：</label>
+											<div class="title">
+												<input id="email" type="text" placeholder="再次输入新邮箱地址">
+												<i class="success iconfont hidden"></i>
+												<i class="error iconfont hidden"></i>
 											</div>												
 										</div>
 									</div>
 									<div class="wrap-course">
 										<div class="mod-course clearfix">
-											<label class="pull-left" for="phone_code">手机验证码：</label>
+											<label class="pull-left" for="phone_code">手机：</label>
 											<div class="title form-controls pull-left">
-												<input type="text" id="" placeholder="请输入验证码">
+												<input type="text" id="phone_code" placeholder="请输入验证码">
 												<i class="error iconfont hidden"></i>
 												<i class="success iconfont hidden"></i>
 												<span class="phone-vcode">发送验证码</span>
@@ -672,21 +704,21 @@
 									</div>
 									<div class="wrap-course">
 										<div class="mod-course clearfix img-vcode">
-											<label class="pull-left" for="id_code">验证码：</label>
-											<div class="title form-controls pull-left">
-												<input type="text" id="" placeholder="请输入验证码">
+											<label class="pull-left" for="img_code">验证码：</label>
+											<div class="title form-controls">
+												<input type="text" id="img_code" placeholder="请输入验证码" accept="image/jpg">
 												<i class="error iconfont hidden"></i>
 												<i class="success iconfont hidden"></i>
 												<!-- <img class="id_code pull-left" src="img/id_code.jpg"> -->
 											</div>
-											<img class="id_code pull-left" src="img/id_code.jpg">
+											<img class="id_code" src="img/id_code.jpg">
 										</div>
 									</div>
 									<div class="wrap-course">
 										<div class="mod-course clearfix">
 											<label class="empty" for=""></label>
 											<div class="title">
-												<a class="btn-primary" href="">下一步</a>
+												<a class="btn-primary" href="">确认</a>
 											</div>
 										</div>
 									</div>
@@ -743,7 +775,7 @@
 							<i class="iconfont close">&#xe604;</i>
 						</div>
 						<div class="wrap-help">
-							<form action="">
+							<!-- <form action="">
 								<div>
 									<div class="wrap-course has-success">
 										<div class="mod-course clearfix">
@@ -771,10 +803,10 @@
 											<label for="">详细地址</label>
 											<div class="title">
 												<textarea name="" id="" cols="30" rows="5" placeholder="最多可输入160个字符"></textarea>
-												<!-- <input type="text" placeholder="请再次输入密码">
+												<input type="text" placeholder="请再次输入密码">
 												<i class="error iconfont hidden">&#xe613;</i>
-												<i class="success iconfont hidden">&#xe696;</i> -->
-												<!-- <p>头像图片不能超过1M,图像尺寸为260*340</p> -->
+												<i class="success iconfont hidden">&#xe696;</i>
+												<p>头像图片不能超过1M,图像尺寸为260*340</p>
 											</div>
 											
 										</div>
@@ -803,10 +835,10 @@
 											<label for="">个性签名</label>
 											<div class="title">
 												<textarea name="" id="" cols="30" rows="5" placeholder="最多可输入160个字符"></textarea>
-												<!-- <input type="text" placeholder="请再次输入密码">
+												<input type="text" placeholder="请再次输入密码">
 												<i class="error iconfont hidden">&#xe613;</i>
-												<i class="success iconfont hidden">&#xe696;</i> -->
-												<!-- <p>头像图片不能超过1M,图像尺寸为260*340</p> -->
+												<i class="success iconfont hidden">&#xe696;</i>
+												<p>头像图片不能超过1M,图像尺寸为260*340</p>
 											</div>
 											
 										</div>
@@ -819,19 +851,156 @@
 													<i class="iconfont">&#xe6b9;</i>
 												</div>
 												<p>头像图片不能超过1M,图像尺寸为160*160</p>
-												<!-- <object data="" type="" width="120" height="30">上传图片</object> -->
+												<object data="" type="" width="120" height="30">上传图片</object>
 											</div>
 											
 										</div>
 									</div>
-									<!-- <div class="form-group">
+									<div class="form-group">
 										<label class="" for=""></label>
 										<span class="form-checked">
 											<input type="checkbox" checked="checked">
 											我已阅读并同意
 											<a href="about.html" target="_blank" class="orange">《唐石科技教师管理协议》</a>
 										</span>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label class="empty" for=""></label>
+											<div class="title">
+												<a class="btn-primary" href="">确认</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form> -->
+							<form action="" enctype="multipart/form-data">
+								<div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="name">昵称：</label>
+											<div class="title">
+												<input id="name" type="text" placeholder="请输入16个字符以下的名字">
+												<i class="success iconfont hidden"></i>
+												<i class="error iconfont hidden"></i>
+											</div>												
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">城市：</label>
+											<div class="title">
+												<span class="standard_select"><!--边框-->
+													<span class="select_shelter"><!--遮挡默认边框-->
+													<select id="selId">
+														
+													</select>
+													</span>
+												</span>
+												<span class="standard_select"><!--边框-->
+													<span class="select_shelter"><!--遮挡默认边框-->
+													<select id="idcat">
+														
+													</select>
+													</span>
+												</span>
+												<span class="standard_select"><!--边框-->
+													<span class="select_shelter"><!--遮挡默认边框-->
+													<select id="job">
+														
+													</select>
+													</span>
+												</span>
+												<!-- <select name="" id="selId"></select>
+												<select name="" id="idcat"></select>
+												<select name="" id="job"></select> -->
+											</div>
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="address">详细地址：</label>
+											<div class="title">
+												<textarea name="" id="address" cols="30" rows="3" placeholder="请输入120个以下字符"></textarea>
+												<!-- <i class="success iconfont hidden"></i>
+												<i class="error iconfont hidden"></i> -->
+												<p class="help-more">120/120</p>
+											</div>												
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label for="">性别：</label>
+											<div class="title">
+												<span class="standard_select"><!--边框-->
+													<span class="select_shelter"><!--遮挡默认边框-->
+													<select id="selId">
+														<option value="">1</option>
+														<option value="">2</option>
+													</select>
+													</span>
+												</span>
+								
+												<!-- <select name="" id="selId"></select>
+												<select name="" id="idcat"></select>
+												<select name="" id="job"></select> -->
+											</div>
+										</div>
+									</div>
+									<div class="wrap-course has-success">
+										<div class="mod-course clearfix">
+											<label for="email">邮箱：</label>
+											<div class="title">
+												<input id="email" type="text" placeholder="邮箱地址">
+												<i class="success iconfont hidden"></i>
+												<i class="error iconfont hidden"></i>
+											</div>												
+										</div>
+									</div>
+									<div class="wrap-course">
+										<div class="mod-course clearfix">
+											<label class="pull-left" for="phone_code">手机：</label>
+											<div class="title form-controls pull-left">
+												<input type="text" id="phone_code" placeholder="请输入验证码">
+												<i class="error iconfont hidden"></i>
+												<i class="success iconfont hidden"></i>
+												<span class="phone-vcode">发送验证码</span>
+											</div>
+										</div>
+									</div>
+									<div class="wrap-course file">
+										<label class="ui-primary" for="xFile" >
+											<i class="iconfont">&#xe6b9;</i>上传头像
+										</label>
+										<p class="help-more">头像图片不能超过1M,图像尺寸为160*160</p>
+										<div>
+											<input type="file" id="xFile">
+											
+										</div>
+									</div>
+									<!-- <div class="wrap-course file">
+										<div class="mod-course clearfix">
+											<label class="pull-left" for="license">机构执照：</label>
+											<div class="title form-controls pull-left">
+												<input type="file" id="license" placeholder="请输入验证码">
+												<i class="error iconfont hidden"></i>
+												<i class="success iconfont hidden"></i>
+												<p class="help-more">请上传机构教学执照</p>
+											</div>
+										</div>
 									</div> -->
+									<div class="wrap-course">
+										<div class="mod-course clearfix img-vcode">
+											<label class="pull-left" for="img_code">验证码：</label>
+											<div class="title form-controls">
+												<input type="text" id="img_code" placeholder="请输入验证码" accept="image/jpg">
+												<i class="error iconfont hidden"></i>
+												<i class="success iconfont hidden"></i>
+												<!-- <img class="id_code pull-left" src="img/id_code.jpg"> -->
+											</div>
+											<img class="id_code" src="img/id_code.jpg">
+										</div>
+									</div>
 									<div class="wrap-course">
 										<div class="mod-course clearfix">
 											<label class="empty" for=""></label>

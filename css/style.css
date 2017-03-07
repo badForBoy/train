@@ -8,6 +8,9 @@ html {
     font-size: 12px;
     font-family: "PingFang SC","Microsoft Yahei",arial,\5b8b\4f53,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
 }
+body{
+    background-color: #eee;
+}
 *{
 	box-sizing:border-box;
 	-moz-box-sizing:border-box; /* Firefox */
@@ -918,16 +921,24 @@ li.well-login a i.pull-left{
 .item-list{
     width: 238px;
     width: calc(20%);
-    border: 1px solid #fff;
+    border: 2px solid #eee;
     overflow: hidden;
     margin-bottom: 10px;
+    background-color: #fff;
+}
+.course-list .item-list{
+    width: 240px;
+    width: calc(20%);
 }
 .item-list:hover{
-    /* border: 1px solid #ddd; */
+    border: 2px solid #fff; 
     box-shadow: 0 8px 16px 0 rgba(7,17,27,.2);
 }
 .box-item{
-    padding: 10px 10px 15px 10px;
+    width: 220px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #fff;
 }
 .list-img{
     position: relative;
