@@ -1,0 +1,739 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="format-detection" content="telephone=no,email=no"/>
+	<link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">
+	<title>唐石教育-课程列表</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="iconFont/iconfont.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/common/item.css">
+	<link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+<!-- 顶部通栏 begin -->
+<script type="text/javascript" src="js/common.js"></script>
+<div id="head1">
+	<div class="contain clearfix">
+		<div class="head1-left pull-left">
+			<ul class="clearfix">
+				<li class="wellcome">
+					<span>您好，欢迎来到唐石<span/>
+				</li>
+				<li>
+									<a href="login.php">请登陆</a>
+									</li>
+				<li>
+					<a href="userRegister.php">免费注册</a>
+				</li>
+			</ul>
+		</div>
+		<div class="head1-right pull-right">
+			<ul class="clearfix">
+				<li class="head1-wrap-nav">
+					<span class="my-platform" href="">网站导航<i class="iconfont">&#xe659;</i></span>
+				</li>
+				<li><a href="">客服中心</a></li>
+				<li><a href="companyRegister.php">机构入驻</a></li>
+				<!-- <li class="shopping"><a href=""><i class="iconfont">&#xe609;</i>购物车</a></li> -->
+				<li class="head1-wrap-nav">
+					<span class="my-platform" href="uc.php">个人中心<i class="iconfont">&#xe659;</i></span>
+					<div class="head1-modal-nav" style="background-color:#FFFFFF">
+						<span><a href="companyUc.php">教育机构开课</a></span>
+						<span><a href="uc.php">个人老师开课</a></span>
+						<span><a href="javascript:void(0);" onclick="loginOut();">退出</a></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>	
+<div id="head2">
+	<div class="contain clearfix">
+		<div class="test"></div>
+		<div class="head2-logo pull-left">
+			<a class="head2-link-logo" href="index.php">
+				<img src="img/logo.png" alt="">
+			</a>
+		</div>
+		<div class="head2-seach pull-left">
+		<form action="merchantSearch.php" method="post" id="searchForm">
+			<div class="head2-seach-modal">
+				<i class="iconfont search-more">&#xe659;</i>
+				<a class="search-item" href="">
+					<span>机构<!-- <i class="iconfont">&#xe659;</i> --></span>
+					<span class="hidden">课程<!-- <i class="iconfont hidden">&#xe659;</i> --></span>
+				</a>
+				<input type="hidden" name="searchType" id="searchType">
+			<input type="text" class="mod-search__input" name="kw" id="kw" placeholder="搜索课程">
+				<a class="search-btn" href="javascript:void(0);" onclick="$$('searchForm').submit();"><i class="iconfont">&#xe660;</i></a>
+				<!-- <input type="button" class="mod-search__button" value="搜索课程"> -->
+			</div>
+		</form>
+			<div class="seach-word-list">
+				<a href="courseSearch.php?kw=前端开发">前端开发</a>
+			<a href="courseSearch.php?kw=Android开发">Android开发</a>
+			<a href="courseSearch.php?kw=淘宝营销必修技">淘宝营销必修技</a>
+			<a href="courseSearch.php?kw=零基础学产品">零基础学产品</a>
+			</div>
+		</div>
+		<div class="head2-login"></div>
+	</div>
+	<div class="header-nav">
+		<div class="contain clearfix">
+			<div class="nav-all pull-left">
+				<div class="box-nav-all">
+					<i class="iconfont">&#xe616;</i>全部课程
+				</div>
+			</div>
+			<div class="nav-list pull-left">
+			<div class="nav-item"><a href="index.php">首页</a></div>
+				<div class="nav-item"><a href="courseList.php">培训课程</a></div>
+				<div class="nav-item"><a href="merchantList.php">培训机构</a></div>
+				<div class="nav-item"><a href="newsList.php">新闻动态</a></div>
+				<div class="nav-item"><a href="elective.php">帮我选课</a></div>
+				<div class="nav-item"><a href="about.php">关于我们</a></div>
+			</div>
+			<!-- 左侧悬浮课程列表begin -->
+			<div class="modal-nav hidden">
+				<ul class="modal-nav-list">
+					<!-- <li class="modal-nav-li-first">
+						<h3><a href=""><i class="iconfont">&#xe616;</i>全部课程</a></h3>
+					</li> -->
+					<li class="modal-nav-li">
+						<div class="modal-nav-li-head">
+							<h3><a class="clearfix" href="">商务礼仪<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+						</div>
+						<div class="modal-nav-li-title">
+							<a href="">前端开发</a>
+							<a href="">Linux运维</a>
+						</div>
+					</li>
+					<li class="modal-nav-li">
+						<div class="modal-nav-li-head">
+							<h3><a class="clearfix" href="">谈判技巧<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+						</div>
+						<div class="modal-nav-li-title">
+							<a href="">平面设计</a>
+							<a href="">游戏美术设计</a>
+						</div>
+					</li>
+					<li class="modal-nav-li">
+						<div class="modal-nav-li-head">
+							<h3><a class="clearfix" href="">营销策略<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+						</div>
+						<div class="modal-nav-li-title">
+							<a href="">前端开发</a>
+							<a href="">Linux运维</a>
+						</div>
+					</li>
+					<li class="modal-nav-li">
+						<div class="modal-nav-li-head">
+							<h3><a class="clearfix" href="">行为心理学<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+						</div>
+						<div class="modal-nav-li-title">
+							<a href="">前端开发</a>
+							<a href="">Linux运维</a>
+						</div>
+					</li>
+					<li class="modal-nav-li">
+						<div class="modal-nav-li-head">
+							<h3><a class="clearfix" href="">IT·互联网<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+						</div>
+						<div class="modal-nav-li-title">
+							<a href="">前端开发</a>
+							<a href="">Linux运维</a>
+						</div>
+					</li>
+					<li class="modal-nav-li">
+						<div class="modal-nav-li-head">
+							<h3><a class="clearfix" href="">IT·互联网<i class="iconfont pull-right">&#xe65f;</i></a></h3>
+						</div>
+						<div class="modal-nav-li-title">
+							<a href="">前端开发</a>
+							<a href="">Linux运维</a>
+						</div>
+					</li>
+				</ul>
+				<!-- 隐藏的课程列表begin -->
+				<div class="modal-nav-side">
+					<div class="modal-nav_modal-nav-side clearfix">
+						<ul class="pull-left">
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">互联网产品</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">互联网产品</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">互联网产品</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+								</div>
+							</li>
+						</ul>
+						<div class="modal-nav-side-oprate pull-right">
+							<div class="oprate-banner">广告位1</div>
+							<div class="oprate-banner">广告位2</div>
+							<div class="oprate-banner">广告位3</div>
+						</div>
+					</div>
+					<div class="modal-nav_modal-nav-side clearfix">
+						<ul class="pull-left">
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">平面设计</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">平面设计</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">平面设计</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+								</div>
+							</li>
+						</ul>
+						<div class="modal-nav-side-oprate pull-right">
+							<div class="oprate-banner">广告位1</div>
+							<div class="oprate-banner">广告位2</div>
+							<div class="oprate-banner">广告位3</div>
+						</div>
+					</div>
+					<div class="modal-nav_modal-nav-side clearfix">
+						<ul class="pull-left">
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">互联网产品</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">互联网产品</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">互联网产品</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+								</div>
+							</li>
+						</ul>
+						<div class="modal-nav-side-oprate pull-right">
+							<div class="oprate-banner">广告位1</div>
+							<div class="oprate-banner">广告位2</div>
+							<div class="oprate-banner">广告位3</div>
+						</div>
+					</div>
+					<div class="modal-nav_modal-nav-side clearfix">
+						<ul class="pull-left">
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">平面设计</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">平面设计</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">平面设计</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+								</div>
+							</li>
+						</ul>
+						<div class="modal-nav-side-oprate pull-right">
+							<div class="oprate-banner">广告位1</div>
+							<div class="oprate-banner">广告位2</div>
+							<div class="oprate-banner">广告位3</div>
+						</div>
+					</div>
+					<div class="modal-nav_modal-nav-side clearfix">
+						<ul class="pull-left">
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">互联网产品</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">互联网产品</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">互联网产品</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+									<a href="">产品策划</a>
+								</div>
+							</li>
+						</ul>
+						<div class="modal-nav-side-oprate pull-right">
+							<div class="oprate-banner">广告位1</div>
+							<div class="oprate-banner">广告位2</div>
+							<div class="oprate-banner">广告位3</div>
+						</div>
+					</div>
+					<div class="modal-nav_modal-nav-side clearfix">
+						<ul class="pull-left">
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">平面设计</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">平面设计</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+								</div>
+							</li>
+							<li class="clearfix">
+								<h4 class="modal-nav-side-head pull-left">平面设计</h4>
+								<div class="modal-nav-side-title pull-left">
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+									<a href="">网页美工</a>
+								</div>
+							</li>
+						</ul>
+						<div class="modal-nav-side-oprate pull-right">
+							<div class="oprate-banner">广告位1</div>
+							<div class="oprate-banner">广告位2</div>
+							<div class="oprate-banner">广告位3</div>
+						</div>
+					</div>
+				</div>
+				<!-- 隐藏的课程列表end -->
+			</div>
+			</div>
+			<!-- 左侧悬浮课程列表end -->
+		</div>
+	</div>	
+	<div class="nav-banner">
+		<div class="contain">
+			<a href=""><img src="img/nav_banner.jpg" alt=""></a>
+		</div>
+	</div>
+
+
+<!-- 顶部通栏 end -->
+
+	<div id="list" class="company-list">
+		<div class="contain main clearfix">
+			
+
+			<!-- 左侧搜索结果列表 begin -->
+			<div class="aside-left pull-left">
+				<div class="coordinate">
+					<a href="index.html">全部机构</a>
+										<i class="iconfont"></i><a href="merchantList.php?cId=11">设计·创作</a>
+									</div>
+				
+				
+				
+				<div class="course">
+					<div class="wrap-course">
+						<dl class="box-course clearfix">
+							<dt class="course-header">
+								<h4>大类</h4>
+							</dt>
+							<dd class="course-list">
+								<a class="on" href="">不限</a>
+								<a href="merchantList.php?cId=12">平面设计</a>
+								<a href="merchantList.php?cId=13">UI设计</a>
+																
+							</dd>
+						</dl>
+					</div>
+					
+				</div>
+				<div class="course-nav">
+					<a class="on" href="">综合</a><i>|</i><a href="">人气</a><i>|</i><a href="">最新</a><i>|</i><a href="">评分</a><i>|</i><a href="">价格</a>
+				</div>
+				
+				<!-- 课程列表 begin -->
+				<div class="all">
+					<ul class="company-list clearfix">
+												
+						
+					</ul>
+				</div>
+				<!-- 课程列表 end -->
+				
+
+				没有数据<!-- </div> -->
+			</div>
+			<!-- 左侧搜索结果列表 begin -->
+
+			<!-- 右侧热门推荐课程 begin -->
+			<div class="aside-right pull-left">
+				<h3>热门推荐</h3>
+				<div class="wrap-list clearfix">
+										<div class="item-list pull-left">
+						<div class="box-item">
+							<div class="list-img">
+								<a href="course.php?id=10">
+								<img src="/web/uploads/images/20170309/2017030908204591.jpg"></a>
+								<div class="list-status">
+									<span>HTML5前端开发-微信小程序｜HTML/CSS3/JS/web app【职坐标】</span>
+								</div>
+							</div>
+							<p class="list-titl"><a href=""></a></p>
+							<div class="list-line clearfix">
+								<span class="price  pull-left">    						¥888						   </span>
+								<span class="source pull-right"><a href="">测试教育机构</a>
+								</span>
+							</div>
+						</div>
+					</div>
+										<div class="item-list pull-left">
+						<div class="box-item">
+							<div class="list-img">
+								<a href="course.php?id=20">
+								<img src="/web/uploads/images/20170309/2017030908204591.jpg"></a>
+								<div class="list-status">
+									<span>HTML5前端开发-微信小程序｜HTML/CSS3/JS/web app【职坐标】</span>
+								</div>
+							</div>
+							<p class="list-titl"><a href=""></a></p>
+							<div class="list-line clearfix">
+								<span class="price  pull-left">    						¥888						   </span>
+								<span class="source pull-right"><a href="">测试教育机构</a>
+								</span>
+							</div>
+						</div>
+					</div>
+										<div class="item-list pull-left">
+						<div class="box-item">
+							<div class="list-img">
+								<a href="course.php?id=30">
+								<img src="/web/uploads/images/20170309/2017030908204591.jpg"></a>
+								<div class="list-status">
+									<span>HTML5前端开发-微信小程序｜HTML/CSS3/JS/web app【职坐标】</span>
+								</div>
+							</div>
+							<p class="list-titl"><a href=""></a></p>
+							<div class="list-line clearfix">
+								<span class="price  pull-left">    						¥888						   </span>
+								<span class="source pull-right"><a href="">测试教育机构</a>
+								</span>
+							</div>
+						</div>
+					</div>
+										<div class="item-list pull-left">
+						<div class="box-item">
+							<div class="list-img">
+								<a href="course.php?id=40">
+								<img src="/web/uploads/images/20170309/2017030908204591.jpg"></a>
+								<div class="list-status">
+									<span>HTML5前端开发-微信小程序｜HTML/CSS3/JS/web app【职坐标】</span>
+								</div>
+							</div>
+							<p class="list-titl"><a href=""></a></p>
+							<div class="list-line clearfix">
+								<span class="price  pull-left">    						¥888						   </span>
+								<span class="source pull-right"><a href="">测试教育机构</a>
+								</span>
+							</div>
+						</div>
+					</div>
+						
+				
+				
+				</div>
+			</div>
+			<!-- 右侧热门推荐课程 end -->
+			
+		</div>
+		
+		<!-- 底部热门推荐课程 begin -->
+		<div class="contain">
+			<div class="wrap-list clearfix">
+									<div class="item-list pull-left">
+						<div class="box-item">
+							<div class="list-img">
+								<a href="course.php?id=1">
+								<img src="/web/uploads/images/20170309/2017030907344227.jpg"></a>
+								<div class="list-status">
+									<span>马哥Python入门-零基础十天精通Python</span>
+								</div>
+							</div>
+							<p class="list-titl"><a href=""></a></p>
+							<div class="list-line clearfix">
+								<span class="free  pull-left">    免费   </span>
+								<span class="source pull-right"><a href="">测试教育机构</a>
+								</span>
+							</div>
+						</div>
+					</div>
+										<div class="item-list pull-left">
+						<div class="box-item">
+							<div class="list-img">
+								<a href="course.php?id=2">
+								<img src="/web/uploads/images/20170309/201703090736119.jpg"></a>
+								<div class="list-status">
+									<span>淘宝天猫开店运营直通车淘宝客SEO店铺规则爆款实操干货-上午10点</span>
+								</div>
+							</div>
+							<p class="list-titl"><a href=""></a></p>
+							<div class="list-line clearfix">
+								<span class="price  pull-left">    						¥600						   </span>
+								<span class="source pull-right"><a href="">测试教育机构</a>
+								</span>
+							</div>
+						</div>
+					</div>
+										<div class="item-list pull-left">
+						<div class="box-item">
+							<div class="list-img">
+								<a href="course.php?id=3">
+								<img src="/web/uploads/images/20170309/2017030907425593.jpg"></a>
+								<div class="list-status">
+									<span>17年最新黑技术-日破百单课程-5天破300单</span>
+								</div>
+							</div>
+							<p class="list-titl"><a href=""></a></p>
+							<div class="list-line clearfix">
+								<span class="price  pull-left">    						¥100						   </span>
+								<span class="source pull-right"><a href="">测试教育机构</a>
+								</span>
+							</div>
+						</div>
+					</div>
+										<div class="item-list pull-left">
+						<div class="box-item">
+							<div class="list-img">
+								<a href="course.php?id=4">
+								<img src="/web/uploads/images/20170309/2017030907443977.jpg"></a>
+								<div class="list-status">
+									<span>2017最新黑车黑搜黑技术-3天破百单</span>
+								</div>
+							</div>
+							<p class="list-titl"><a href=""></a></p>
+							<div class="list-line clearfix">
+								<span class="price  pull-left">    						¥800						   </span>
+								<span class="source pull-right"><a href="">测试教育机构</a>
+								</span>
+							</div>
+						</div>
+					</div>
+										<div class="item-list pull-left">
+						<div class="box-item">
+							<div class="list-img">
+								<a href="course.php?id=5">
+								<img src="/web/uploads/images/20170309/2017030907454256.jpg"></a>
+								<div class="list-status">
+									<span>2017手淘免费新规，突破百万流量玩法！</span>
+								</div>
+							</div>
+							<p class="list-titl"><a href=""></a></p>
+							<div class="list-line clearfix">
+								<span class="price  pull-left">    						¥1200						   </span>
+								<span class="source pull-right"><a href="">测试教育机构</a>
+								</span>
+							</div>
+						</div>
+					</div>
+						
+				
+			</div>
+		</div>
+		<!-- 底部热门推荐课程 end -->
+	</div>
+
+	<!-- 友情链接 begin -->
+	﻿<div class="wrap-friend footer">
+		<div class="contain modal-friend">
+			<div class="modal-friend-icon"></div>
+			<div class="modal-friend-information">
+				<p>copyright © 2017 www.t-towns.com, All Rights Reserved.</p>
+				<p>浙ICP备17010830号</p>
+			</div>
+		</div>
+	</div>	<!-- 友情链接 end -->
+
+<script src="js/jquery/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/courseDetails.js"></script>
+<script type="text/javascript" src="js/company.js"></script>
+<script type="text/javascript" src="js/search.js"></script>	
+<script type="text/javascript" src="js/header.js"></script>		
+</body>
+</html>

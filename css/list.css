@@ -1,6 +1,11 @@
 /* body{
 	background-color: #eee;
 } */
+.price{color: #e85308 !important;}
+.free{color: #188eee !important;}
+.f15{font-size: 15px !important;}
+.f20{font-size: 20px !important;}
+.mr5{margin-right: 5px !important;}
 #list{
 	margin-bottom: 80px;
 }
@@ -60,8 +65,37 @@ dd a{
 .course-nav a{
 	margin:0 10px;
 }
+.course-nav i{
+	color: #666;
+}
 .course-nav a.on{
 	color: #188eee;
+}
+.course-nav .list-style{
+	width: auto;
+	display: inline-block;
+	position: relative;
+	*top: -20px;
+}
+.course-nav .list-style a{
+	margin: 0 2px;
+}
+.course-nav .list-style a i{
+	color: #333;
+}
+.course-nav .list-style a:hover i{
+	color: #188eee;
+}
+.course-nav .list-style a i.f18{
+	font-size: 18px;    
+}
+.course-nav .list-style a.on i{
+	color: #188eee;
+}
+.course-nav .list-style i.pr{
+	position: relative;
+	top: -2px;
+	left: -1px;
 }
 .all .modal-like-list{
 	margin-left: -6px;
@@ -96,4 +130,48 @@ dd a{
 .company-list .aside-left{
 	width: 950px;
 	margin-right: 12px;
+}
+
+.course-title{    
+	width: 300px;
+    padding: 10px 20px;
+}
+.course-buy{    
+	width: 170px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.course-buy .gray2{color: #666;line-height: 20px;}
+.course-title h3 {
+    margin-bottom: 5px;
+}
+.att .teacherMode{
+	margin-top: 10px;
+}
+.att .teacherMode a{
+	color: #fff;
+}
+.course-title p {
+    margin-bottom: 20px;
+    color: #666;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 32px;
+    *height: 28px;
+    height: 28px\0;
+    overflow: hidden;
+}
+.att {
+    padding: 10px 0 0 0;
+}
+.att .course-company a{
+	color: #333;
+}
+.att .course-company a:hover{
+	color: #188eee;
 }

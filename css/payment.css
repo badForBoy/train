@@ -1,0 +1,129 @@
+em{font-style: normal;}
+dt,dd{display: block;}
+dt{
+	color: #000;
+    font-weight: 700;
+}
+.payment .wrap{
+	font-size: 14px;
+	box-sizing: border-box;
+	background: #fff;
+	padding: 50px 270px 50px 250px;
+}
+.payment .wrap dt{
+	float: left;
+}
+.payment .wrap .order dd{
+	color: #666;
+}
+.payment .wrap .info span{
+	color: #000;
+    font-weight: 700;
+}
+.payment .wrap .info a{
+	margin-left: 20px;
+	text-decoration: none;
+	font-weight: 500;
+}
+.payment .wrap .info a span{
+	font-weight: 500;
+}
+.payment .wrap .info a{
+	color: #333;
+}
+.payment .wrap .info a:hover span,
+.payment .wrap .info a:hover i{
+	text-decoration: none;
+	color: #188eee;
+}
+.payment .wrap .info span em{
+	color: #188eee;
+	font-size: 24px;
+	font-weight: 500;
+}
+.payment .wrap .info .details{
+	 display: none; 
+	padding-left: 72px;
+}
+.payment .wrap .info .details.on{
+	display: block;
+}
+.payment .wrap .info .details{
+	color: #666;
+}
+.payment .wrap .info .details dt{
+	color: #666;
+	font-weight: normal;
+}
+.payment .wrap .info .details dl{
+	padding-top: 15px;
+}
+.payment .wrap .info .details dd span,
+.payment .wrap .info .details dd i{
+	color: #666;
+	font-weight: 500;
+}
+
+.payment .wrap .pay-channel{
+	margin-top: 40px;
+}
+.payment .wrap .pay-channel dl dt{
+	color: #000;
+    font-weight: 700;
+    font-size: 14px;
+	line-height: 44px;
+	float: none;
+}
+.payment .wrap .pay-channel .pay-item ul li{
+	float: left;
+	width: 130px;
+	height: 40px;
+	line-height: 34px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #dedede;
+	margin-right: 10px;
+}
+.payment .wrap .pay-channel .pay-item ul li:hover,.payment .wrap .pay-channel .pay-item ul li:active{
+	border: 1px solid #188eee;
+}
+.payment .wrap .pay-channel .pay-item .item-w i{
+	color: #00c800;
+	font-size: 24px;
+	margin-right: 10px;
+}
+.payment .wrap .pay-channel .pay-item .item-z i{
+	color: #1b82d2;
+	font-size: 24px;
+	margin-right: 10px;
+}
+.payment .wrap .pay-channel .pay-item ul li.on{
+	border: 2px solid #188eee;
+}
+.payment .wrap .pay-channel .pay-modal{
+	margin-top: 25px;
+}
+.payment .wrap .pay-channel .pay-modal .f1{
+	float: left;
+	width: 200px;
+}
+.payment .wrap .pay-channel .pay-modal .f1 img{
+	width: 200px;
+}
+.payment .wrap .pay-channel .pay-modal .f1 .explain{
+	background: #00c800;
+	text-align: center;
+	color: #fff;
+	width: 200px;
+	padding: 5px 0;
+}
+.payment .wrap .pay-channel .pay-modal .f1 .explain{
+	font-size: 12px;
+}
+.payment .wrap .pay-channel .pay-modal .pay-z .f1 .explain{
+	background: #1b82d2;
+}
+.payment .wrap .pay-channel .pay-modal .f2{
+	float: left;
+	width: 200px;
+}

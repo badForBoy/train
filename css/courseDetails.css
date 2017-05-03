@@ -4,6 +4,7 @@
 i.star-gray{
 	color: #999 !important;
 }
+a,a:hover{text-decoration: none;}
 #header{
 	margin-bottom: 0px;
 }
@@ -49,11 +50,13 @@ i.star-gray{
 .basic-header h3{
 	color: #333;
 	cursor: default;
+	margin-bottom: 0;
 }
 .basic-eva{
 	color: #666;
 	cursor: default;
 	padding: 14px 0;
+	font-size: 14px;
 }
 .basic-eva span{
 	padding-right: 10px;
@@ -63,7 +66,7 @@ i.star-gray{
 	margin-right: 4px;
 }
 .basic-eva span a{
-	font-size: 12px;
+	font-size: 14px;
 }
 .basic-free{
 	font-size: 30px;
@@ -349,27 +352,111 @@ td,th{
     color: #188EEE;
 }
 
-/*********************
-    友情链接
-*********************/
-.wrap-friend{
-	position: absolute;
-	bottom: 0;
-	margin-top: 50px;
-    background: #282828;
-    width: 100%;
+.list-img .list-status{bottom: 4px;}
+
+/* 评价课程 */
+.evaluare .basic .basic-inf{
+	height: 100px;
+	background-color: #eee !important;
+	padding: 20px;
+}
+.evaluare .basic .basic-inf p{
+	line-height: 24px;
+}
+.evaluare .basic .basic-info{margin-bottom: 20px;}
+.evaluare .evaluate-all{margin-bottom: 10px;}
+.evaluare .evaluate-form{background-color: #ddd;margin-bottom: 80px;}
+.evaluare .evaluate-form form .mod-course{margin-bottom: 6px;}
+/*.evaluare .evaluate-form form .mod-course .title{ width: 1000px; }*/
+.evaluare .evaluate-form form .mod-course .select_shelter{width: 100%;}
+.evaluare .evaluate-form form .mod-course .select_shelter select{width: 588px;}
+
+
+/* 弹窗购买 */
+#pay-modal{
+	display: none;
+}
+#pay-modal .wrap .bl-header{
+	padding: 10px 20px 0 20px;
+	background: #188eee !important;
+}
+#pay-modal .wrap .bl-header span{
+	font-size: 16px;
+	color: #fff;
+}
+#pay-modal .wrap .bl-header i{
+	color: #fff;
+}
+.box-info,.box-date,.box-price{
+	padding: 10px 20px 0 20px;
+}
+#pay-modal .wrap-course{
+	position: static;
+	float: left;
+	width: 50%;
+}
+#pay-modal .basic-btn{
+	position: static;
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+#pay-modal .box-price span{
+	font-size: 16px;
+	color: #333;
+}
+#pay-modal .box-price em{
+	font-style: normal;
+	font-size: 22px;
+	color: #E85308;
+}
+#pay-modal .basic-btn a{
+	width: 110px;
+	height: 40px;
+	line-height: 40px;
+	border:1px solid #d9d9d9;
+	color: #333;
+}
+#pay-modal .basic-btn a.on{
+	color: #fff;
+}
+#pay-modal .info-img{
+	float: left;
+}
+#pay-modal .info-img img{
+	width: 90px;
+	height: 50px;
+}
+#pay-modal .info-title{
+	padding-left: 10px;
+	float: left;
+}
+#pay-modal .info-title h3,
+#pay-modal .box-date h3{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
     height: auto;
-    padding: 28px 0 20px 0;
+    line-height: 1.5;
+    color: #333;
+    font-weight: 500;
 }
-.modal-friend-icon{
-    /*position: absolute;*/
-    background: url(../img/solid.png) no-repeat;
-    width: 100px;
-    height: 67px;
-    margin: 20px auto 10px;
-    padding-top: 20px;
+#pay-modal .info-title{
+	display: inline-block;
+    vertical-align: middle;
+    color: #999;
 }
-.modal-friend-information{
-    text-align: center;
-    color: #666;
+#pay-modal .box-date{
+   /*  border: 1px solid #e5e5e5;
+   border-top: 0;
+   padding: 5px 15px 6px;
+   position: relative; */
+}
+#pay-modal .box-date p{
+	font-size: 14px;
+	color: #333;
 }

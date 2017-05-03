@@ -187,9 +187,6 @@ li.well-login a i.pull-left{
     }
 } 
 /* ====================机构列表==================== */
-.company-list{
-    margin-top: 10px;
-}
 .company-list li{
     border-bottom: 1px solid #ddd;
     margin-bottom: 20px;
@@ -456,7 +453,6 @@ input[type=date]{
 .btn-primary{
     display: inline-block;
     text-align: center;
-    width: 70px;
     height: 34px;
     line-height: 34px;
     padding: 0px 16px;
@@ -532,7 +528,7 @@ a.btn{
     margin: 0 -15px;
     margin-left: -12px; */
 }
-.item-list{
+.wrap-list .item-list{
     width: 236px;
     /* width: calc(20%); */
     border: 2px solid #fff;
@@ -540,7 +536,7 @@ a.btn{
     margin-bottom: 10px;
     background-color: #fff;
 }
-.item-list:hover{
+.wrap-list .item-list:hover{
     border: 2px solid #fff; 
     box-shadow: 0 8px 16px 0 rgba(7,17,27,.2);
 }

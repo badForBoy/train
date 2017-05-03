@@ -5,6 +5,7 @@
 
 	//学团详情切换
 	$team.click(function(event) {
+		debugger
 		var itemNum = $(this).index();
 		$(this).addClass('on').siblings($team).removeClass('on');
 		$teamMod.eq(itemNum).removeClass('hidden').siblings($teamMod).addClass('hidden');

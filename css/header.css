@@ -6,7 +6,7 @@ html {
     -webkit-text-size-adjust: 100%;
     height: 100%;
     font-size: 12px;
-    font-family: "PingFang SC","Microsoft Yahei",arial,\5b8b\4f53,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei";
 }
 body{ 
     position: relative !important;
@@ -94,11 +94,11 @@ li{
 }
 /*head1*/
 #head1{
+    background: #fff;
     font-size: 12px;
     width: 100%;
     height: 36px;
-	line-height: 35px;
-	background: #fff;
+    line-height: 35px;
     color: #333;
     border-bottom: 1px solid #E7E8E7;
 }
@@ -109,8 +109,8 @@ li{
     margin: 0 auto;
 }
 .head1-left ul li{
-	float: left;
-	padding-right: 20px;
+    float: left;
+    padding-right: 20px;
 }
 .wellcome span{
     font-size: 14px;
@@ -125,8 +125,8 @@ li{
     color: #188EEE;
 }
 .head1-right ul li{
-	float: right;
-	padding-right: 20px;
+    float: right;
+    padding-right: 20px;
 }
 .head1-wrap-nav{
     position: relative;
@@ -139,7 +139,7 @@ li{
     height: 12px;
     line-height: 13px;
     top: 2px;
-    right: 7px;
+    right: 8px;
     margin-left: 2px;
     transition: transform .3s;
     margin-top: 10px;
@@ -152,7 +152,7 @@ li{
     top: 35px;
     border: 1px solid #dbdbdb;
     border-top: 0;
-    z-index: 10;
+    text-align: center;
 }
  .head1-wrap-nav{
     cursor: pointer;
@@ -337,9 +337,17 @@ a.search-btn{
     display: block;
     padding: 16px 14px;
     color: #fff;
+    *padding-bottom: 20px;
+    padding-bottom: 20px\0;
 }
 .header-nav .nav-item:hover{
     background: #fff;
+    color: #188eee;
+}
+.header-nav .nav-item.on{
+    background: #fff;
+}
+.header-nav .nav-item.on a{
     color: #188eee;
 }
 .header-nav .nav-item:hover a{
@@ -361,11 +369,15 @@ a.search-btn{
 /* 隐藏列表板块 */
 
 .modal-nav{
+    display: none;
     width: 220px;
     position: absolute;
     top: 51px;
     left: 0;
     z-index: 99999;
+}
+.modal-nav h3{
+    margin-top: 0;
 }
 .modal-nav-list{
     width: 220px;

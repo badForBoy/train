@@ -19,5 +19,20 @@
 		$listItem.slideToggle(200);
 	});
 
+	/*弹窗登录显隐*/
+	$("#login-modal .wrap .bl-header i").click(function(event) {
+		$("#login-modal").hide();
+	});
+	$(".login-btn").click(function(event) {
+		$("#login-modal").show();
+	});
+
+
+	$(".basic .pay-btn").click(function(event) {
+		$("#pay-modal").show();
+	});
+	$("#pay-modal .wrap .bl-header i").click(function(event) {
+		$("#pay-modal").hide();
+	});
 
 }());

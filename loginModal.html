@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="format-detection" content="telephone=no,email=no"/>
+	<link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">
+	<title>login</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="iconFont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<!-- 弹窗登录 begin -->	
+	<div class="login-modal">
+		<div class="wrap">
+			<div class="close">
+				<i class="iconfont">&#xe604;</i>
+			</div>
+			<div class="login-form clearfix">
+				<form action="">
+					<div class="username">
+						<label for="tp_username">
+							<i class="iconfont">&#xe6b8;</i>
+						</label>
+						<!-- <span>会员名/邮箱/手机号</span> -->
+						<input type="text" name="tp_username" tabindex="1" maxlength="32" placeholder="会员名/邮箱/手机号">
+					</div>
+					<div class="password">
+						<label for="tp_password">
+							<i class="iconfont">&#xe8b0;</i>
+						</label>
+						<input type="password" name="tp_password" tabindex="1" maxlength="32" placeholder="密码">
+					</div>
+					<div class="submit">
+						<button type="submit" class="J_Submit">登 录</button>
+					</div>
+					<div class="wrap-course">
+						<label class="" for=""></label>
+						<div class="form-checked clearfix">
+							<div class="pull-left">
+								<input type="checkbox" checked="checked">
+								十天内免费登录
+								<a href="forget.html" target="_blank" class="orange">忘记密码</a>
+							</div>
+							<div class="switch-back">
+								还没有帐号？
+								<a href="registerSelect.html">点击注册</a>
+							</div>
+						</div>
+					</div>
+				</form>
+				
+			</div>
+		</div>
+		<div class="modal-bg"></div>
+	</div>
+	<!-- 弹窗登录 end -->	
+	<!-- 顶部通栏 begin -->
+	<div id="header">
+		<div class="content clearfix">
+			<div class="logo pull-left">
+				<a href="index.html"></a>
+			</div>
+			<div class="wellcome2 pull-right">
+				<p>您好，欢迎来到唐石!</p>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部通栏 end -->
+
+	<div id="login">
+		<div class="content">
+			<div class="login-bg">
+				<img src="img/login.jpg" alt="">
+			</div>
+			<div class="wrap-box-login">
+				<!-- 标准登陆框 begin -->
+				<div class="login-box">
+					<h3>用户登录</h3>
+					<form action="" id="P_Form">
+						<div class="username">
+							<label for="tp_username">
+								<i title="会员名"></i>
+							</label>
+							<!-- <span>会员名/邮箱/手机号</span> -->
+							<input type="text" name="tp_username" tabindex="1" maxlength="32" placeholder="会员名/邮箱/手机号">
+						</div>
+						<div class="password">
+							<label for="tp_password">
+								<i title="会员名"></i>
+							</label>
+							<input type="password" name="tp_password" tabindex="1" maxlength="32" placeholder="密码">
+						</div>
+						<div class="submit">
+							<button type="submit" class="J_Submit">登 录</button>
+						</div>
+					</form>
+					<a class="reset-password" href="forget.html">忘记密码</a>
+					<div class="switch-back">
+						还没有帐号？
+						<a href="registerSelect.html">点击注册</a>
+					</div>
+				</div>
+				<!-- 标准登陆框 end -->
+			</div>
+		</div>
+	</div>
+
+	<!-- 友情链接 begin -->
+	<div class="wrap-friend footer">
+		<div class="contain modal-friend">
+			<!-- <div class="modal-friend-icon"></div> -->
+			<div class="modal-friend-information">
+				<p>copyright © 2004-today pxto.com.cn, All Rights Reserved.</p>
+				<p>版权所有 备案编号：京公网安备1101054307 , <a href="">ICP备07505283号</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- 友情链接 end -->
+
+</body>
+</html>
